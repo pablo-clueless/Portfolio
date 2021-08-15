@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Okunola Samson",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/new-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "web",
+    "development",
+    "web",
+    "developer",
+    "content",
+    "writer"
+  ],
+  "bugs": {
+    "url": "https://github.com/github.com/new-portfolio/issues"
+  },
+  "homepage": "https://github.com/github.com/new-portfolio#readme"
+}

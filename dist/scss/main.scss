@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@300;800&display=swap');
+@import 'config';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.heading-text{
+    text-align: center;
+}
+
+body{
+    padding: 20px 0;
+    margin: 0;
+    position: relative;
+    background: #f8f9fa;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: $primary;
+}
+header{
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 14px 10px -15px #ced4da;
+    z-index: 2;
+    
+   ul{
+        list-style: none;
+        justify-self: end;
+    }
+
+   li{
+        display: inline;
+        margin: 0 10px;
+        font-family: 900;
+    }
+
+    a{
+        color: $primary;
+        font-weight: 700;
+        transition: 0.5s;
+
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    margin-top: 20vh;
+    display: flex;
+    padding: 30px 40px 40px;
+    font-family: 'Montserrat', sans-serif;
+    
+    .hero-text{
+        width: 100%;
+        text-align: center;
+        color: $primary;
+
+        h1{
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+
+        a{
+            color: text-color(#fff);
+        }
+    }
+
+    .hero-image{
+        margin-top: 100px;
+        position: relative;
+        
+        .steam{
+            position: absolute;
+            top: -100%;
+            left: 43%;
+            animation: steam 5s linear infinite 3s;
+        }
+
+        .steam::before, .steam::after{
+            content: "";
+            position: absolute;
+            background: #fff;
+            width: 40px;
+            height: 70px;
+            border-right: 0px solid transparent;
+            border-top: 5px solid #000;
+            border-left: 8px solid #000;
+            border-bottom: 2px solid transparent;
+            z-index: 1;
+            border-radius: 80% 0 10% 10%;
+            transform: rotate(168deg) skew(10deg);
+            filter: blur(6px);
+        }
+
+        .steam::after{
+            left: -42%;
+            border-radius: 60% 0 10% 10%;
+            transform: rotate(315deg) skew(10deg);
+            filter: blur(7px);
+        }
+
+        @keyframes steam {
+            0%{top: -60%; opacity: .075; visibility: visible;}
+            20%{ top: -70%; opacity: 0.2;}
+            40%{ top: -80%; opacity: 0.4;}
+            60%{ top: -90%; opacity: 0.2;}
+            80%{ top: -95%; opacity: 0.075;}
+            100%{ top: -100%; opacity: 0; visibility: hidden;}
+        }
+    }
+}
+
+#about{
+    background: $third;
+    height: auto;
+
+    h1{
+        margin: 0 0 20px;
+    }
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content{
+        width: 50%;
+        height: 20vh;
+        line-height: 40%;
+        margin: 40px auto;
+
+        .content-container{
+            width: 200px;
+            height: 15vh;
+            display: flex;
+            overflow-y: hidden;
+        }
+
+        .content-container::before{
+            content: "[";
+        }
+
+        .content-container::after{
+            content: "]";
+        }
+        .content-container::after,.content-container::before{
+            font-size: 100px;
+            -webkit-animation: 3s opacity infinite;
+            animation: 3s opacity infinite;
+        }
+
+        .content-list{
+            padding: 0 10px;
+            -webkit-animation: 10s change infinite;
+            animation: 10s change infinite;
+        }
+        @keyframes opacity {
+            0%, 100% {opacity: 0;}
+            50% {opacity: 1;}
+        }
+        @keyframes change {
+           0%, 12%, 100% { transform: translateY(0);}
+           17%, 30% { transform: translateY(-100px);}
+           33%, 46% { transform: translateY(-200px);}
+           49%, 62% { transform: translateY(-300px);}
+           66%, 79% {transform: translateY(-400px);}
+           83%, 95% {transform: translateY(-500px);}
+        }
+        .content-items{
+            margin-bottom: 50px;
+        }
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 20px 0;
+
+        .box-container{
+            display: flex;
+
+            .box-card{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 10px;
+                width: 50%;
+                margin: 5px 10px;
+                padding: 10px;
+                background: $primary;
+            }
+            
+            h3, p{
+                color: #f8f9fa;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+#projects{
+
+    .projects{
+        width: 100%;
+        height: 50vh;
+        background: $primary;
+    }
+}
+
+#contact{
+    .mail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0;
+        padding: 20px 30px;
+
+        a{
+            color: $primary;
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+    }
+}

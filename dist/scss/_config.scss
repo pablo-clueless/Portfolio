@@ -1,0 +1,48 @@
+//Colors
+$primary: #394856;
+$secondary: #eccada;
+$third: #8cafce;
+$fourth: #b494a4;
+
+//Containers
+.container{
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+//Background and Text
+@mixin back-ground-color($color){
+    background-color: $color;
+    color: text-color($color);
+}
+@function text-color($color){
+    @if(lightness($color)>70){
+        @return $secondary;
+    } @else{
+        @return $primary;
+    }
+}
+
+//Button
+%btn{
+    display: inline-flex;
+    padding: 10px 20px;
+    margin: 30px auto;
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #eccada;
+    transition: 0.5s;
+    
+    &:hover{
+        transform: scale(.95);
+    }
+}
+
+.btn{
+    @extend %btn;
+    @include back-ground-color($primary);
+}
