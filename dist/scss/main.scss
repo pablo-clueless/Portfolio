@@ -80,6 +80,10 @@ header{
     .hamburger{
         cursor: pointer;
 
+        .close{
+            transform: rotate(180deg);
+        }
+
         .patty{
             list-style: none;
             position: relative;
@@ -100,20 +104,20 @@ header{
             }
 
             .show:nth-child(1){
-                transform: translateX(-150%);
-                transition:all 0.3s ease-in-out;
+                transform: translateX(-40vw);
+                transition:all 1s ease-in-out;
             }
             .show:nth-child(2){
-                transform: translateX(-250%);
-                transition:all 0.6s ease-in-out;
-            }
-            .show:nth-child(3){
-                transform: translateX(-380%);
+                transform: translateX(-30vw);
                 transition:all 0.8s ease-in-out;
             }
+            .show:nth-child(3){
+                transform: translateX(-20vw);
+                transition:all 0.6s ease-in-out;
+            }
             .show:nth-child(4){
-                transform: translateX(-650%);
-                transition:all 1s ease-in-out;
+                transform: translateX(-10vw);
+                transition:all 0.4s ease-in-out;
             }
         }
     }
@@ -125,6 +129,12 @@ header{
     }
     .hamburger{
         visibility: visible;
+    }
+}
+
+@media screen and (min-width:599px){
+    .hamburger{
+        display: none;
     }
 }
 
