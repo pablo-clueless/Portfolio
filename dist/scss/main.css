@@ -147,21 +147,6 @@ header .hamburger .patty .show:nth-child(4) {
   transition: all 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  .menu {
-    display: none;
-  }
-  .hamburger {
-    visibility: visible;
-  }
-}
-
-@media screen and (min-width: 599px) {
-  .hamburger {
-    display: none;
-  }
-}
-
 #hero {
   position: relative;
   width: 100%;
@@ -199,7 +184,7 @@ header .hamburger .patty .show:nth-child(4) {
 }
 
 #hero .pointer {
-  margin-top: 60px;
+  margin: 60px;
   animation: 2s opacity infinite;
 }
 
@@ -320,19 +305,6 @@ header .hamburger .patty .show:nth-child(4) {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #skills .box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  #skills .box .box-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-}
-
 #projects .projects {
   width: 100%;
   padding: 20px;
@@ -388,20 +360,6 @@ header .hamburger .patty .show:nth-child(4) {
 #projects a {
   text-decoration: underline;
   color: #394856;
-}
-
-@media screen and (max-width: 700px) {
-  #projects .projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #projects .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 
 #contact .mail {
@@ -475,5 +433,47 @@ footer {
 
 footer a {
   color: #47bc95;
+}
+
+@media screen and (min-width: 599px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .pointer {
+    display: none;
+  }
+  #skills .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  #skills .box .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #projects .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #projects .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
