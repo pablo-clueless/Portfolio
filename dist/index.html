@@ -31,12 +31,35 @@
           id="#"
         />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#about" title="About">ABOUT</a></li>
-          <li><a href="#skills" title="Skills">SKILLS</a></li>
-          <li><a href="#projects" title="Projects">PROJECTS</a></li>
-          <li><a href="#contact" title="Contact">CONTACT</a></li>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#about">ABOUT</a></li>
+          <li class="menu-item"><a href="#skills">SKILLS</a></li>
+          <li class="menu-item"><a href="#projects">PROJECTS</a></li>
+          <li class="menu-item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <nav class="hamburger">
+        <i class="fas fa-hamburger fa-lg"></i>
+        <ul class="patty">
+          <li class="ham">
+            <a href="#about">
+              <i class="fas fa-user fa-lg"></i>
+            </a>
+          </li>
+          <li class="ham">
+            <a href="#skills">
+              <i class="fas fa-brain fa-lg"></i>
+            </a>
+          </li>
+          <li class="ham">
+            <a href="#projects">
+              <i class="fas fa-project-diagram fa-lg"></i>
+            </a>
+          </li>
+          <li class="ham">
+            <a href="#contact"> <i class="fas fa-phone fa-lg"></i></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -44,20 +67,22 @@
     <main>
       <div id="hero">
         <div class="hero-text">
-          <h3>- OKUNOLA SAMSON -</h3>
+          <h2>- OKUNOLA SAMSON -</h2>
           <h1>Frontend Web Developer, Content Writer</h1>
           <p>
-            in a love/hate relationship with javascript but I love her still.
+            In a love/hate relationship with Javascript but I love her still.
+            Currently learning Sveltejs and React.
           </p>
           <a href="#contact" class="btn">
             CONTACT ME <i class="fas fa-envelope fa-sm"></i
           ></a>
-          <div class="hero-image">
-            <div class="steam"></div>
-            <img src="./images/mug.png" alt="" />
-          </div>
+        </div>
+        <div class="pointer">
+          <a href="#about"><i class="fas fa-arrow-circle-down fa-4x"></i></a>
         </div>
       </div>
+
+      <!-- About -->
       <div id="about" class="container">
         <h1>- @pablo_clueless -</h1>
         <p>
@@ -71,6 +96,8 @@
           experience.
         </p>
       </div>
+
+      <!-- Skills -->
       <div id="skills" class="container">
         <h1>- TECHNOLOGIES I USE -</h1>
         <div class="content">
@@ -90,28 +117,156 @@
             <div class="box-card">
               <i class="fas fa-mobile-alt fa-lg" style="color: #e59c24"></i>
               <h3>Responsive and Adaptive Designs</h3>
+              <p>
+                Employing mobile first approach and media queries, I deliver
+                responsive designs that look good on all devices and browsers.
+              </p>
             </div>
             <div class="box-card">
-              <i class="fas fa-code fa-lg" style="color: #ffeccc"></i>
+              <i class="fas fa-file-code fa-lg" style="color: #ffeccc"></i>
               <h3>Minimal code</h3>
+              <p>I do my best to write minimal, reusable and</p>
             </div>
           </div>
           <div class="box-container">
             <div class="box-card">
               <i class="fas fa-paint-brush fa-lg" style="color: #fff"></i>
               <h3>User-friendly interface</h3>
+              <p></p>
             </div>
             <div class="box-card">
               <i class="fas fa-search fa-lg" style="color: #8b7356"></i>
               <h3>SEO optimization</h3>
+              <p>
+                Engaging the best SEO practices including using semantic tags
+                and meta descriptions & keywords, I improve your websites
+                visibility and rankings on search engines.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Projects -->
       <div id="projects" class="container">
         <h1>- PROJECTS -</h1>
-        <div class="projects"></div>
+        <p>Here are some of my projects.</p>
+        <div class="projects">
+          <div class="card">
+            <div class="links">
+              <a
+                href="https://github.com/pablo-clueless/Red-Velvet"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://dinered.netlify.app" target="_blank">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>Red Velvet</h3>
+            <p>
+              Red Velvet is a fictional restaurant in the heart of Lagos. Built
+              with the basic web technologies. It is one of my favorites.
+            </p>
+            <h5>HTML CSS</h5>
+          </div>
+          <div class="card">
+            <div class="links">
+              <a
+                target="_blank"
+                href="https://github.com/pablo-clueless/Music-Player"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://okunola-musicplayer.netlify.app">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>Music Player</h3>
+            <p>
+              I'm a huge fan of music so why not build a music player? With cool
+              neomorphism design and a dash of JavaScript, it looks and feels
+              good.
+            </p>
+            <h5>HTML CSS JavaScript</h5>
+          </div>
+          <div class="card">
+            <div class="links">
+              <a
+                target="_blank"
+                href="https://github.com/pablo-clueless/1203-Creations"
+              >
+                <i class="fab fa-github"></i
+              ></a>
+              <a target="_blank" href="https://1203creations.netlify.app">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>1203 Creations</h3>
+            <p>
+              Marketing site for a photograhy company. One of my earliest
+              projects, built out of love and passion for media PS: I'm also a
+              video editoer
+            </p>
+            <h5>HTML CSS</h5>
+          </div>
+          <div class="card">
+            <div class="links">
+              <a
+                target="_blank"
+                href="https://github.com/pablo-clueless/text-to-speech"
+              >
+                <i class="fab fa-github"></i
+              ></a>
+              <a target="_blank" href="https://t2speech.netlify.app">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>Text to Speech</h3>
+            <p>
+              A simple text app with language options, adjustable speech rate
+              and pitch. Collaborations would be highly welcomed as I hope to
+              make the app accessible to the visually-impaired. Feel free to
+              submit pull requests or fork.
+            </p>
+            <h5>HTML Sass JavaScript</h5>
+          </div>
+          <div class="card">
+            <div class="links">
+              <a href="https://starrynight-bg.netlify.app" target="_blank">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>Starry Nights</h3>
+            <p>
+              I see the stars like fireflies dancing in the skies. This is one
+              piece that I really really like; with some nice white noise, this
+              animation helps me get better sleep
+            </p>
+            <h5>HTML CSS JavaScript</h5>
+          </div>
+          <div class="card">
+            <div class="links">
+              <a href="https://svelte-hwa.netlify.app" target="_blank">
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>Handwashing App</h3>
+            <p>
+              A COVID-19 handwashing app with timer, timed to WHO recommended
+              standard. Built using Sveltejs framework.
+            </p>
+            <h5>Sveltejs BlueprintCSS</h5>
+          </div>
+        </div>
+        <h3>
+          To view more of my works, visit my <a href="#socials">Codepen</a> and
+          <a href="#socials">Github</a>.
+        </h3>
       </div>
+
+      <!-- Contact -->
       <div id="contact" class="container">
         <h1>- CONTACT -</h1>
         <p>
@@ -121,34 +276,44 @@
         </p>
         <div class="contact">
           <div class="mail">
-            <form action="" method="post">
-              <label for="name"></label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-              /><br />
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                id=""
-                placeholder="Email"
-              /><br />
-              <label for="subject"></label>
-              <input
-                type="text"
-                name="subject"
-                id=""
-                placeholder="Subject"
-              /><br />
-              <textarea name="message" id="" cols="30" rows="10"></textarea
-              ><br />
-              <input type="submit" value="Submit" />
+            <form
+              action="response.html"
+              method="post"
+              data-netlify="true"
+              name="Contact Form"
+            >
+              <div class="form-group">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject"></label>
+                <input type="text" name="subject" id="" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="SUBMIT" />
+              </div>
             </form>
           </div>
-          <div class="socials">
+          <div class="socials" id="socials">
             <a
               target="blank"
               href="https://twitter.com/pablo_clueless"
@@ -174,8 +339,15 @@
         </div>
       </div>
     </main>
+
+    <div class="to-top">
+      <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+    </div>
+
+    <!-- Footer -->
     <footer class="container">
-      Copyright of pablo_clueless &copy;2021. All rights reserved.
+      Copyright of pablo_clueless &copy;2021. All rights reserved. Design by Eke
+      <a href="https://twitter.com/evavic44" target="_blank">@evavic44</a>
     </footer>
 
     <script src="main.js"></script>
