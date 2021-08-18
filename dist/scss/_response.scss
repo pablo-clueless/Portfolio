@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+  .fa-check-circle {
+    margin: 50px 0;
+  }
+
+  .text-cont {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: $third;
+    padding: 0 20px;
+    overflow: hidden;
+
+    h1 {
+      font-size: 8vw;
+      font-weight: 400;
+    }
+
+    .car {
+      margin: 70px 0;
+
+      .fa-shipping-fast {
+        transform: translate3d(-1000px, 0, 0);
+        animation: 8s move linear infinite;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate3d(-1000px, 0, 0);
+        }
+        100% {
+          transform: translate3d(1000px, 0, 0);
+        }
+      }
+    }
+  }
+}

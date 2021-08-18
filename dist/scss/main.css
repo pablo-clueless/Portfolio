@@ -29,6 +29,51 @@
   color: #394856;
 }
 
+.wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .fa-check-circle {
+  margin: 50px 0;
+}
+
+.wrapper .text-cont {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #8cafce;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.wrapper .text-cont h1 {
+  font-size: 8vw;
+  font-weight: 400;
+}
+
+.wrapper .text-cont .car {
+  margin: 70px 0;
+}
+
+.wrapper .text-cont .car .fa-shipping-fast {
+  transform: translate3d(-1000px, 0, 0);
+  animation: 8s move linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate3d(-1000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(1000px, 0, 0);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

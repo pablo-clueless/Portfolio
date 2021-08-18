@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@300;800&display=swap');
 @import 'config';
-
+@import 'response';
 
 //Global and Reset
 html{
@@ -422,7 +422,7 @@ footer{
     .pointer{
         display: none;
     }
-    
+
     #skills{
         .box{
             display: grid;
