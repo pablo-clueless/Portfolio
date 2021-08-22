@@ -362,6 +362,11 @@ header {
       background: #fff;
       color: $primary;
     }
+
+    .form-group input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .socials {

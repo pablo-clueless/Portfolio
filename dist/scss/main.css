@@ -533,6 +533,11 @@ header .menu .menu-list .menu-item a:hover {
   color: #394856;
 }
 
+#contact .mail .form-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
 #contact .socials {
   display: flex;
   justify-content: space-evenly;
