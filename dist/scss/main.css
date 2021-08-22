@@ -29,6 +29,111 @@
   color: #394856;
 }
 
+.menu-btn {
+  cursor: pointer;
+  transition: all 0.8s ease-out;
+  z-index: 3;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #394856;
+  transition: all 0.8s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line {
+  background: #ffeccc;
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.menu-box .nav-item {
+  transform: translate3d(600px, 0, 0);
+  transition: all 0.8s ease-out;
+}
+
+.menu-box .nav-item.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu-box .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  padding: 5px 30px;
+  font-weight: 400;
+  color: #ffeccc;
+  transition: all 0.8s ease-out;
+}
+
+.menu-box .nav-link:hover {
+  color: #47bc95;
+}
+
+.menu-box .show {
+  visibility: visible;
+}
+
+.menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  float: right;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 50px 0;
+  background-color: #394856;
+  list-style: none;
+  transform: translate3d(600px, 0, 0);
+  transition: all 0.8s ease-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
 .wrapper {
   width: 100%;
   height: 80vh;
@@ -98,7 +203,7 @@ body {
   margin: 0;
   position: relative;
   background: #f8f9fa;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
   color: #394856;
 }
 
@@ -144,65 +249,16 @@ header .menu .menu-list .menu-item a:hover {
   color: #47bc95;
 }
 
-header .hamburger {
-  cursor: pointer;
-}
-
-header .hamburger .close {
-  transform: rotate(180deg);
-}
-
-header .hamburger .patty {
-  list-style: none;
-  position: relative;
-}
-
-header .hamburger .patty .ham {
-  visibility: hidden;
-  position: absolute;
-  top: -2.5vh;
-  transition: all 0.5s ease-in-out;
-}
-
-header .hamburger .patty .ham a:hover {
-  color: #47bc95;
-}
-
-header .hamburger .patty .show {
-  visibility: visible;
-}
-
-header .hamburger .patty .show:nth-child(1) {
-  transform: translateX(-40vw);
-  transition: all 1s ease-in-out;
-}
-
-header .hamburger .patty .show:nth-child(2) {
-  transform: translateX(-30vw);
-  transition: all 0.8s ease-in-out;
-}
-
-header .hamburger .patty .show:nth-child(3) {
-  transform: translateX(-20vw);
-  transition: all 0.6s ease-in-out;
-}
-
-header .hamburger .patty .show:nth-child(4) {
-  transform: translateX(-10vw);
-  transition: all 0.4s ease-in-out;
-}
-
 #hero {
   position: relative;
   width: 100%;
-  height: 95vh;
-  margin-top: 20vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 30px 40px 40px;
-  font-family: 'Montserrat', sans-serif;
+  padding: 200px 40px 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #hero .hero-text {
@@ -236,6 +292,7 @@ header .hamburger .patty .show:nth-child(4) {
 #about {
   background: #8cafce;
   height: auto;
+  padding: 100px 20px 30px;
 }
 
 #about h1 {
@@ -246,6 +303,7 @@ header .hamburger .patty .show:nth-child(4) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0;
 }
 
 #skills .content {
@@ -270,7 +328,8 @@ header .hamburger .patty .show:nth-child(4) {
   content: "]";
 }
 
-#skills .content .content-container::after, #skills .content .content-container::before {
+#skills .content .content-container::after,
+#skills .content .content-container::before {
   font-size: 100px;
   color: #8cafce;
   animation: 3s opacity infinite;
@@ -282,22 +341,29 @@ header .hamburger .patty .show:nth-child(4) {
 }
 
 @keyframes change {
-  0%, 12%, 100% {
+  0%,
+  12%,
+  100% {
     transform: translateY(0);
   }
-  17%, 30% {
+  17%,
+  30% {
     transform: translateY(-100px);
   }
-  33%, 46% {
+  33%,
+  46% {
     transform: translateY(-200px);
   }
-  49%, 62% {
+  49%,
+  62% {
     transform: translateY(-300px);
   }
-  66%, 79% {
+  66%,
+  79% {
     transform: translateY(-400px);
   }
-  83%, 95% {
+  83%,
+  95% {
     transform: translateY(-500px);
   }
 }
@@ -342,12 +408,17 @@ header .hamburger .patty .show:nth-child(4) {
 }
 
 @keyframes opacity {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
+}
+
+#projects {
+  padding: 100px 0 0;
 }
 
 #projects .projects {
@@ -369,7 +440,9 @@ header .hamburger .patty .show:nth-child(4) {
   border-bottom: 5px solid #394856;
 }
 
-#projects .projects .card h3, #projects .projects .card p, #projects .projects .card h5 {
+#projects .projects .card h3,
+#projects .projects .card p,
+#projects .projects .card h5 {
   text-align: left;
 }
 
@@ -407,6 +480,10 @@ header .hamburger .patty .show:nth-child(4) {
   color: #394856;
 }
 
+#contact {
+  padding: 100px 20px 0;
+}
+
 #contact .mail {
   width: 100%;
   display: flex;
@@ -416,11 +493,12 @@ header .hamburger .patty .show:nth-child(4) {
   padding: 10px 20px;
 }
 
-#contact .mail .form-group input, #contact .mail .form-group textarea {
+#contact .mail .form-group input,
+#contact .mail .form-group textarea {
   border: 1px solid #394856;
   width: 70vw;
   height: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #394856;
   font-size: 1rem;
   border-radius: 5px;
@@ -481,7 +559,7 @@ footer a {
 }
 
 @media screen and (min-width: 599px) {
-  .hamburger {
+  .menu-btn {
     display: none;
   }
 }
@@ -490,7 +568,7 @@ footer a {
   .menu {
     display: none;
   }
-  .hamburger {
+  .menu-btn {
     visibility: visible;
   }
   .pointer {
