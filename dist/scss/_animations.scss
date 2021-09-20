@@ -1,0 +1,101 @@
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+	height: 100%;
+	width: 50%;
+    transform: scale(0.8);
+    z-index: -2;
+
+	#followPath {
+		fill: none;
+		stroke: $primary;
+		stroke-width: 8;
+		stroke-dasharray: 2870px;
+		stroke-dashoffset: 2870px;
+		animation: drawPath 15s linear infinite;
+	}
+	#dashedPath {
+		fill: none;
+		stroke: #f8f9fa;
+		stroke-width: 14;
+		stroke-dasharray: 50px;
+	}
+	#airplain {
+		fill: $primary;
+		transform: translate(-10px, -45px);
+	}
+}
+
+.ani{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    .moving-square-frame{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        left: 10px;
+        opacity: .2;
+        border: 1px solid #000;
+    }
+    
+    .ani-moving-square {
+        background: $primary;
+        height: 20px;
+        width: 20px;
+        opacity: .5;
+        animation: ani-moving-square 15s cubic-bezier(.7, 0, .7, 1) infinite;
+    }
+}
+
+@keyframes drawPath {
+	0% {
+		opacity: 1;
+		stroke-dashoffset: 2870px;
+	}
+	53% {
+		opacity: 1;
+		stroke-dashoffset: 0;
+	}
+	78% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes ani-moving-square {
+	0%, 2.5% {
+		transform: translate(0, 0);
+	}
+	10%, 15% {
+		transform: translate(40px, 0);
+	}
+	22.5%, 27.5% {
+		transform: translate(40px, 40px);
+	}
+	35%, 40% {
+		transform: translate(0, 40px);
+	}
+	47.5%, 52.5% {
+		transform: translate(0, 0);
+	}
+	60%, 65% {
+		transform: translate(0, 40px);
+	}
+	72.5%, 77.5% {
+		transform: translate(40px, 40px);
+	}
+	85%, 90% {
+		transform: translate(40px, 0);
+	}
+	97.5%, 100% {
+		transform: translate(0, 0);
+	}
+}
