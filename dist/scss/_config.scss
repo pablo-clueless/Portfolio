@@ -9,6 +9,8 @@ $alt: #ffeccc;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
+    transition: transform 0.25s;
+    will-change: transform;
 }
 
 //Background and Text

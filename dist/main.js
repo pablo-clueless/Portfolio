@@ -1,3 +1,4 @@
+//Hamburger menu
 const menuBtn      = document.querySelector('.menu-btn');
 const menu         = document.querySelector('.menu-box');
 const menuNav      = document.querySelector('.menu-nav');
@@ -24,3 +25,24 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+
+//Skew Scrolling effect
+const containers = document.querySelectorAll('.container');
+const hero = document.querySelector('.hero');
+
+let currentPos = window.pageYOffset;
+
+function update(){
+    const newPos = window.pageYOffset;
+    const diff = newPos - currentPos;
+    const speed = diff * 0.15;
+
+    containers.forEach(container => container.style.transform = `skewY(${speed}deg)`);
+
+    currentPos = newPos;
+
+    requestAnimationFrame(update);
+}
+
+update();

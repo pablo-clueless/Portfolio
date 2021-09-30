@@ -180,23 +180,26 @@ header {
       100% {
         transform: translateY(0);
       }
-      15% {
+      13% {
         transform: translateY(-100px);
       }
-      25% {
+      22% {
         transform: translateY(-200px);
       }
-      40% {
+      35% {
         transform: translateY(-300px);
       }
-      59% {
+      50% {
         transform: translateY(-400px);
       }
-      70% {
+      65% {
         transform: translateY(-500px);
       }
-      85% {
+      73% {
         transform: translateY(-600px);
+      }
+      85%{
+        transform: translateY(-700px);
       }
     }
     .content-items {
