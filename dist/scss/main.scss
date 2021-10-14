@@ -244,6 +244,21 @@ header {
   }
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 30px 0;
+
+  img{
+    width: 100%;
+
+    &:hover{
+      box-shadow: 5px 5px 10px $primary;
+    }
+  }
+}
+
 @keyframes opacity {
   0%,
   100% {
