@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&family=Open+Sans:wght@700&family=Raleway:wght@300;500&display=swap');
+
+:root {
+  --sans: 'Open Sans', sans-serif;
+  --rale: 'Raleway', sans-serif;
+  --code: 'M PLUS 1 Code', sans-serif;
+  --pry: #efa649;
+  --sec: #a35623;
+  --alt: #f86d09;
+  --dark: #08080d;
+  --mid: #323647;
+  --ash: #9da9ce;
+  --light: #f8f9ff;
+  --time-func: 0.3s all ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--mid);
+  color: #fff;
+  font-family: var(--rale);
+}
+
+main {
+  padding: 10px 30px;
+}
