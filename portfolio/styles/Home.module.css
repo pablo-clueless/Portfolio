@@ -1,0 +1,87 @@
+.header {
+    padding: 10px 30px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav img {
+    width: 50px;
+}
+
+.header nav ul, .hero ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header nav ul li a, .hero ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark);
+    transition: var(--time-func);
+}
+
+.header nav ul li a:hover {
+    color: var(--pry);
+    border-bottom: 1px solid var(--pry);
+}
+
+.hero {
+    margin: 20px 0;
+}
+
+.hero p {
+    color: var(--alt);
+    margin: 20px 0;
+}
+
+.hero h1, .hero h2 {
+    color: var(--mid);
+    font-family: var(--sans);
+    font-size: 4rem;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+.hero h1:hover, .hero h2:hover {
+    animation: jelly 0.5s;
+}
+
+.hero ul li a {
+    color: var(--sec);
+}
+
+.hero ul li a:hover {
+    color: var(--mid);
+}
+
+.hero button {
+    background: var(--sec);
+    color: var(--light);
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    box-shadow: 0 0 0 10px transparent;
+    animation: pulse 1.5s;
+}
+
+@keyframes pulse {
+    from {box-shadow: 0 0 0 0 var(--sec);}
+}
+
+@media screen and (max-width: 600px) {
+    .hero h1, .hero h2 {
+        font-size: 2.5rem;
+    }
+}

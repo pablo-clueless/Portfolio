@@ -4,14 +4,17 @@
   --sans: 'Open Sans', sans-serif;
   --rale: 'Raleway', sans-serif;
   --code: 'M PLUS 1 Code', sans-serif;
-  --pry: #efa649;
-  --sec: #a35623;
-  --alt: #f86d09;
-  --dark: #08080d;
-  --mid: #323647;
-  --ash: #9da9ce;
-  --light: #f8f9ff;
-  --time-func: 0.3s all ease;
+  --pry: #a686db;
+  --sec: #ffa985;
+  --alt: #008bda;
+  --dark: #000;
+  --mid: #555;
+  --light: #fbfbfd;
+  --time-func: 0.5s all ease;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 * {
@@ -21,11 +24,10 @@
 }
 
 body {
-  background: var(--mid);
-  color: #fff;
+  background: var(--light);
   font-family: var(--rale);
 }
 
 main {
-  padding: 10px 30px;
+  padding: 0 30px;
 }
