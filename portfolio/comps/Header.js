@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Header.module.css'
 import { FiGithub, FiTwitter, FiLinkedin, FiCodepen, FiMessageSquare } from 'react-icons/fi'
 
 const Header = () => {
@@ -9,22 +9,22 @@ const Header = () => {
             <img src='/images/branding.png' alt='logo' />
                 <ul>
                     <li>
-                        <Link href='#'>
+                        <Link href='#about'>
                             <a>About</a>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href='#'>
                             <a>Blog</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
-                        <Link href='#'>
+                        <Link href='#works'>
                             <a>Work</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='#'>
+                        <Link href='#contact'>
                             <a>Contact</a>
                         </Link>
                     </li>

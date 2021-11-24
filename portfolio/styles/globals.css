@@ -4,18 +4,18 @@
   --sans: 'Open Sans', sans-serif;
   --rale: 'Raleway', sans-serif;
   --code: 'M PLUS 1 Code', sans-serif;
-  --pry: #a686db;
+  /* --pry: #55433b; */
   --sec: #ffa985;
-  --alt: #008bda;
+  --alt: #e48b93;
   --dark: #000;
   --mid: #555;
   --light: #fbfbfd;
   --time-func: 0.5s all ease;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 * {
   box-sizing: border-box;

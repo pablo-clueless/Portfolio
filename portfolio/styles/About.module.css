@@ -1,0 +1,123 @@
+.main {
+    display: flex;
+    background: var(--mid);
+    color: var(--light);
+    padding: 30px 30px;
+}
+
+.main div {
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+.main div ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.main div ul li {
+    color: var(--sec);
+    margin: 0  20px;
+    line-height: 2;
+}
+
+.main div ul li::before {
+    content: "‣";
+    color: var(--light);
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.main div a {
+    text-decoration: none;
+    color: var(--sec);
+}
+
+.main .imgContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .imgWrapper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 10%;
+}
+
+.imgWrapper img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.imgWrapper .img1 {
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translate(-10px, -10px);
+    transition: transform var(--time-func);
+    transform-origin: top;
+}
+
+.imgWrapper:hover .img1 {
+    transform: translate(0, 0);
+}
+
+.imgWrapper .img2 {
+    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+    transform: translate(-30px, 5px);
+    transition: transform var(--time-func);
+}
+
+.imgWrapper:hover .img2 {
+    transform: translate(0, 0);
+}
+
+.imgWrapper .img3 {
+    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+    transform: translate(-15px, -10px);
+    transition: transform 300ms ease;
+}
+
+.imgWrapper:hover .img3 {
+    transform: translate(0, 0);
+}
+
+.imgWrapper:hover .img4 {
+    transform: translate(0, 0);
+}
+
+.imgWrapper .img4 {
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translate(-32px, 5px);
+    transition: transform 300ms ease;
+    transform-origin: top;
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .main div {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .main .imgContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imgWrapper:hover {
+        transform: translateX(-35px);
+    }
+}
