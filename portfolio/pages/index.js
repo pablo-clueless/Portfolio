@@ -9,6 +9,9 @@ export default function Home() {
     <>
     <Head>
       <title>Samson Okunola</title>
+      <meta name='author' content='Samson Okunola'/>
+      <meta name='description' content="Samson Okunola's portfolio site"/>
+      <meta name='description' content='next app'/>
     </Head>
     <Header />
     <About />

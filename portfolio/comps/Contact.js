@@ -3,7 +3,7 @@ import { FiMapPin, FiPhone} from 'react-icons/fi'
 
 const Contact = () => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id='contact'>
             <h2>- Contact -</h2>
             <div className={styles.contact}>
                 <h1>Get In Touch</h1>

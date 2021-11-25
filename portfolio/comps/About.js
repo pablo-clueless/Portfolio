@@ -19,7 +19,7 @@ const About = () => {
                         <li>Sass</li>
                         <li>HTML5</li>
                     </ul>
-                    <p>Check out my blog on Hashnode at
+                    <p className={styles.hash}>Check out my blog on Hashnode at
                         <Link href='https://frontendpablo.hasnode.dev' passHref>
                             <a target='_blank' rel='noopener noreferre'> FrontendPablo</a>
                         </Link>

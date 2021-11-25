@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&family=Open+Sans:wght@700&family=Raleway:wght@300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=M+PLUS+1+Code:wght@300&family=Open+Sans:wght@700&display=swap');
 :root {
   --sans: 'Open Sans', sans-serif;
-  --rale: 'Raleway', sans-serif;
+  --rale: 'Inter', sans-serif;
   --code: 'M PLUS 1 Code', sans-serif;
   /* --pry: #55433b; */
   --sec: #ffa985;
@@ -21,6 +20,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+*, html, body {
+  scroll-behavior: smooth;
 }
 
 body {

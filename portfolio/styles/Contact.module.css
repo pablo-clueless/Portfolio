@@ -6,6 +6,7 @@
 .main h2 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 2rem;
 }
 
 .contact {
@@ -22,7 +23,7 @@
 }
 
 .contact p {
-    width: 70%;
+    width: 90%;
     font-size: 1.3rem;
 }
 

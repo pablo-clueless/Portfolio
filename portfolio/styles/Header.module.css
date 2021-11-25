@@ -19,6 +19,10 @@
     list-style: none;
 }
 
+.hero ul {
+    margin: 50px 0 20px;
+}
+
 .header nav ul li a, .hero ul li a {
     margin: 0 10px;
     text-decoration: none;
@@ -33,7 +37,7 @@
 }
 
 .hero {
-    margin: 20px 0;
+    margin-top: 80px;
 }
 
 .hero p {
@@ -51,12 +55,17 @@
     text-shadow: 5px 5px var(--sec);
 }
 
+.hero h1 {
+    font-size: 3rem;
+}
+
 /* .hero h1:hover, .hero h2:hover {
     animation: jelly 0.5s;
 } */
 
 .hero ul li a {
     color: var(--sec);
+    font-size: 1.5rem;
 }
 
 .hero ul li a:hover {
@@ -72,6 +81,14 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.hero button a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light);
+    font-family: var(--rale);
 }
 
 .hero button:hover {
@@ -90,7 +107,20 @@
 } */
 
 @media screen and (max-width: 600px) {
-    .hero h1, .hero h2 {
+    .hero {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        text-shadow: 3px 3px var(--sec);
+    }
+
+    .hero h2 {
         font-size: 2.5rem;
+    }
+
+    .hero ul {
+        margin: 0;
     }
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from '../styles/Header.module.css'
-import { FiGithub, FiTwitter, FiLinkedin, FiCodepen, FiMessageSquare } from 'react-icons/fi'
+import { FiGithub, FiTwitter, FiLinkedin, FiCodepen } from 'react-icons/fi'
 
 const Header = () => {
     return (
@@ -34,7 +34,7 @@ const Header = () => {
                <p>Hi, my name is</p>
                <h1>Okunola Samson.</h1>
                <h2>I'm a Frontend Web Developer &amp; Content Writer.</h2>
-               <p>I love minimalistic cool designs and animations. In a kinda love/hate reltionship with JavaScript. </p>
+               <p>I love minimalistic cool designs and animations. In a kinda love/hate relationship with JavaScript. </p>
                <ul>
                    <li>
                        <Link href='https://github.com/pablo-clueless' passHref>
@@ -56,13 +56,17 @@ const Header = () => {
                            <a target='_blank' re='noopener noreferrer'><FiCodepen /></a>
                        </Link>
                    </li>
-                   <li>
+                   {/* <li>
                        <Link href='https://pablos-blog.vercel.app' passHref>
-                           <a target='_blank' re='noopener noreferrer'><FiMessageSquare /></a>
+                           <a target='_blank' re='noopener noreferrer'>
+                               <img src="" alt="" />
+                           </a>
                        </Link>
-                   </li>
+                   </li> */}
                </ul>
-               <button> Hire Me </button>
+               <button>
+                   <a href="#contact"> Hire Me</a>
+               </button>
            </div>
         </header>
     )

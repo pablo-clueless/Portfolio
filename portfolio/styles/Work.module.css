@@ -4,12 +4,14 @@
 
 .main h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .intro {
     margin: 50px 0 20px;
     font-size: 1.2rem;
     color: var(--dark);
+    text-align: center;
 }
 
 .wrapper {
@@ -129,7 +131,7 @@
     color: var(--light);
     font-weight: 300;
     font-size: 0.75rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 2px;
     margin-right: 10px;
 }
