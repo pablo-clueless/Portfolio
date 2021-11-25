@@ -34,7 +34,7 @@ const Header = () => {
                <p>Hi, my name is</p>
                <h1>Okunola Samson.</h1>
                <h2>I'm a Frontend Web Developer &amp; Content Writer.</h2>
-               <p>I love minimalistic cool designs and animations. In a kinda of love/hate reltionship with JavaScript. </p>
+               <p>I love minimalistic cool designs and animations. In a kinda love/hate reltionship with JavaScript. </p>
                <ul>
                    <li>
                        <Link href='https://github.com/pablo-clueless' passHref>

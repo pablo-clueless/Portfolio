@@ -34,7 +34,14 @@ const Work = () => {
                 </div>
                 ))}
             </div>
-            <p>More of my works:</p>
+            <p className={styles.more}>More of my works can be found in my
+                <Link href='https://github.com/pablo-clueless'>
+                    <a target='_blank' rel='noopener noreferrer'> Github </a>
+                    </Link>&amp; on 
+                <Link href='https://codepen.io/pablo-clueless'>
+                    <a target='_blank' rel='noopener noreferrer'> Codepen. </a>
+                </Link>
+            </p>
         </div>
        </>
     )

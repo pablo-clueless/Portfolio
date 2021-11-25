@@ -1,47 +1,54 @@
 .main {
-    display: flex;
     background: var(--mid);
     color: var(--light);
-    padding: 30px 30px;
+    padding: 10px 30px;
 }
 
-.main div {
+.main h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cover {
+    display: flex;
+}
+
+.cover div {
     width: 60%;
     font-size: 1.1rem;
 }
 
-.main div ul {
+.cover div ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-.main div ul li {
+.cover div ul li {
     color: var(--sec);
     margin: 0  20px;
     line-height: 2;
 }
 
-.main div ul li::before {
+.cover div ul li::before {
     content: "‣";
     color: var(--light);
     font-size: 1.5rem;
     margin-right: 5px;
 }
 
-.main div a {
+.cover div a {
     text-decoration: none;
     color: var(--sec);
 }
 
-.main .imgContainer {
+.cover .imgContainer {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main .imgWrapper {
+.cover .imgWrapper {
     width: 80%;
     height: 80%;
     position: relative;
@@ -52,8 +59,8 @@
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20%;
+    left: -10%;
     transform-origin: left;
 }
 
@@ -100,24 +107,28 @@
 }
 
 @media screen and (max-width: 850px) {
-    .main {
+    .cover {
         flex-direction: column-reverse;
         align-items: center;
+        gap: 30px;
         padding: 10px;
     }
 
-    .main div {
+    .cover div {
         width: 100%;
         margin: 20px 0;
-        text-align: center;
     }
 
-    .main .imgContainer {
+    .cover .imgContainer {
         width: 300px;
         height: 300px;
     }
 
+    .imgWrapper img{
+        left: -15%;
+    }
+
     .imgWrapper:hover {
-        transform: translateX(-35px);
+        transform: translateX(-25px);
     }
 }

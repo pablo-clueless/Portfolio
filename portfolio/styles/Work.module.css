@@ -2,6 +2,11 @@
     padding: 10px 30px;
 }
 
+.main h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .intro {
     margin: 20px 0;
     font-size: 1.2rem;
@@ -151,6 +156,15 @@
     opacity: 1;
     transform: translateY(0px);
     transition-delay: .7s;
+}
+
+.main .more {
+    font-size: 1.2rem;
+}
+
+.main .more a {
+    text-decoration: none;
+    color: var(--sec);
 }
 
 @keyframes shake {
