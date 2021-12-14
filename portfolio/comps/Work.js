@@ -5,7 +5,7 @@ import { Data } from './ProjectData'
 const Work = () => {
     return (
        <>
-        <div className={styles.main} id='works'>
+        <section className={styles.section} id='works'>
             <h2>- Works -</h2>
             <div className={styles.intro}>
                 <p>I love creating user-friendly and beautiful sites while keeping it clean and scalable and providing great user experience. Below are some of my works over the time.</p>
@@ -42,7 +42,7 @@ const Work = () => {
                     <a target='_blank' rel='noopener noreferrer'> Codepen. </a>
                 </Link>
             </p>
-        </div>
+        </section>
        </>
     )
 }

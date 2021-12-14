@@ -93,7 +93,7 @@
 
 .hero button:hover {
     box-shadow: 0 0 0 10px transparent;
-    animation: pulse 1.5s;
+    animation: pulse 1.5s infinite forwards;
 }
 
 @keyframes pulse {

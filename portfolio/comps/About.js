@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const About = () => {
     return (
-        <div className={styles.main} id='about'>
+        <section className={styles.section} id='about'>
             <h2>- About Me -</h2>
             <div className={styles.cover}>
                 <div>
@@ -34,7 +34,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

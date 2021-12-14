@@ -1,8 +1,8 @@
-.main {
+.section {
     padding: 10px 30px;
 }
 
-.main h2 {
+.section h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
@@ -161,13 +161,18 @@
     transition-delay: .7s;
 }
 
-.main .more {
+.section .more {
     font-size: 1.2rem;
 }
 
-.main .more a {
+.section .more a {
     text-decoration: none;
     color: var(--sec);
+}
+
+.section .more a:hover {
+    color: var(--alt);
+    border-bottom: 1px solid var(--alt);
 }
 
 @keyframes shake {

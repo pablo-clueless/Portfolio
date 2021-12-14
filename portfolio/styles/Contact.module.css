@@ -1,9 +1,10 @@
-.main {
-    background: var(--mid);
-    color: var(--light);
+.section {
+    background: var(--light);
+    color: var(--mid);
     padding: 10px 30px;
 }
-.main h2 {
+
+.section h2 {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2rem;
@@ -32,7 +33,7 @@
     width: 200px;
     height: 65px;
     background: transparent;
-    color: var(--light);
+    color: var(--mid);
     border: 1px solid var(--sec);
     text-decoration: none;
     padding: 20px 30px;
