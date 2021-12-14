@@ -66,10 +66,14 @@
 
 .event_copy strong {
     font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .event_copy p:not(.event_thumbnail) {
     padding-bottom: 1.2em;
+    font-size: 0.9rem;
+    font-style: italic;
 }
   
 .event_icon {

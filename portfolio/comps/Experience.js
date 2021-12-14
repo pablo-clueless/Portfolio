@@ -14,11 +14,11 @@ const Experience = () => {
                         <h4>Intern</h4>
                         <p><strong>Frontend Development (React JS)</strong>
                         <br />
-                        Worked on personal and team projects.
+                        - Worked on personal and team projects.
                         <br />
-                        Led 2 teams for capstone projects.
+                        - Led 2 teams for capstone projects with a rating of C and A.
                         <br />
-                        team lead in the bootcamp.
+                        - Team lead in the bootcamp.
                         </p>
                         </div>
                     </li>
