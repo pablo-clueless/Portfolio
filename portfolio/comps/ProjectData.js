@@ -46,5 +46,12 @@ export const Data = [
         lang: 'reactjs',
         live: 'https://pablos-dictionary.vercel.app',
         repo: 'https://github.com/pablo-clueless/Dictionary'
+    },{
+        cover: '/images/edmi.jpg',
+        name: 'EDMI',
+        content: "Official site of EDMI. Still production but has most of it's functionalities.",
+        lang: 'nextjs',
+        live: 'edmi-delta.vercel.app',
+        repo: 'https://github.com/pablo-clueless/EDMI-Next/'
     }
 ]

@@ -24,7 +24,7 @@ const Work = () => {
                             <h3>{item.content}</h3>
                         </div>
                         <Link href={item.repo} passHref>
-                            <a target='_blank' rel='noreferrer noopener'>Github</a>
+                            <a target='_blank' rel='noreferrer noopener' >Github</a>
                         </Link>
                         <Link href={item.live} passHref>
                             <a target='_blank' rel='noreferrer noopener'>Live</a>
