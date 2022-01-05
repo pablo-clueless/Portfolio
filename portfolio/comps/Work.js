@@ -1,5 +1,7 @@
-import styles from '../styles/Work.module.css'
 import Link from 'next/link'
+import Badge from 'react-simple-badges'
+
+import styles from '../styles/Work.module.css'
 import { Data } from './ProjectData'
 
 const Work = () => {

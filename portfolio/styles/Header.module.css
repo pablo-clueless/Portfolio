@@ -1,39 +1,21 @@
 .header {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 10px 30px;
 }
 
-.header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header nav img {
-    width: 50px;
-}
-
-.header nav ul, .hero ul {
+.hero ul {
     display: flex;
     align-items: center;
     list-style: none;
-}
-
-.hero ul {
     margin: 50px 0 20px;
 }
 
-.header nav ul li a, .hero ul li a {
+.hero ul li a {
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
     color: var(--dark);
     transition: var(--time-func);
-}
-
-.header nav ul li a:hover {
-    color: var(--sec);
-    border-bottom: 2px solid var(--mid);
 }
 
 .hero {
@@ -58,10 +40,6 @@
 .hero h1 {
     font-size: 3rem;
 }
-
-/* .hero h1:hover, .hero h2:hover {
-    animation: jelly 0.5s;
-} */
 
 .hero ul li a {
     color: var(--sec);
@@ -100,15 +78,9 @@
     from {box-shadow: 0 0 0 0 var(--sec);}
 }
 
-/* @keyframes jelly {
-    25% {transform: scale(0.9, 1.1);}
-    50% {transform: scale(1.1, 0.9);}
-    75% {transform: scale(0.95, 1.05);}
-} */
-
 @media screen and (max-width: 600px) {
     .hero {
-        margin: 0;
+        margin-top: 80px;
     }
 
     .hero h1 {

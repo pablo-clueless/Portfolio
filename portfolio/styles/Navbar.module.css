@@ -1,0 +1,122 @@
+.nav {
+    width: 100%;
+    background: var(--mid-sec);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 5;
+    /* box-shadow: 3px 3px 8px var(--sec); */
+}
+
+.nav .menu_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .menu_list li a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark);
+    transition: var(--time-func);
+}
+
+.nav .menu_list li a:hover {
+    color: var(--sec);
+    border-bottom: 2px solid var(--mid);
+}
+
+.button {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.button .lines {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transition: 0.3s all ease;
+}
+
+.button .lines:nth-child(1) {
+    width: 70%;
+}
+
+.button .lines:nth-child(3) {
+    width: 60%;
+    align-self: flex-end;
+}
+
+.button.show .lines:nth-child(1) {
+    width: 50%;
+    transform: rotate(45deg) translate3d(4px, 1px , 0);
+}
+
+.button.show .lines:nth-child(2) {
+    transform: rotate(-45deg) translate3d(0, 0, 0);
+}
+
+.button.show .lines:nth-child(3) {
+    width: 50%;
+    transform: rotate(45deg) translate3d(-3px, -2px , 0);
+}
+
+.menu {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--mid-sec);
+    transition: var(--time-func);
+}
+
+.menu ul {
+    height: 40%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark);
+    transition: var(--time-func);
+}
+
+.menu ul li a:hover {
+    color: var(--alt)
+}
+
+@media screen and (max-width: 850px) {
+    .nav .menu_list {
+        display: none;
+    }
+
+    .button {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .button {
+        display: none;
+    }
+}

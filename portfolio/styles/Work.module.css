@@ -68,7 +68,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    z-index: 4;
     width: 100%;
     height: 100%;
     transition: .5s;
@@ -94,7 +94,7 @@
     height: 100px;
     text-align: center;
     transition: 1s;
-    z-index: 90;
+    z-index: 3;
 }
 
 .container .card:hover .contentBx {
@@ -163,6 +163,7 @@
 
 .section .more {
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .section .more a {

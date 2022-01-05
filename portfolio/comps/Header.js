@@ -1,39 +1,17 @@
 import Link from 'next/link'
-import styles from '../styles/Header.module.css'
 import { FiGithub, FiTwitter, FiLinkedin, FiCodepen } from 'react-icons/fi'
+
+import styles from '../styles/Header.module.css'
+import Navbar from './Navbar'
 
 const Header = () => {
     return (
         <header className={styles.header}>
-           <nav>
-            <img src='/images/branding.png' alt='logo' />
-                <ul>
-                    <li>
-                        <Link href='#about'>
-                            <a>About</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='#works'>
-                            <a>Work</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='#experience'>
-                            <a>Experience</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='#contact'>
-                            <a>Contact</a>
-                        </Link>
-                    </li>
-                </ul>
-           </nav>
+           <Navbar />
            <div className={styles.hero}>
                <p>Hi, my name is</p>
                <h1>Okunola Samson.</h1>
-               <h2>I'm a Frontend Web Developer &amp; Content Writer.</h2>
+               <h2>I&apos;m a Frontend Web Developer &amp; Content Writer.</h2>
                <p>I love minimalistic cool designs and animations. In a kinda love/hate relationship with JavaScript. </p>
                <ul>
                    <li>

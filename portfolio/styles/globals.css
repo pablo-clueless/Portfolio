@@ -10,12 +10,13 @@
   --dark: #000;
   --mid: #555;
   --light: #fbfbfd;
+  --mid-sec: #b9b6bc;
   --time-func: 0.5s all ease;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
-} */
+}
 
 * {
   box-sizing: border-box;

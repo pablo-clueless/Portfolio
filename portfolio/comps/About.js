@@ -1,5 +1,10 @@
-import styles from '../styles/About.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
+import Badge from 'react-simple-badges'
+import Atropos from 'atropos/react'
+
+import 'atropos/css'
+import styles from '../styles/About.module.css'
 
 const About = () => {
     return (
@@ -7,31 +12,51 @@ const About = () => {
             <h2>- About Me -</h2>
             <div className={styles.cover}>
                 <div>
-                    <p>I'm a self-taught Frontend Web Developer based in Lagos.   I love minimalist &amp; cool designs and animations. I spend most of my time either writing new codes or reviewing my previous ones. I also love reading a lot. I like pop music and good food(it's a zen time for me and you should employ me to keep this coming). I recently fell in love with writing and I've written a some articles with a few in my draft. I'm also hoping to start a cohort for techies in my community soon.</p>
+                    <p>I&apos;m a self-taught Frontend Web Developer based in Lagos.   I love minimalist &amp; cool designs and animations. I spend most of my time either writing new codes or reviewing my previous ones. I also love reading a lot. I like pop music and good food(it&apos;s a zen time for me and you should employ me to keep this coming). I recently fell in love with writing and I&apos;ve written a some articles with a few in my draft. I&apos;m also hoping to start a cohort for techies in my community soon.</p>
                     <br />
-                    <p>Below are a few technologies I've been working with recently:</p>
+                    <p>Below are a few technologies I&apos;ve been working with recently:</p>
                     <ul>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Sveltejs</li>
-                        <li>CSS3</li>
-                        <li>Sass</li>
-                        <li>HTML5</li>
+                        <li>
+                            <Badge name="JavaScript" backgroundColor='#000000' logoColor='#e7fb00' />
+                        </li>
+                        <li>
+                            <Badge name="React" backgroundColor='#000000' logoColor='#61dafb' />
+                        </li>
+                        <li>
+                            <Badge name='Next.js' backgroundColor='#000000' logoColor='#ffffff' />
+                        </li>
+                        <li>
+                            <Badge name='Svelte' backgroundColor='#ff3e00' />
+                        </li>
+                        <li>
+                            <Badge name='Node.js' />
+                        </li>
+                        <li>
+                            <Badge name='Express' />
+                        </li>
+                        <li>
+                            <Badge name='CSS3' />
+                        </li>
+                        <li>
+                            <Badge name='Sass' />
+                        </li>
+                        <li>
+                            <Badge name='Bootstrap' />
+                        </li>
+                        <li>
+                            <Badge name='HTML5' />
+                        </li>
                     </ul>
                     <p className={styles.hash}>Check out my blog on Hashnode at
                         <Link href='https://frontendpablo.hasnode.dev' passHref>
-                            <a target='_blank' rel='noopener noreferre'> FrontendPablo</a>
+                            <a target='_blank' rel='noopener noreferre'> &rarr; FrontendPablo </a>
                         </Link>
                     </p>
                 </div>
                 <div className={styles.imgContainer}>
-                    <div className={styles.imgWrapper}>
-                        <img src="/images/web-pablo.png" alt="samson okunola" className={styles.img1}/>
-                        <img src="/images/web-pablo.png" alt="samson okunola" className={styles.img2}/>
-                        <img src="/images/web-pablo.png" alt="samson okunola" className={styles.img3}/>
-                        <img src="/images/web-pablo.png" alt="samson okunola" className={styles.img4}/>
-                    </div>
+                    <Atropos>
+                        <Image src={'/images/web-pablo.png'} alt='Samson Okunola' width={300} height={300} className={styles.img} />
+                    </Atropos>
                 </div>
             </div>
         </section>
