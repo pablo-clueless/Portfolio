@@ -32,19 +32,10 @@ const About = () => {
                             <Badge name='Node.js' />
                         </li>
                         <li>
-                            <Badge name='Express' />
-                        </li>
-                        <li>
-                            <Badge name='CSS3' />
-                        </li>
-                        <li>
                             <Badge name='Sass' />
                         </li>
                         <li>
                             <Badge name='Bootstrap' />
-                        </li>
-                        <li>
-                            <Badge name='HTML5' />
                         </li>
                     </ul>
                     <p className={styles.hash}>Check out my blog on Hashnode at
