@@ -12,7 +12,7 @@ export default function Home() {
       <title>Samson Okunola</title>
       <meta name='author' content='Samson Okunola'/>
       <meta name='description' content="Samson Okunola's portfolio site"/>
-      <meta name='description' content='next app'/>
+      <meta name='description' content="Samson Okunola is a frontend developer and content writer."/>
       <link rel='shortcut icon' href='/branding.png' />
     </Head>
     <Header />
