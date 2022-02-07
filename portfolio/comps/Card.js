@@ -10,9 +10,10 @@ const Card = (props) => {
     return (
         <motion.div
         className={styles.card}
-        initial={{ opacity: 0.5 }}
+        initial={{ opacity: 1 }}
         whileHover={{
             opacity: 1,
+            scale: 1.05,
             boxShadow: "0 0 25px -10px #FFF",
             transition: {
                 type: "spring",
