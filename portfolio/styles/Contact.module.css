@@ -1,90 +1,78 @@
 .section {
-    background: var(--light);
-    color: var(--mid);
-    padding: 10px 30px;
+    display: grid;
+    place-items: center;
+    color: var(--light);
+    text-align: center;
+    margin: 5rem 0;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 50px;
+.section h1 {
+    font-size: 3rem;
+}
+
+.section span {
+    color: var(--alt);
+    text-transform: uppercase;
+}
+
+.section p {
+    width: 70%;
+    font-size: 1.5rem;
+    margin: 5rem 0;
+}
+
+.section .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 4rem 0;
+    border: 2px solid var(--alt);
+    color: var(--light);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.section .link:hover, .section a:focus {
+    animation: pulse 1s infinite;
+    border-color: var(--pry);
+    box-shadow: 0 0 0 2rem rgba(9, 247, 8, 0);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--alt);}
+}
+
+.section ul {
+    list-style: none;
+    display: flex;
+}
+
+.section ul li {
+    margin: 0 1rem;
+}
+
+.section ul li a {
+    border: none;
+    color: var(--light);
     font-size: 2rem;
-    font-weight: 900;
+    transition: var(--transition);
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+.section ul li a:hover,
+.section ul li a:focus {
+    color: var(--pry);
 }
 
-.contact h1 {
-    font-family: var(--sans);
-    font-size: 5rem;
-    margin-bottom: 30px;
-}
-
-.contact p {
-    width: 90%;
-    font-size: 1.3rem;
-}
-
-.contact a {
-    width: 200px;
-    height: 65px;
-    background: transparent;
-    color: var(--mid);
-    border: 1px solid var(--sec);
-    text-decoration: none;
-    padding: 20px 30px;
-    margin: 80px 0;
-    transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
-    box-shadow: 5px 5px var(--sec);
-}
-
-.contact a:hover {
-    background: var(--sec);
-    box-shadow: 0 0 0 0 var(--sec);
-}
-
-.info {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.info div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.info div:nth-of-type(1) {
-    margin-bottom: 10px;
-}
-
-.info .icon {
-    color: transparent;
-    stroke: var(--sec);
-    stroke-width: 1.5;
-    margin-right: 20px;
-}
-
-.me {
-    color: var(--sec);
-    text-align: center;
-    margin: 100px 0 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .contact h1 {
-        font-size: 2.5rem;
+@media screen and (max-width: 800px) {
+    .section {
+        margin: 3rem 0;
     }
-
-    .info {
-        width: 100%;
+    
+    .section p {
+        font-size: 1rem;
+        margin: 1rem 0;
     }
 }

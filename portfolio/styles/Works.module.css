@@ -1,0 +1,27 @@
+.section {
+    width: 100%;
+    color: var(--light);
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 3rem;
+    margin: 0 0 2rem;
+}
+
+.section span {
+    color: var(--alt);
+    padding: 0 2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 2rem 0 0;
+}

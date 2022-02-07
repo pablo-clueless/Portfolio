@@ -1,92 +1,55 @@
 .section {
-    background: var(--mid);
     color: var(--light);
-    padding: 10px 30px;
-}
-
-.section h2 {
-    font-size: 2rem;
-    font-weight: 900;
     text-align: center;
-    margin-bottom: 50px;
-}
-.cover {
-    display: flex;
 }
 
-.cover div {
-    width: 60%;
-    font-size: 1.1rem;
-}
-
-.cover div p {
-    line-height: 1.6;
-}
-
-.cover div ul {
+.section,
+.about {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
+    place-items: center;
 }
 
-.cover div ul li {
-    color: var(--sec);
-    margin: 10px  20px;
-    line-height: 2;
+.section h1 {
+    font-size: 3rem;
 }
 
-.cover .hash {
-    text-align: center;
-    margin-top: 30px;
+.section span {
+    color: var(--alt);
+    text-transform: uppercase;
 }
 
-.cover div a {
-    text-decoration: none;
-    color: var(--sec);
+.about {
+    width: 100%;
+    padding: 0 2rem;
+    margin: 3rem 0;
 }
 
-.cover .imgContainer {
-    width: 40%;
+.about p {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+.image__container {
+    width: 200px;
+    height: 200px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background: var(--light);
+    border-radius: 50%;
 }
 
-@media screen and (max-width: 850px) {
-    .cover {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 30px;
-        padding: 10px;
+@media screen and (max-width: 800px) {
+    .image__container {
+        width: 150px;
+        height: 150px;
     }
 
-    .cover div {
-        width: 100%;
-        margin: 20px 0;
+    .about {
+        padding: 0;
     }
 
-    .cover .imgContainer {
-        width: 300px;
-        height: 300px;
-    }
-
-    .imgWrapper img{
-        left: -15%;
-    }
-
-    .imgWrapper:hover {
-        transform: translateX(-25px);
-    }
-}
-
-@media screen and (min-width: 1080px) {
-    .imgWrapper {
-        top: -15%;
-    }
-}
-
-@media screen and (max-width: 525px) {
-    .cover div ul {
-        grid-template-columns: repeat(2, 1fr);
+    .about p {
+        font-size: 1rem;
     }
 }

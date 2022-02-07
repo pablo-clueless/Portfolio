@@ -1,51 +1,25 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Badge from 'react-simple-badges'
+import { motion } from 'framer-motion'
 
-import styles from '../styles/Work.module.css'
+import styles from '../styles/Works.module.css'
+import Card from './Card'
 import { Data } from './ProjectData'
 
 const Work = () => {
+
     return (
-       <>
-        <section className={styles.section} id='works'>
-            <h2>- Works -</h2>
-            <div className={styles.intro}>
-                <p>I love creating user-friendly and beautiful sites while keeping it clean and scalable and providing great user experience. Below are some of my works over the time.</p>
-            </div>
-            <div className={styles.wrapper}>
-                {Data.map((item, i) => (
-                    <div className={styles.container} key={i}>
-                    <div className={styles.card}>
-                        <div className={styles.imgBx}>
-                        <img src={item.cover} alt={item.name} />
-                    </div>
-                    <div className={styles.contentBx}>
-                        <h2>{item.name}</h2>
-                        <p>{item.lang}</p>
-                        <div className={styles.content}>
-                            <h3>{item.content}</h3>
-                        </div>
-                        <Link href={item.repo} passHref>
-                            <a target='_blank' rel='noreferrer noopener' >Github</a>
-                        </Link>
-                        <Link href={item.live} passHref>
-                            <a target='_blank' rel='noreferrer noopener'>Live</a>
-                        </Link>
-                        </div>
-                    </div>
-                </div>
+       <motion.section className={styles.section} id='works'>
+           <h1>Works</h1>
+
+           <span>I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.</span>
+
+           <div className={styles.container}>
+                {Data.map((item, index) => (
+                    <Card key={index} name={item.name} lang={item.lang} text={item.text} repo={item.repo} live={item.live} />
                 ))}
             </div>
-            <p className={styles.more}>More of my works can be found in my
-                <Link href='https://github.com/pablo-clueless'>
-                    <a target='_blank' rel='noopener noreferrer'> Github </a>
-                    </Link>&amp; on 
-                <Link href='https://codepen.io/pablo-clueless'>
-                    <a target='_blank' rel='noopener noreferrer'> Codepen. </a>
-                </Link>
-            </p>
-        </section>
-       </>
+       </motion.section>
     )
 }
 

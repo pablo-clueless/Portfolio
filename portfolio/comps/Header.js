@@ -1,52 +1,60 @@
 import Link from 'next/link'
-import { FiGithub, FiTwitter, FiLinkedin, FiCodepen } from 'react-icons/fi'
+import { motion } from 'framer-motion'
+import { FiHome ,FiUser, FiBriefcase, FiArchive, FiMail } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
-import Navbar from './Navbar'
 
 const Header = () => {
     return (
-        <header className={styles.header}>
-           <Navbar />
-           <div className={styles.hero}>
-               <p>Hi, my name is</p>
-               <h1>Okunola Samson.</h1>
-               <h2>I&apos;m a Frontend Web Developer &amp; Content Writer.</h2>
-               <p>I love minimalistic cool designs and animations. In a kinda love/hate relationship with JavaScript. </p>
-               <ul>
-                   <li>
-                       <Link href='https://github.com/pablo-clueless' passHref>
-                           <a target='_blank' re='noopener noreferrer'><FiGithub /></a>
-                       </Link>
-                   </li>
-                   <li>
-                       <Link href='https://www.linkedin.com/in/samson-olawale-okunola-76842a169/' passHref>
-                           <a target='_blank' re='noopener noreferrer'><FiLinkedin /></a>
-                       </Link>
-                   </li>
-                   <li>
-                       <Link href='https://twitter.com/pablo_clueless' passHref>
-                           <a target='_blank' re='noopener noreferrer'><FiTwitter /></a>
-                       </Link>
-                   </li>
-                   <li>
-                       <Link href='https://codepen.io/pablo-clueless' passHref>
-                           <a target='_blank' re='noopener noreferrer'><FiCodepen /></a>
-                       </Link>
-                   </li>
-                   {/* <li>
-                       <Link href='https://pablos-blog.vercel.app' passHref>
-                           <a target='_blank' re='noopener noreferrer'>
-                               <img src="" alt="" />
-                           </a>
-                       </Link>
-                   </li> */}
-               </ul>
-               <button>
-                   <a href="#contact"> Hire Me</a>
-               </button>
-           </div>
-        </header>
+        <motion.header 
+        className={styles.header}
+        initial={{ opacity: 0 }}
+        animate={{
+            opacity: 1,
+            transition: {
+                duration: 5
+            }
+        }}
+        id="home"
+        >
+            <h1>okunola samson</h1>
+            <p>frontend web developer and content writer</p>
+            
+            <ul>
+                <li>
+                    <Link href='/'>
+                        <a>Home</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='#about'>
+                        <a>About</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='#works'>
+                        <a>Works</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='#skills'>
+                        <a>Skills</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='#contact'>
+                        <a>Contact</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='https://frontendpablo.hashnode.dev' passHref>
+                        <a target='_blank' rel='noopener noreferrer'>
+                            Blog
+                        </a>
+                    </Link>
+                </li>
+            </ul>
+        </motion.header>
     )
 }
 

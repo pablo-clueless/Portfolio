@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import About from '../comps/About'
+
 import Contact from '../comps/Contact'
-import Experience from '../comps/Experience'
+import Footer from '../comps/Footer'
 import Header from '../comps/Header'
+import MobileMenu from '../comps/MobileMenu'
+import Skills from '../comps/Skills'
 import Work from '../comps/Work'
 
 export default function Home() {
@@ -16,10 +19,12 @@ export default function Home() {
       <link rel='shortcut icon' href='/branding.png' />
     </Head>
     <Header />
+    <MobileMenu />
     <About />
+    <Skills />
     <Work />
-    <Experience />
     <Contact />
+    <Footer />
     </>
   )
 }

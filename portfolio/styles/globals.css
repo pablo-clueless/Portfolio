@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=M+PLUS+1+Code:wght@300&family=Open+Sans:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&family=Poppins:wght@200;300;400&display=swap');
 
 :root {
-  --sans: 'Open Sans', sans-serif;
-  --rale: 'Inter', sans-serif;
-  --code: 'M PLUS 1 Code', sans-serif;
-  /* --pry: #55433b; */
-  --sec: #ffa985;
-  --alt: #e48b93;
+  --palan: 'Palanquin Dark', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --pry: #39FF14;
+  --sec: #F43D3D;
+  --alt: #1A5846;
+  --light: #FFF;
   --dark: #000;
-  --mid: #555;
-  --light: #fbfbfd;
-  --mid-sec: #b9b6bc;
-  --time-func: 0.5s all ease;
+  --transition: 0.5s all ease;
 }
 
 ::-webkit-scrollbar {
@@ -24,15 +21,29 @@
   padding: 0;
 }
 
-*, html, body {
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--light);
-  font-family: var(--rale);
+  font-family: var(--poppins);
+  background: var(--dark);
+  overflow-x: hidden;
 }
 
-main {
-  padding: 0 30px;
+section {
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--palan);
+}
+
+p {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
 }
