@@ -11,6 +11,10 @@ const MobileMenu = () => {
         setShowMenu(!showMenu)
     }
 
+    const closeMenu = () => {
+        setShowMenu(close)
+    }
+
     const variants = {
         open: { opacity: 1, x: 0 },
         closed: { opacity: 0, x: "-100%" }
@@ -37,7 +41,7 @@ const MobileMenu = () => {
                         stiffness: 100,
                         duration: 1 }}}
                 >
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
@@ -51,7 +55,7 @@ const MobileMenu = () => {
                             <a>Home</a>
                         </Link>
                     </motion.li>
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
@@ -65,7 +69,7 @@ const MobileMenu = () => {
                             <a>About</a>
                         </Link>
                     </motion.li>
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
@@ -79,7 +83,7 @@ const MobileMenu = () => {
                             <a>Works</a>
                         </Link>
                     </motion.li>
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
@@ -93,7 +97,7 @@ const MobileMenu = () => {
                             <a>Skills</a>
                         </Link>
                     </motion.li>
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
@@ -107,7 +111,7 @@ const MobileMenu = () => {
                             <a>Contact</a>
                         </Link>
                     </motion.li>
-                    <motion.li whileHover={{
+                    <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: {
