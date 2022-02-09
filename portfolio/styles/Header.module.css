@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem;
+    position: relative;
 }
 
 .header h1 {

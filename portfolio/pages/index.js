@@ -5,7 +5,9 @@ import Contact from '../comps/Contact'
 import Footer from '../comps/Footer'
 import Header from '../comps/Header'
 import MobileMenu from '../comps/MobileMenu'
+// import PureThree from '../comps/PureThree'
 import Skills from '../comps/Skills'
+import Three from '../comps/Three'
 import Work from '../comps/Work'
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <meta name='description' content="Samson Okunola is a frontend developer and content writer."/>
       <link rel='shortcut icon' href='/branding.png' />
     </Head>
+    {/* <Three /> */}
+    {/* <PureThree /> */}
     <Header />
     <MobileMenu />
     <About />

@@ -1,13 +1,18 @@
 import Image from 'next/image'
 import Atropos from 'atropos/react'
 import { motion } from 'framer-motion'
-
 import 'atropos/css'
+
+import img from '/public/8.png'
 import styles from '../styles/About.module.css'
+import AboutBackground from './AboutBackground'
 
 const About = () => {
     return (
         <section className={styles.section} id="about">
+            <div className={styles.background}>
+            <AboutBackground />
+            </div>
             <h1>About</h1>
 
             <span>Who is Okunola Samson ?</span>
@@ -15,7 +20,7 @@ const About = () => {
             <div className={styles.about}>
                 <Atropos className='my-atropos'>
                     <motion.div className={styles.image__container}>
-                        <Image src='/8.png' alt='avatar from craftwork' layout='fill' />
+                        <Image src={img} alt='avatar from craftwork' layout='fill' />
                     </motion.div>
                 </Atropos>
                 <p>I&apos;m a self-taught Frontend Web Developer based in Lagos, Nigeria. I love minimalist & cool designs and animations. I spend most of my time either writing new codes or reviewing previous ones, adhering to real applications implementation with the knowledge and understanding of web development concepts.

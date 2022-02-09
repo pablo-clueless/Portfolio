@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FiHome ,FiUser, FiBriefcase, FiArchive, FiMail } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
+// import PureThree from './PureThree'
 
 const Header = () => {
     return (
@@ -17,6 +18,7 @@ const Header = () => {
         }}
         id="home"
         >
+            {/* <PureThree /> */}
             <h1>okunola samson</h1>
             <p>frontend web developer and content writer</p>
             

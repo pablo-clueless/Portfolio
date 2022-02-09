@@ -47,3 +47,8 @@ p {
 a {
   text-decoration: none;
 }
+
+canvas {
+  background: var(--dark);
+  height: 100vh;
+}
