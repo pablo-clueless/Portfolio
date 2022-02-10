@@ -48,6 +48,10 @@
     border-radius: 50%;
 }
 
+.image__container img {
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 800px) {
     .image__container {
         width: 150px;

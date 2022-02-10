@@ -1,16 +1,20 @@
-import React, { Suspense } from "react"
+import React, { Suspense, useState } from "react"
+import * as THREE from "three"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
+import { OrbitControls, Stars } from "@react-three/drei"
 
 import Box from "./Box"
 import Sphere from './Sphere'
+import Torus from "./Torus"
 
 const Three = () => {
+    const [active, setActive] = useState(false)
     
     return (
         <>
         <Canvas
         camera={{ fov: 50, near: 0.1, far: 1000, position: [-5, 2, 10] }} shadows={{ type: "BasicShadowMap" }}>
+
             {/* ambient light */}
             <ambientLight intensity={0.3} />
 
@@ -22,18 +26,21 @@ const Three = () => {
             <pointLight position={[0, -10, 0]} intensity={1.5} color="red" />
             
             <group>
-                <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -5, 0]} >
+                <Stars radius={100} depth={50} count={10000} factor={4} saturation={1} fade />
+                {/* <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -5, 0]} >
                     <planeBufferGeometry attach="geometry" args={[100, 100]} />
                     <meshStandardMaterial attach="material" color="gray" />
-                </mesh>
+                </mesh> */}
                 {/* shapes */}
-                {/* <Sphere position={[0, 1, 0]} args={[2, 64, 64]} /> */}
-                <Box position={[0, 1, 0]} args={[3, 2, 1]} color="lightblue" speed={2} factor={0.6} />
+                {/* <Sphere onClick={() => setActive(!active)} position={[0, 1, 0]} args={[2, 64, 64]} color="pink" /> */}
+                {/* <Box position={[0, 1, 0]} args={[3, 2, 1]} color="lightblue" speed={2} factor={0.6} />
                 <Box position={[-2, 1, -3]} args={[1, 1, 1]} color="pink" speed={6} factor={0.6} />
-                <Box position={[5, 1, -2]} args={[0.5, 1, 0.5]} color="beige" speed={6} factor={0.6} />
+                <Box position={[5, 1, -2]} args={[0.5, 1, 0.5]} color="beige" speed={6} factor={0.6} /> */}
+               <Torus position={[0, 1, 0]} args={[1.5, 0.7, 16, 100]} color="pink" speed={1.5} factor={2} />
             </group>
 
-            <OrbitControls />
+            {/* {active && <OrbitControls />} */}
+            {/* <OrbitControls /> */}
         </Canvas>
         </>
     )

@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FiHome ,FiUser, FiBriefcase, FiArchive, FiMail } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
-// import PureThree from './PureThree'
+import HeaderBackground from './HeaderBackground'
 
 const Header = () => {
     return (
@@ -18,7 +17,9 @@ const Header = () => {
         }}
         id="home"
         >
-            {/* <PureThree /> */}
+            <div className={styles.three}>
+                <HeaderBackground />
+            </div>
             <h1>okunola samson</h1>
             <p>frontend web developer and content writer</p>
             

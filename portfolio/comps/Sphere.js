@@ -11,7 +11,7 @@ const Box = (props) => {
     useFrame(() => mesh.current.rotation.x = mesh.current.rotation.y += 0.01)
 
     return (
-        <mesh castShadow position={props.position} ref={mesh}>
+        <mesh onClick={props.onClick} castShadow position={props.position} ref={mesh}>
             <sphereBufferGeometry attach="geometry" args={props.args}/>
             <MeshWobbleMaterial attach="material" color={props.color} speed={1} factor={0.6} />
         </mesh>

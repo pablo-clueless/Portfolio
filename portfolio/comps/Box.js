@@ -10,7 +10,9 @@ import { TextureLoader } from "three"
 const Box = (props) => {
     const mesh = useRef(null)
 
-    useFrame(() => mesh.current.rotation.x = mesh.current.rotation.y += 0.01)
+    useFrame(() => {
+        mesh.current.rotation.x = mesh.current.rotation.y += 0.01  
+    })
 
     return (
         <mesh castShadow position={props.position} ref={mesh}>

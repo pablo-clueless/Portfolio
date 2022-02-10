@@ -9,6 +9,14 @@
     position: relative;
 }
 
+.three {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .header h1 {
     font-size: 5rem;
     text-transform: uppercase;

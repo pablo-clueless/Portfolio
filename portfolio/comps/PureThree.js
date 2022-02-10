@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import * as THREE from 'three'
 import OrbitControls from "three-orbitcontrols"
+import { MeshWobbleMaterial } from '@react-three/drei'
 
 import styles from '../styles/PureThree.module.css'
 
@@ -24,8 +25,7 @@ class PureThree extends Component {
         var texture = new THREE.TextureLoader().load('/public/AmbientOcclusionMap.png')
         var material = new THREE.MeshStandardMaterial({
             color: 0x1A5846,
-            normalMap: texture,
-            wireframe: true
+            normalMap: texture
         })
         this.sphere = new THREE.Mesh(geometry, material)
 
@@ -40,7 +40,7 @@ class PureThree extends Component {
         this.scene.add(this.ambientLight)
 
         // add directional light
-        this.directionalLight = new THREE.DirectionalLight(0xFFFFFF, 10)
+        this.directionalLight = new THREE.DirectionalLight(0xff00000, 10)
         this.directionalLight.position.set(0, 10, 0)
         this.directionalLight.intensity = 1.5
         this.scene.add(this.directionalLight)
@@ -58,7 +58,7 @@ class PureThree extends Component {
         this.scene.add(this.pointLightTwo)
 
         // orbit controls
-        new OrbitControls(this.camera, this.renderer.domElement)
+        // new OrbitControls(this.camera, this.renderer.domElement)
 
         // event handlers
         // window resize
