@@ -77,4 +77,8 @@
     .header ul {
         display: none;
     }
+
+    .three {
+        z-index: -1;
+    }
 }

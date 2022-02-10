@@ -32,9 +32,9 @@ const HeaderBackground = () => {
 
             <group>
                 <Stars radius={100} depth={50} count={10000} factor={4} saturation={1} fade />
-                <Sphere position={[1, (position * -0.25), (position - 3)]} args={[2, 64, 64]} color="#1A5846" />
+                <Sphere position={[1, (position * -0.25), (position - 3)]} args={[1, 64, 64]} color="#1A5846" />
             </group>
-            <OrbitControls enableZoom={false} enableRotate enablePan={false} autoRotate />
+            <OrbitControls enableZoom={false} enableRotate enablePan autoRotate />
         </Canvas>
         </>
     )
