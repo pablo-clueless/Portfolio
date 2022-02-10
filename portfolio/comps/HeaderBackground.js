@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react"
 // import * as THREE from "three"
 import { Canvas, useFrame } from "@react-three/fiber"
-import { Stars } from "@react-three/drei"
+import { OrbitControls, Stars } from "@react-three/drei"
 
 import Torus from "./Torus"
 import Sphere from "./Sphere"
 
 const HeaderBackground = () => {
-    const [positionZ, setPositionZ] = useState(0)
+    const [position, setPosition] = useState(0)
 
     useEffect(() => {
         const updateSphere = () => {
             let y = window.scrollY
-            setPositionZ(y * -0.05)
+            setPosition(y * -0.05)
         }
         window.addEventListener("scroll", updateSphere)
-    },[positionZ])
+    },[position])
 
     return (
         <>
@@ -32,8 +32,9 @@ const HeaderBackground = () => {
 
             <group>
                 <Stars radius={100} depth={50} count={10000} factor={4} saturation={1} fade />
-                <Sphere position={[1, (positionZ * -0.25), positionZ]} args={[2, 64, 64]} color="#1A5846" />
+                <Sphere position={[1, (position * -0.25), (position - 3)]} args={[2, 64, 64]} color="#1A5846" />
             </group>
+            <OrbitControls enableZoom={false} enableRotate enablePan={false} autoRotate />
         </Canvas>
         </>
     )
