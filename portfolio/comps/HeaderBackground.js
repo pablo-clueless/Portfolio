@@ -32,8 +32,7 @@ const HeaderBackground = () => {
 
             <group>
                 <Stars radius={100} depth={50} count={10000} factor={4} saturation={1} fade />
-                {/* <Torus position={[0, 1, 0]} args={[1.5, 0.7, 16, 100]} speed={1.5} factor={2} /> */}
-                <Sphere position={[1, (positionZ * -0.01), positionZ]} args={[2, 64, 64]} color="#1A5846" />
+                <Sphere position={[1, (positionZ * -0.25), positionZ]} args={[2, 64, 64]} color="#1A5846" />
             </group>
         </Canvas>
         </>
