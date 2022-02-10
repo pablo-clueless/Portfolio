@@ -25,7 +25,7 @@ const About = () => {
                 </Atropos>
                 <p>I&apos;m a self-taught Frontend Web Developer based in Lagos, Nigeria. I love minimalist & cool designs and animations. I spend most of my time either writing new codes or reviewing previous ones, adhering to real applications implementation with the knowledge and understanding of web development concepts.
                 <br /> <br />
-                I am like looking for solutions and creating a great experience for users. I&apos;ve worked with other developers on projects and created several working SPAs that are maintainable and scalable.<br /> <br />
+                I like looking for solutions and creating a great user experience. I&apos;ve worked with other developers on projects and created several working SPAs and websites that are maintainable and scalable.<br /> <br />
                 I also love reading a lot. I like pop music and good food. I recently fell in love with writing and I&apos;ve written some articles with a few in my draft.</p>
             </div>
         </section>
