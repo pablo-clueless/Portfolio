@@ -3,7 +3,7 @@ import Atropos from 'atropos/react'
 import { motion } from 'framer-motion'
 import 'atropos/css'
 
-import img from '/public/me.png'
+import img from '/public/8.png'
 import styles from '../styles/About.module.css'
 import AboutBackground from './AboutBackground'
 

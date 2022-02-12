@@ -48,7 +48,7 @@ const Card = (props) => {
                 }}>
                     <Link href={props.live} passHref>
                         <a target='_blank' rel='noreferrer noopener'>
-                            Live link
+                            Live
                         </a>
                     </Link>
                 </motion.li>

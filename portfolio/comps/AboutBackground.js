@@ -20,8 +20,8 @@ const Three = () => {
 
             {/* shapes */}
             <Box position={[0, -2, 0]} args={[3.5, 2, 1]} color="#1A5846" speed={1} factor={0.6} />
-            <Box position={[-4, 1, -3]} args={[1, 1, 0.5]} color="#39FF14" speed={6} factor={0.6} />
-            <Box position={[10, -8, -5]} args={[0.5, 2, 2]} color="beige" speed={6} factor={1} />
+            <Box position={[-4, 1, -3]} args={[1, 1, 0.5]} color="#1F5275" speed={6} factor={0.6} />
+            <Box position={[10, -8, -5]} args={[0.5, 2, 2]} color="#CA46BF" speed={6} factor={1} />
         </Canvas>
         </>
     )

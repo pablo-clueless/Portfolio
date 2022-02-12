@@ -30,7 +30,7 @@
 
 .card a {
     padding: 0.25rem 1.5rem;
-    margin: 0.5rem 0;
+    margin: 0;
     color: var(--alt);
     font-family: var(--palan);
     text-transform: uppercase;
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 900px) {
     .card {
-        width: 70%;
+        width: 80%;
     }
 }
 
