@@ -3,7 +3,7 @@ import Atropos from 'atropos/react'
 import { motion } from 'framer-motion'
 import 'atropos/css'
 
-import img from '/public/8.png'
+import img from '/public/me.png'
 import styles from '../styles/About.module.css'
 import AboutBackground from './AboutBackground'
 
@@ -20,7 +20,7 @@ const About = () => {
             <div className={styles.about}>
                 <Atropos className='my-atropos'>
                     <motion.div className={styles.image__container}>
-                        <Image src={img} alt='avatar from craftwork' layout='fill' width={100} />
+                        <Image src={img} alt='Okunola Samson' layout='fill' />
                     </motion.div>
                 </Atropos>
                 <p>I&apos;m a self-taught Frontend Web Developer based in Lagos, Nigeria. I love minimalist & cool designs and animations. I spend most of my time either writing new codes or reviewing previous ones, adhering to real applications implementation with the knowledge and understanding of web development concepts.
