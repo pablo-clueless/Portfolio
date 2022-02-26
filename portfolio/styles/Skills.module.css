@@ -20,9 +20,8 @@
 
 .grid {
     width: 80%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;;
     gap: 1rem;
     margin: 0 auto;
 }
@@ -30,11 +29,5 @@
 @media screen and (max-width: 800px) {
     .section p {
         font-size: 1rem;
-    }
-
-    .grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }

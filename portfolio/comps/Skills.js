@@ -14,12 +14,10 @@ const Skills = () => {
                 <Badge name='javascript' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='react' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='next.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='svelte' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='node.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='express'backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='three.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='sass' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='bootstrap' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='styled-components' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
             </div>
         </section>
