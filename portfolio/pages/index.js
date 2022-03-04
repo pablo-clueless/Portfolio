@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Samson Okunola</title>
+      <title>Samson Okunola | Portfolio Site</title>
       <meta name='author' content='Samson Okunola'/>
       <meta name='description' content="Samson Okunola's portfolio site"/>
       <meta name='description' content="Samson Okunola is a frontend developer and content writer."/>
