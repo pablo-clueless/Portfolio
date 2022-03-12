@@ -33,11 +33,11 @@ export const Data = [
     },
     {
         cover: "/images/let's-chat.jpg",
-        name: "LET'S CHAT",
-        text: "Let's Chat is a chatroom with login. User authentication, authorization and database from Firebase",
-        lang: 'reactjs | firebase',
-        live: 'https://lets-chat-ten.vercel.app',
-        repo: 'https://github.com/pablo-clueless/Let-s-Chat'
+        name: 'INSOCIAL',
+        text: 'inSocial is an image sharing paltform. Share, download and save images, and interact with other users.',
+        lang: 'reactjs | tailwind | sanity',
+        live: 'https://insocial.vercel.app',
+        repo: 'https://github.com/pablo-clueless/insocial'
     },
     {
         cover: '/images/dictionary.jpg',
