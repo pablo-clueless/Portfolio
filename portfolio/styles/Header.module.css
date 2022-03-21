@@ -66,7 +66,7 @@
     font-size: 1rem;
     align-self: center;
     cursor: pointer;
-    z-index: 200;
+    z-index: 2;
     transition: var(--transition);
 }
 
