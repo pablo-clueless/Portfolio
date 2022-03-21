@@ -1,10 +1,17 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import useDownloader from 'react-use-downloader'
+import { FiDownload } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
 import HeaderBackground from './HeaderBackground'
 
 const Header = () => {
+    const { size, elapsed, percentage, download, error, isInProgress } = useDownloader()
+    
+    const fileUrl = '/files/Okunola Samson.pdf'
+    const fileName = 'Okunola_Samson.pdf'
+    
     return (
         <motion.header 
         className={styles.header}
@@ -57,6 +64,11 @@ const Header = () => {
                     </Link>
                 </li>
             </ul>
+
+            <button className={isInProgress ? `${styles.button} ${styles.button__active}` : `${styles.button}`} onClick={() => download(fileUrl, fileName)}>
+               {isInProgress ? <FiDownload /> : `Download CV`}
+            </button>
+            {error && <p className={styles.download__error}>Downloaf failed, check your network and retry.</p>}
         </motion.header>
     )
 }

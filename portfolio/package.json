@@ -26,6 +26,7 @@
     "react-spring": "^9.4.2",
     "react-three-fiber": "^6.0.13",
     "react-transition-group": "^4.4.2",
+    "react-use-downloader": "^1.1.7",
     "three": "^0.137.5",
     "three-orbitcontrols": "^2.110.3"
   },
