@@ -22,10 +22,8 @@ class PureThree extends Component {
 
         // create shape
         var geometry = new THREE.SphereBufferGeometry(1, 64, 64)
-        var texture = new THREE.TextureLoader().load('/public/AmbientOcclusionMap.png')
         var material = new THREE.MeshStandardMaterial({
             color: 0x1A5846,
-            normalMap: texture
         })
         this.sphere = new THREE.Mesh(geometry, material)
 

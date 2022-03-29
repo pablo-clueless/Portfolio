@@ -6,9 +6,8 @@ import Contact from '../comps/Contact'
 import Footer from '../comps/Footer'
 import Header from '../comps/Header'
 import MobileMenu from '../comps/MobileMenu'
-import PureThree from '../comps/PureThree'
+// import PureThree from '../comps/PureThree'
 import Skills from '../comps/Skills'
-import Three from '../comps/Three'
 import Work from '../comps/Work'
 
 export default function Home() {
