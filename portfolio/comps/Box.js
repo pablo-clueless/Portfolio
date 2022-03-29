@@ -4,9 +4,6 @@ import { useFrame } from "@react-three/fiber"
 import { MeshWobbleMaterial } from "@react-three/drei"
 // import { useSpring, a } from "react-spring"
 
-import img from "../public/NormalMap.png"
-import { TextureLoader } from "three"
-
 const Box = (props) => {
     const mesh = useRef(null)
 
