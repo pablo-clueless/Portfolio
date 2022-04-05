@@ -9,7 +9,7 @@ import HeaderBackground from './HeaderBackground'
 const Header = () => {
     const { size, elapsed, percentage, download, error, isInProgress } = useDownloader()
     
-    const fileUrl = '/files/Okunola Samson.pdf'
+    const fileUrl = '/files/Samson Okunola.pdf'
     const fileName = 'Okunola_Samson.pdf'
     
     return (
