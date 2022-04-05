@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Canvas } from "@react-three/fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, Stars } from "@react-three/drei"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
@@ -39,10 +39,13 @@ const HeaderBackground = () => {
         <>
         <Canvas camera={{ fov: 50, near: 0.1, far: 1000, position: [0, 0, 10] }}>
             {/* ambient light */}
-            <ambientLight intensity={0.5} />
+            <ambientLight intensity={1} color='white' />
 
             {/* directional light */}
-            <directionalLight position={[0, 10, 0]} intensity={1.5}  castShadow />
+            <directionalLight position={[0, 10, 0]} intensity={1} color='white' />
+
+            {/* spot light */}
+            <spotLight intensity={1} position={[0, 10, 5]} color='orange' />
             
             <group>
                 <Stars radius={100} depth={50} count={10000} factor={4} saturation={1} fade />
@@ -54,7 +57,7 @@ const HeaderBackground = () => {
             </group>
 
             {/* zoom is disabled for all devices, other controls are hidden from from mobile devices by setting the z-index to -1 on small screens */}
-            <OrbitControls enableZoom={false} enableRotate enablePan autoRotate autoRotateSpeed={0.5} minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI / 2} />
+            <OrbitControls enableZoom={false} enableRotate enablePan autoRotate autoRotateSpeed={0.3} minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI / 2} />
         </Canvas>
         </>
     )
