@@ -68,7 +68,7 @@ const Header = () => {
             <button className={isInProgress ? `${styles.button} ${styles.button__active}` : `${styles.button}`} onClick={() => download(fileUrl, fileName)}>
                {isInProgress ? <FiDownload /> : `Download CV`}
             </button>
-            {error && <p className={styles.download__error}>Downloaf failed, check your network and retry.</p>}
+            {error && <p className={styles.download__error}>Download failed, check your network and retry.</p>}
         </motion.header>
     )
 }

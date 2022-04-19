@@ -7,14 +7,14 @@ export const Data = [
         live: 'https://blueflamingo.netlify.app',
         repo: 'https://github.com/pablo-clueless/Blue-Flamingo'
     },
-    {
-        cover: '/images/music-player.jpg',
-        name: 'MUSIC PLAYER',
-        text:" I'm a huge fan of music so why not build a music player? With cool minimalist design and a dash of JavaScript, it looks and feels good.",
-        lang: 'html5 | css3 | javascript',
-        live: 'https://pablos-musicplayer.netlify.app',
-        repo: 'https://github.com/pablo-clueless/Music-Player'
-    },
+    // {
+    //     cover: '/images/music-player.jpg',
+    //     name: 'MUSIC PLAYER',
+    //     text:" I'm a huge fan of music so why not build a music player? With cool minimalist design and a dash of JavaScript, it looks and feels good.",
+    //     lang: 'html5 | css3 | javascript',
+    //     live: 'https://pablos-musicplayer.netlify.app',
+    //     repo: 'https://github.com/pablo-clueless/Music-Player'
+    // },
     {
         cover: '/images/text-to-speech.jpg',
         name: 'TEXT TO SPEECH',
@@ -46,5 +46,13 @@ export const Data = [
         lang: 'reactjs | rapidapi',
         live: 'https://pablos-dictionary.vercel.app',
         repo: 'https://github.com/pablo-clueless/Dictionary'
+    },
+    {
+        cover: '/images/',
+        name: 'AIGIS',
+        text: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
+        lang: 'reactjs | nodejs | identitypass api',
+        live: 'https://aigisorg.netlify.app',
+        repo: 'https://github.com/aegis-org'
     }
 ]
