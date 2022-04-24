@@ -12,6 +12,9 @@ import Work from '../comps/Work'
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Samson Okunola</title>
+    </Head>
     <Header />
     <MobileMenu />
     <About />

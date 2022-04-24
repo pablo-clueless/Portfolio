@@ -24,7 +24,6 @@ class MyDocument extends Document {
           <meta property="twitter:title" content="Okunola Samson's Portfolio Site" />
           <meta property="twitter:description" content="Samson Okunola is a frontend developer  who loves minimalist designs and 3D animations." />
           <meta property="twitter:image" content="/public/lockscreen.png" />
-          <title>Samson Okunola</title>
         </Head>
         <body>
           <Main />
