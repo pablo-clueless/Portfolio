@@ -1,7 +1,18 @@
-import React, { Suspense } from "react"
+import React, { useEffect, useState } from "react"
 import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
-import Box from "./Box"
+const BTCCoin = () => {
+    const [model, setModel] = useState()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => {
+        new GLTFLoader().load('/3d-objs/btc/scene.gltf', setModel)
+    })
+
+    return model ? <primitive object={model.scene} /> : null
+}
 
 const Three = () => {
     
@@ -9,19 +20,28 @@ const Three = () => {
         <>
         <Canvas camera={{ fov: 50, near: 0.1, far: 1000, position: [-5, 2, 10] }} shadows>
             {/* ambient light */}
-            <ambientLight intensity={0.3} />
+            <ambientLight intensity={1} color='white' />
 
             {/* directional light */}
-            <directionalLight position={[0, 10, 0]} intensity={1.5}  castShadow />
+            <directionalLight position={[0, 10, 0]} intensity={10}  castShadow color='white' />
 
             {/* point lights */}
-            <pointLight position={[-10, 0, -20]} intensity={0.5} />
-            <pointLight position={[0, -10, 0]} intensity={1.5} />
+            <pointLight position={[-10, 0, -20]} intensity={1} color='white' />
+            <pointLight position={[0, -10, 0]} intensity={1.5} color='white' />
 
-            {/* shapes */}
-            <Box position={[0, -2, 0]} args={[3.5, 2, 1]} color="#1A5846" speed={1} factor={0.6} />
-            <Box position={[-4, 1, -3]} args={[1, 1, 0.5]} color="#1F5275" speed={6} factor={0.6} />
-            <Box position={[10, -8, -5]} args={[0.5, 2, 2]} color="#CA46BF" speed={6} factor={1} />
+            {/* tokens */}
+            <mesh position={[0, -3, 0]} rotateX={2} rotateY={45} scale={0.03}>
+                <BTCCoin />
+            </mesh>
+            <mesh position={[-5, 0, 0]} scale={0.01}>
+                <BTCCoin />
+            </mesh>
+            <mesh position={[-0.9, 1, 0]} scale={0.015}>
+                <BTCCoin />
+            </mesh>
+            <mesh position={[2.5, 0, 0]}  scale={0.01}>
+                <BTCCoin />
+            </mesh>       
         </Canvas>
         </>
     )

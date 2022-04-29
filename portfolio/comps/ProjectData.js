@@ -6,13 +6,13 @@ export const Data = [
         live: 'https://blueflamingo.netlify.app',
         repo: 'https://github.com/pablo-clueless/Blue-Flamingo'
     },
-    // {
-    //     name: 'MUSIC PLAYER',
-    //     text:" I'm a huge fan of music so why not build a music player? With cool minimalist design and a dash of JavaScript, it looks and feels good.",
-    //     lang: 'html5 | css3 | javascript',
-    //     live: 'https://pablos-musicplayer.netlify.app',
-    //     repo: 'https://github.com/pablo-clueless/Music-Player'
-    // },
+    {
+        name: 'BANK DAPP',
+        text: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
+        lang: 'react | ether.js | material ui| solidity',
+        live: 'https://hardhat-bank-dapp.vercel.app',
+        repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
+    },
     // {
     //     name: 'TEXT TO SPEECH',
     //     text: 'A simple text to speech app with multiple voice options, adjustable speech rate and pitch. Looking to make this one big.',
@@ -34,13 +34,13 @@ export const Data = [
         live: 'https://insocial.vercel.app',
         repo: 'https://github.com/pablo-clueless/insocial'
     },
-    {
-        name: 'DICTIONARY',
-        text: 'A basic English dictionary with phonetics, pronounciation, and other related langauge semantics.',
-        lang: 'reactjs | rapidapi',
-        live: 'https://pablos-dictionary.vercel.app',
-        repo: 'https://github.com/pablo-clueless/Dictionary'
-    },
+    // {
+    //     name: 'DICTIONARY',
+    //     text: 'A basic English dictionary with phonetics, pronounciation, and other related langauge semantics.',
+    //     lang: 'reactjs | rapidapi',
+    //     live: 'https://pablos-dictionary.vercel.app',
+    //     repo: 'https://github.com/pablo-clueless/Dictionary'
+    // },
     {
         name: 'AIGIS',
         text: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',

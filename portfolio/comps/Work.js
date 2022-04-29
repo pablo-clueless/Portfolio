@@ -15,7 +15,7 @@ const Work = () => {
            <span>I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.</span>
 
            <div className={styles.container}>
-                {Data.map((item, index) => (
+                {Data.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
                     <Card key={index} name={item.name} lang={item.lang} text={item.text} repo={item.repo} live={item.live} />
                 ))}
             </div>

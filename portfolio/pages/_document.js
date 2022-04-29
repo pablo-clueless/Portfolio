@@ -7,6 +7,8 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <meta charSet='utf-8' />
+          {/* favicon */}
+          <link rel='shortcut icon' href='/branding.png' />
           {/* -- Primary Meta Tags -- */}
           <meta name="title" content="Okunola Samson" />
           <meta name="description" content="Samson Okunola is a frontend developer who loves minimalist designs, 3D animations and a Web3 enthusiast." />
