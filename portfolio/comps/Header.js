@@ -28,7 +28,7 @@ const Header = () => {
                 <HeaderBackground />
             </div>
             <h1>okunola samson</h1>
-            <p>frontend web developer and content writer</p>
+            <p>web developer, blockhain enthusiast and content writer</p>
             
             <ul>
                 <li>
