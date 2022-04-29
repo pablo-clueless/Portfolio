@@ -38,7 +38,7 @@ const HeaderBackground = () => {
         <>
         <Canvas camera={{ fov: 50, near: 0.1, far: 1000, position: [0, 0, 10] }}>
             {/* ambient light */}
-            <ambientLight intensity={1} color='white' />
+            <ambientLight intensity={1} color='purple' />
 
             {/* directional light */}
             <directionalLight position={[0, 10, 0]} intensity={1} color='white' />
