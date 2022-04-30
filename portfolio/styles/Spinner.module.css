@@ -1,0 +1,24 @@
+.spinner_background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background: var(--dark);
+}
+
+.spinner {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 10px solid var(-pry);
+    border-radius: 50%;
+    animation: spin 0.5s infinite ease;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to { transform:  rotate(360deg);}
+}

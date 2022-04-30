@@ -1,5 +1,6 @@
+import { lazy, Suspense } from 'react'
 import Head from 'next/head'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
 
 import About from '../comps/About'
 import Contact from '../comps/Contact'
