@@ -64,7 +64,7 @@ const Contact = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href='https://linkedin.com/in/samson-olawale-okunola-76842a169/' passHref>
+                    <Link href='https://linkedin.com/in/samson-okunola/' passHref>
                         <a target='_blank' rel='noopener noreferrer'>
                             <FiLinkedin />
                         </a>
