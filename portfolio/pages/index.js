@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { About, Contact, Footer, Header, MobileMenu, Skills, Work } from '../comps/index'
+import { About, Contact, Experience, Footer, Header, MobileMenu, Skills, Work } from '../comps/index'
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
     <MobileMenu />
     <About />
     <Skills />
+    <Experience />
     <Work />
     <Contact />
     <Footer />
