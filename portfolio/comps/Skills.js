@@ -22,6 +22,7 @@ const Skills = () => {
                 <Badge name='styled-components' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='Tailwind CSS' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
                 <Badge name='Material UI' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
+                <Badge name='Solidity' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
             </div>
         </section>
     )

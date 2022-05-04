@@ -1,14 +1,6 @@
-import { lazy, Suspense } from 'react'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 
-import About from '../comps/About'
-import Contact from '../comps/Contact'
-import Footer from '../comps/Footer'
-import Header from '../comps/Header'
-import MobileMenu from '../comps/MobileMenu'
-import Skills from '../comps/Skills'
-import Work from '../comps/Work'
+import { About, Contact, Footer, Header, MobileMenu, Skills, Work } from '../comps/index'
 
 export default function Home() {
   return (
