@@ -1,5 +1,6 @@
 .header {
     height: 100vh;
+    background: transparent;
     color: var(--light);
     text-align: center;
     display: flex;
@@ -14,7 +15,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    mix-blend-mode: exclusion;
+    z-index: -1;
 }
 
 .header h1 {
@@ -72,14 +73,22 @@
 
 
 .button:hover{
-    animation: pulse 1s infinite;
-    border-color: var(--light);
-    box-shadow: 0 0 0 2rem rgba(9, 247, 8, 0);
+    animation: jelly 0.5s;
 }
     
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--light);}
-}
+@keyframes jelly {
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+  
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+  
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
 
 .button__active {
     width: 50px;
@@ -115,9 +124,5 @@
 
     .header ul {
         display: none;
-    }
-
-    .three {
-        z-index: -1;
     }
 }

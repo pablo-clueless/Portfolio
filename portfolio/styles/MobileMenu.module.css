@@ -22,7 +22,7 @@
 .button__line {
     width: 100%;
     height: 1px;
-    background: var(--light);
+    background: var(--alt);
     margin: 4px 0;
     transition: var(--transition);
 }
@@ -69,7 +69,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--dark);
+    background: var(--body-bg);
     z-index: 3;
 }
 
@@ -85,9 +85,11 @@
     padding: 0.25rem 2rem;
     margin: 1rem 0;
     border: 1px solid var(--alt);
+    cursor: pointer;
 }
 
 .menu ul li a {
+    width: 100%;
     color: var(--alt);
 }
 

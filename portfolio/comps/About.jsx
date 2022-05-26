@@ -5,14 +5,11 @@ import 'atropos/css'
 
 import img from '/public/me.png'
 import styles from '../styles/About.module.css'
-import AboutBackground from './AboutBackground'
+// import AboutBackground from './AboutBackground'
 
 const About = () => {
     return (
         <section className={styles.section} id="about">
-            <div className={styles.background}>
-            <AboutBackground />
-            </div>
             <h1>About</h1>
 
             <span>Who is Okunola Samson ?</span>

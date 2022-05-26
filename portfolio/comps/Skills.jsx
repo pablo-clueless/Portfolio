@@ -11,18 +11,18 @@ const Skills = () => {
 
             <p>I am autodidactic, solution-oriented and a team player, currently learning Python and Typescript. below are some technologies I&apos;ve been working with:</p>
             <div className={styles.grid}>
-                <Badge name='javascript' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='typescript' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='react' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='next.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='node.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='express'backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='three.js' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='sass' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='styled-components' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='Tailwind CSS' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='Material UI' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
-                <Badge name='Solidity' backgroundColor='#000000' logoColor='#FFF' style={{ border: "1px solid #FFF" }} />
+                <Badge name='javascript' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='typescript' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='react' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='next.js' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='node.js' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='express'backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='three.js' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='sass' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='styled-components' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='Tailwind CSS' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='Material UI' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
+                <Badge name='Solidity' backgroundColor='#FFFFFF' logoColor='#000000' style={{ border: "1px solid #000" }} />
             </div>
         </section>
     )

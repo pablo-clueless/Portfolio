@@ -3,11 +3,12 @@
 :root {
   --palan: 'Palanquin Dark', sans-serif;
   --poppins: 'Poppins', sans-serif;
-  --pry: #39FF14;
+  --pry: #14fbff;
   --sec: #F43D3D;
-  --alt: #1A5846;
+  --alt: #FFF;
   --light: #FFF;
   --dark: #000;
+  --body-bg: #000000;
   --transition: 0.5s all ease;
 }
 
@@ -26,8 +27,8 @@ html {
 }
 
 body {
+  background: var(--body-bg);
   font-family: var(--poppins);
-  background: var(--dark);
   overflow-x: hidden;
 }
 

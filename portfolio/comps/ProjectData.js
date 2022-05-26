@@ -1,5 +1,6 @@
 export const Data = [
     {
+        image: '/projects/blue-flamingo.png',
         name: 'BLUE FLAMINGO',
         text: 'Blue Flamingo is a fictional restaurant in the heart of Lagos. It is one of my favorites.',
         lang: 'reactjs',
@@ -7,20 +8,15 @@ export const Data = [
         repo: 'https://github.com/pablo-clueless/Blue-Flamingo'
     },
     {
+        image: '/projects/bank-dapp.png',
         name: 'BANK DAPP',
         text: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
         lang: 'react | ether.js | material ui| solidity',
         live: 'https://hardhat-bank-dapp.vercel.app',
         repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
     },
-    // {
-    //     name: 'TEXT TO SPEECH',
-    //     text: 'A simple text to speech app with multiple voice options, adjustable speech rate and pitch. Looking to make this one big.',
-    //     lang: 'html5 | sass | javascript | speech-api',
-    //     live: 'https://t2speech.netlify.app',
-    //     repo: 'https://github.com/pablo-clueless/text-to-speech'
-    // },
     {
+        image: '/projects/weather-app.png',
         name: 'WEATHER APP',
         text: 'Check accurate weather for any location. Data includes temperature, weather description, windspeed and others.',
         lang: 'reactjs | openweatherapi',
@@ -28,20 +24,15 @@ export const Data = [
         repo: 'https://github.com/pablo-clueless/WeatherApp'
     },
     {
+        image: '/projects/insocial.png',
         name: 'INSOCIAL',
         text: 'inSocial is an image sharing paltform. Share, download and save images, and interact with other users.',
         lang: 'reactjs | tailwind | sanity',
         live: 'https://insocial.vercel.app',
         repo: 'https://github.com/pablo-clueless/insocial'
     },
-    // {
-    //     name: 'DICTIONARY',
-    //     text: 'A basic English dictionary with phonetics, pronounciation, and other related langauge semantics.',
-    //     lang: 'reactjs | rapidapi',
-    //     live: 'https://pablos-dictionary.vercel.app',
-    //     repo: 'https://github.com/pablo-clueless/Dictionary'
-    // },
     {
+        image: '/projects/aigis.png',
         name: 'AIGIS',
         text: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
         lang: 'reactjs | nodejs | identitypass api',
@@ -49,6 +40,7 @@ export const Data = [
         repo: 'https://github.com/aegis-org'
     },
     {
+        image: '/projects/pablos-store.png',
         name: "PABLO'S STORE",
         text: "An e-commerce store built with chec-commerce and stripe.",
         lang: 'reactjs | material ui | commercejs',

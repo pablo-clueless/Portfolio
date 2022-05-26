@@ -16,7 +16,7 @@ const Work = () => {
 
            <div className={styles.container}>
                 {Data.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
-                    <Card key={index} name={item.name} lang={item.lang} text={item.text} repo={item.repo} live={item.live} />
+                    <Card key={index} {...item} />
                 ))}
             </div>
        </motion.section>

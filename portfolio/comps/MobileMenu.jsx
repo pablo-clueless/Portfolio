@@ -42,7 +42,7 @@ const MobileMenu = () => {
                         duration: 1 }}}
                 >
                     <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--pry)",
+                        borderColor: "var(--alt)",
                         translateY: [5, 0, 5],
                         transition: {
                             type: "spring",

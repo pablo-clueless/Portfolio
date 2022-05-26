@@ -4,28 +4,23 @@ import useDownloader from 'react-use-downloader'
 import { FiDownload } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
+import Particle from './Particle'
 import HeaderBackground from './HeaderBackground'
 
 const Header = () => {
     const { size, elapsed, percentage, download, error, isInProgress } = useDownloader()
     
     const fileUrl = '/files/Samson Okunola.pdf'
-    const fileName = 'Okunola_Samson.pdf'
+    const fileName = 'Samson_Okunola.pdf'
     
     return (
         <motion.header 
         className={styles.header}
         initial={{ opacity: 0 }}
-        animate={{
-            opacity: 1,
-            transition: {
-                duration: 5
-            }
-        }}
-        id="home"
-        >
+        animate={{ opacity: 1, transition: { duration: 5 } }} id="home">
             <div className={styles.three}>
                 <HeaderBackground />
+                <Particle />
             </div>
             <h1>okunola samson</h1>
             <p>web developer, blockchain enthusiast and content writer</p>

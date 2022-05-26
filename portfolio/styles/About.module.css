@@ -45,13 +45,10 @@
     align-items: center;
     justify-content: center;
     background: var(--light);
-    border-radius: 15%;
     position: relative;
 }
 
-.image__container img {
-    border-radius: 15%;
-}
+/* .image__container img {} */
 
 @media screen and (max-width: 800px) {
     .image__container {

@@ -4,11 +4,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--dark);
+    background: transparent;
     color: var(--light);
     padding: 1rem 2rem;
     border: 1px solid var(--light);
     text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.card:hover .hidden {
+    display: block;
+    transition: 0.5s all ease;
 }
 
 .card p:nth-child(2){

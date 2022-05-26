@@ -1,7 +1,7 @@
 .section {
     color: var(--light);
     text-align: center;
-    margin: 5rem 0;
+    padding: 2rem 0;
 }
 
 .section h1 {
@@ -20,7 +20,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1rem;
     margin: 2rem 0 0;
 }
 
@@ -30,10 +30,22 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.25rem;
-    background: var(--dark);
+    background: transparent;
     color: var(--light);
     padding: 1rem 2rem;
     text-align: left;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--light);
+    /* border-radius: 50%; */
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { About, Contact, Experience, Footer, Header, MobileMenu, Skills, Work } from '../comps/index'
+import { About, Contact, Experience, Footer, Header, MobileMenu, Particle, Skills, Work } from '../comps/index'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
     <Head>
       <title>Samson Okunola</title>
     </Head>
+    
     <Header />
     <MobileMenu />
     <About />
