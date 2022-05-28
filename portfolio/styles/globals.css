@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('//db.onlinewebfonts.com/c/adfdcfb900b1d051d06ebd612d907e44?family=Orelo+SemiWide+Heavy');
 
 :root {
-  --palan: 'Palanquin Dark', sans-serif;
+  --orelo: 'Orelo SemiWide Heavy';
   --poppins: 'Poppins', sans-serif;
-  --pry: #14fbff;
+  --pry: #7D0BE7;
   --sec: #F43D3D;
   --alt: #FFF;
   --light: #FFF;
@@ -37,7 +38,8 @@ section {
 }
 
 h1, h2, h3 {
-  font-family: var(--palan);
+  font-family: var(--orelo);
+  letter-spacing: 5px;
 }
 
 p {

@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 
 import styles from '../styles/MobileMenu.module.css'
 
+const menu = ['home', 'about', 'works', 'skills', 'contact']
+
 const MobileMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
 
@@ -27,102 +29,24 @@ const MobileMenu = () => {
                 <div className={styles.button__line}></div>
                 <div className={styles.button__line}></div>
             </div>
-            {showMenu && <motion.div
-            className={styles.menu}
-            animate={showMenu ? "open" : "closed"}
-            variants={variants}
-            >
-                <motion.ul
-                initial={{ x: 200 }}
-                animate={{ 
-                    x: 0,
-                    transition: { 
-                        type: "spring",
-                        stiffness: 100,
-                        duration: 1 }}}
-                >
-                    <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--alt)",
-                        translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="#home">
-                            <a>Home</a>
-                        </Link>
-                    </motion.li>
+            {showMenu && <motion.div className={styles.menu} animate={showMenu ? "open" : "closed"} variants={variants}>
+                <motion.ul initial={{ x: 200 }} animate={{x: 0, transition: {type: "spring", stiffness: 100, duration: 1 }}}>
+                    {menu.map((item) => (
+                        <motion.li key={item} onClick={closeMenu} whileHover={{
+                            borderColor: "var(--pry)",
+                            translateY: [5, 0, 5],
+                            transition: { type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
+                            <Link href={`#${item}`}>
+                                <a>{item}</a>
+                            </Link>
+                        </motion.li>
+                    ))}
                     <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="#about">
-                            <a>About</a>
-                        </Link>
-                    </motion.li>
-                    <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--pry)",
-                        translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="#works">
-                            <a>Works</a>
-                        </Link>
-                    </motion.li>
-                    <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--pry)",
-                        translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="#skills">
-                            <a>Skills</a>
-                        </Link>
-                    </motion.li>
-                    <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--pry)",
-                        translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="#contact">
-                            <a>Contact</a>
-                        </Link>
-                    </motion.li>
-                    <motion.li onClick={closeMenu} whileHover={{
-                        borderColor: "var(--pry)",
-                        translateY: [5, 0, 5],
-                        transition: {
-                            type: "spring",
-                            stiffness: 100,
-                            duration: 0.5,
-                            repeat: Infinity
-                        }
-                    }}>
-                        <Link href="https://frontendpablo.hashnode.dev" passHref>
-                            <a target="_blank" rel="noopener noreferrer">Blog</a>
+                        transition: { type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
+                        <Link href="https://frontendpablo.hashnode.dev">
+                            <a>blog</a>
                         </Link>
                     </motion.li>
                 </motion.ul>

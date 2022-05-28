@@ -9,7 +9,8 @@
 }
 
 .section span {
-    color: var(--alt);
+    color: var(--pry);
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
