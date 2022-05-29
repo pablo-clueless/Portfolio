@@ -1,7 +1,7 @@
 .section {
     color: var(--light);
     text-align: center;
-    padding: 2rem 0;
+    padding: 0 2rem;
 }
 
 .section h1 {

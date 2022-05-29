@@ -1,68 +1,43 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import useDownloader from 'react-use-downloader'
-import { FiDownload } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 import styles from '../styles/Header.module.css'
-import Particle from './Particle'
-import HeaderBackground from './HeaderBackground'
+import logo from '../public/branding.png'
+
+
+const menu = ['home', 'about', 'works', 'skills', 'contact']
 
 const Header = () => {
-    const { size, elapsed, percentage, download, error, isInProgress } = useDownloader()
-    
+    const { download, error } = useDownloader()
     const fileUrl = '/files/Samson Okunola.pdf'
     const fileName = 'Samson_Okunola.pdf'
-    
-    return (
-        <motion.header 
-        className={styles.header}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 5 } }} id="home">
-            <div className={styles.three}>
-                <HeaderBackground />
-                <Particle />
-            </div>
-            <h1>okunola samson</h1>
-            <p>web developer, blockchain enthusiast and content writer</p>
-            
-            <ul>
-                <li>
-                    <Link href='/'>
-                        <a>Home</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='#about'>
-                        <a>About</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='#works'>
-                        <a>Works</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='#skills'>
-                        <a>Skills</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='#contact'>
-                        <a>Contact</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='https://frontendpablo.hashnode.dev' passHref>
-                        <a target='_blank' rel='noopener noreferrer'>
-                            Blog
-                        </a>
-                    </Link>
-                </li>
-            </ul>
 
-            <button className={isInProgress ? `${styles.button} ${styles.button__active}` : `${styles.button}`} onClick={() => download(fileUrl, fileName)}>
-               {isInProgress ? <FiDownload /> : `Download CV`}
-            </button>
+    return (
+        <motion.header className={styles.header} initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 5 } }} id="home">
+            <nav className={styles.nav}>
+                <Image src={logo} alt='Samson Okunola' width={50} height={50} priority />
+                <ul>
+                    {menu.map(item => (
+                    <li key={item}>
+                        <Link href={`#${item}`}>
+                            <a>{item}</a>
+                        </Link>
+                    </li>
+                    ))}
+                </ul>
+                <a className={styles.button} href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
+                    Resume <FiArrowRight />
+                </a>
+            </nav>
+            <span>
+                Hello, I&apos;m
+            </span>
+            <h1>Okunola Samson</h1>
+            <p>Web Developer. Blockchain Enthusiast. Content Writer.</p>
+
             {error && <p className={styles.download__error}>Download failed, check your network and retry.</p>}
         </motion.header>
     )

@@ -8,6 +8,7 @@
     color: var(--light);
     padding: 1rem 2rem;
     border: 1px solid var(--light);
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .card p:nth-child(2){
-    color: var(--alt);
+    color: var(--light);
     text-transform: uppercase;
 }
 
@@ -39,10 +40,9 @@
 .card a {
     padding: 0.25rem 1.5rem;
     margin: 0;
-    color: var(--alt);
-    font-family: var(--palan);
-    text-transform: uppercase;
-    border: 1px solid var(--alt);
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 15px;
     transition: var(--transition);
 }
 

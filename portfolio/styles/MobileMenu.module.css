@@ -58,8 +58,10 @@
 }
 
 .menu, .menu ul {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu {
@@ -79,7 +81,7 @@
 }
 
 .menu ul li {
-    width: 30%;
+    width: 40%;
     text-align: center;
     padding: 0.25rem 2rem;
     margin: 1rem 0;
@@ -93,6 +95,36 @@
     text-transform: capitalize;
 }
 
+.button_resume {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 0.75rem;
+    margin-top: 1rem;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+
+.button_resume:hover{
+    animation: jelly 0.5s;
+}
+    
+@keyframes jelly {
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+  
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+  
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+}
 
 @media screen and (max-width: 800px) {
     .nav {

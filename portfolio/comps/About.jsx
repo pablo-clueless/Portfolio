@@ -5,7 +5,6 @@ import 'atropos/css'
 
 import img from '/public/me.png'
 import styles from '../styles/About.module.css'
-// import AboutBackground from './AboutBackground'
 
 const About = () => {
     return (

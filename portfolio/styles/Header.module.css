@@ -1,6 +1,7 @@
 .header {
     height: 100vh;
-    background: transparent;
+    background: rgb(125,11,231);
+    background: linear-gradient(to bottom, rgba(125,11,231,1) -400%, rgba(11,15,28,1) 70%);
     color: var(--light);
     text-align: center;
     display: flex;
@@ -10,64 +11,91 @@
     position: relative;
 }
 
-.three {
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 .header h1 {
     font-size: 5rem;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .header p {
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: capitalize;
 }
 
-.header ul {
+.header span {
+    color: var(--pry);
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+}
+
+.nav img {
+    background: var(--light);
+}
+
+.nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 10rem 0 0;
 }
 
-.header ul li {
+.nav ul li {
     margin: 0 1rem;
 }
 
-.header ul li a {
+.nav ul li a {
     position: relative;
     color: var(--light);
     font-size: 1.5rem;
     transition: var(--transition);
 }
 
-.header ul li a::before{
+.nav ul li a:hover {
+    color: var(--pry);
+}
+
+.nav ul li a::before{
     content: '';
     position: absolute;
     bottom: 0;
     right: 0;
     width: 0;
     height: 3px;
-    background: var(--light);
+    background: var(--pry);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+ 
+@media (hover: hover) and (pointer: fine) {
+    .header ul li a:hover::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
 }
 
 .button {
-    margin-top: 5rem;
-    padding: 0.75rem 0.5rem;
-    background: transparent;
-    border: 1px solid var(--light);
-    color: var(--light);
-    font-size: 1rem;
-    align-self: center;
-    cursor: pointer;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 15px;
     transition: var(--transition);
 }
 
@@ -88,29 +116,6 @@
     75% {
       transform: scale(0.95, 1.05);
     }
-  }
-
-.button__active {
-    width: 50px;
-    height: 50px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    font-size: 1.5rem;
-}
-
-.download__error {
-    color: var(--sec);
-    font-size: 1rem;
-    font-weight: 400;
-}
-  
-@media (hover: hover) and (pointer: fine) {
-    .header ul li a:hover::before{
-        left: 0;
-        right: auto;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -122,7 +127,7 @@
         font-size: 1rem;
     }
 
-    .header ul {
+    .nav {
         display: none;
     }
 }

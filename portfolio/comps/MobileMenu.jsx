@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Link from 'next/link'
 import { motion } from "framer-motion"
+import useDownloader from 'react-use-downloader'
+import { FiArrowRight } from "react-icons/fi"
 
 import styles from '../styles/MobileMenu.module.css'
 
@@ -8,6 +10,9 @@ const menu = ['home', 'about', 'works', 'skills', 'contact']
 
 const MobileMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const { download, error } = useDownloader()
+    const fileUrl = '/files/Samson Okunola.pdf'
+    const fileName = 'Samson_Okunola.pdf'
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
@@ -50,6 +55,9 @@ const MobileMenu = () => {
                         </Link>
                     </motion.li>
                 </motion.ul>
+                <a className={styles.button_resume} href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
+                    Resume <FiArrowRight />
+                </a>
             </motion.div>}
         </motion.nav>
     )

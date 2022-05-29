@@ -6,10 +6,9 @@
   --poppins: 'Poppins', sans-serif;
   --pry: #7D0BE7;
   --sec: #F43D3D;
-  --alt: #FFF;
   --light: #FFF;
   --dark: #000;
-  --body-bg: #000000;
+  --body: #0B0F1C;
   --transition: 0.5s all ease;
 }
 
@@ -28,7 +27,7 @@ html {
 }
 
 body {
-  background: var(--body-bg);
+  background: var(--body);
   font-family: var(--poppins);
   overflow-x: hidden;
 }
