@@ -50,6 +50,7 @@
 .section ul {
     list-style: none;
     display: flex;
+    gap: 1rem;
 }
 
 .section ul li {
@@ -66,7 +67,8 @@
 
 .section ul li a:hover,
 .section ul li a:focus {
-    color: var(--pry);
+    color: var(--dark);
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width: 800px) {

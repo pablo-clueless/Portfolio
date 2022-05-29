@@ -68,9 +68,9 @@
     color: var(--pry);
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 1150px) {
     .card {
-        width: 30%;
+        width: 20%;
     }
 }
 

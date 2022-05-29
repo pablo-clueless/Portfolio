@@ -10,7 +10,7 @@ const Footer = () => {
 
             <Link href='#home' passHref>
                 <motion.a
-                animate={{ color: "var(--light)", scale: 1 }} whileHover={{color: "var(--pry)", translateY: [-5, 0, -5], transition: {type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
+                animate={{ color: "var(--dark)", scale: 1 }} whileHover={{color: "var(--light)", translateY: [-5, 0, -5], transition: {type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
                     scroll to top &uarr;
                 </motion.a>
             </Link>
