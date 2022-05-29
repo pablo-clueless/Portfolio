@@ -1,6 +1,8 @@
 .section {
     display: grid;
     place-items: center;
+    background: rgb(125,11,231);
+    background: linear-gradient(0deg, var(--pry) 40%, #000 100%);
     color: var(--light);
     text-align: center;
     padding: 1rem 0;
