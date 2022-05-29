@@ -46,7 +46,7 @@ export const data = [
     },
     {
         image_dt: '/projects/e-comerce-dt.png',
-        icon: 'ic:baseline-security',
+        icon: 'fontisto:shopping-store',
         name: "PABLO'S STORE",
         description: "An e-commerce store built with chec-commerce and stripe.",
         lang: 'reactjs | material ui | commercejs',
