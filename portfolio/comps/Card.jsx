@@ -1,34 +1,39 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { FiGlobe, FiGithub } from 'react-icons/fi'
+import { Icon } from '@iconify/react'
 
 import styles from '../styles/Card.module.css'
 
-const Card = (props) => {
+const Card = ({name, lang, repo, live, image_dt, icon}) => {
    
     return (
         <div className={styles.card}>
-            <h2>{props.name}</h2>
-            <p>{props.lang}</p>
-            <p>{props.text}</p>
-            <ul>
-                <motion.li whileHover={{scale: [1, 1.2, 1], transition: {type: "tween", duration: 0.3}}}>
-                    <Link href={props.repo} passHref>
-                        <a target='_blank' rel='noreferrer noopener'>
-                            Github
-                        </a>
-                    </Link>
-                </motion.li>
-                <motion.li whileHover={{scale: [1, 1.2, 1], transition: {type: "tween", duration: 0.3}}}>
-                    <Link href={props.live} passHref>
-                        <a target='_blank' rel='noreferrer noopener'>
-                            Live
-                        </a>
-                    </Link>
-                </motion.li>
-            </ul>
+            <Icon icon={icon} className={styles.card_icon} />
+            <div className={styles.card_image}>
+                <Image src={image_dt} alt={name} width={200} height={250} />
+            </div>
+            <h2>{name}</h2>
+            <p>{lang}</p>
+            
+            <div className={styles.card_info}>
+                <ul>
+                    <li>
+                        <Link href={repo} passHref>
+                            <a target='_blank' rel='noreferrer noopener'>
+                                <FiGithub />
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={live} passHref>
+                            <a target='_blank' rel='noreferrer noopener'>
+                                <FiGlobe />
+                            </a>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

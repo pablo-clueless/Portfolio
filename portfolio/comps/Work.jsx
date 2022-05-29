@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import styles from '../styles/Works.module.css'
 import Card from './Card'
-import { Data } from './ProjectData'
+import { data } from '../project-data'
 
 const Work = () => {
 
@@ -15,8 +13,8 @@ const Work = () => {
            <span>I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.</span>
 
            <div className={styles.container}>
-                {Data.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
-                    <Card key={index} {...item} />
+                {data.map((item) => (
+                    <Card key={item.name} {...item} />
                 ))}
             </div>
        </motion.section>

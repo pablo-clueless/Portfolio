@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import url('//db.onlinewebfonts.com/c/adfdcfb900b1d051d06ebd612d907e44?family=Orelo+SemiWide+Heavy');
+@import url('https://db.onlinewebfonts.com/c/adfdcfb900b1d051d06ebd612d907e44?family=Orelo+SemiWide+Heavy');
 
 :root {
   --orelo: 'Orelo SemiWide Heavy';
   --poppins: 'Poppins', sans-serif;
   --pry: #7D0BE7;
-  --sec: #F43D3D;
-  --light: #FFF;
+  --sec: #;
+  --light: #FCF0EC;
   --dark: #000;
-  --body: #0B0F1C;
+  --body: #392A46;
   --transition: 0.5s all ease;
 }
 
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  background: var(--body);
+  background: var(--dark);
   font-family: var(--poppins);
   overflow-x: hidden;
 }

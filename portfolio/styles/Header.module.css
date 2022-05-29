@@ -1,7 +1,7 @@
 .header {
     height: 100vh;
     background: rgb(125,11,231);
-    background: linear-gradient(to bottom, rgba(125,11,231,1) -400%, rgba(11,15,28,1) 70%);
+    background: linear-gradient(to bottom, var(--pry) -50%, #000 100%);
     color: var(--light);
     text-align: center;
     display: flex;
@@ -24,13 +24,23 @@
 }
 
 .header span {
-    color: var(--pry);
+    color: var(--dark);
     font-size: 1.5rem;
-    font-weight: 100;
     text-transform: capitalize;
     align-self: flex-start;
     margin-bottom: 2rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.header span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    width: 2.5rem;
+    height: 2px;
+    background: var(--dark);
 }
 
 .nav {
