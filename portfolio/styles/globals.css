@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import url('https://db.onlinewebfonts.com/c/adfdcfb900b1d051d06ebd612d907e44?family=Orelo+SemiWide+Heavy');
 
+@font-face {
+    font-family: 'Orelo SemiWide Heavy';
+    src: url('/fonts/Orelo\ SemiWide\ Heavy.ttf') format('truetype');
+}
 :root {
   --orelo: 'Orelo SemiWide Heavy';
   --poppins: 'Poppins', sans-serif;
