@@ -24,7 +24,7 @@
 }
 
 .header span {
-    color: var(--dark);
+    color: var(--light);
     font-size: 1.5rem;
     text-transform: capitalize;
     align-self: flex-start;
@@ -37,7 +37,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: -40%;
+    left: -45%;
     width: 2.5rem;
     height: 2px;
     background: var(--dark);
