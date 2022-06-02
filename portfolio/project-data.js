@@ -1,13 +1,22 @@
 export const data = [
     {
-        image_dt: '/projects/flamingo-dt.png',
+        image_dt: '',
         icon: 'fa6-solid:bed',
-        name: 'BLUE FLAMINGO',
-        description: 'Blue Flamingo is a fictional restaurant in the heart of Lagos. It is one of my favorites.',
-        lang: 'reactjs | css',
-        live: 'https://blueflamingo.netlify.app',
-        repo: 'https://github.com/pablo-clueless/Blue-Flamingo'
+        name: 'SHORTLET',
+        description: '',
+        lang: 'reatjs | material-ui',
+        live: 'short-let.vercel.app',
+        repo: 'https://github.com/pablo-clueless/shortlet'
     },
+    // {
+    //     image_dt: '/projects/flamingo-dt.png',
+    //     icon: 'fa6-solid:bed',
+    //     name: 'BLUE FLAMINGO',
+    //     description: 'Blue Flamingo is a fictional restaurant in the heart of Lagos. It is one of my favorites.',
+    //     lang: 'reactjs | css',
+    //     live: 'https://blueflamingo.netlify.app',
+    //     repo: 'https://github.com/pablo-clueless/Blue-Flamingo'
+    // },
     {
         image_dt: '/projects/bank-dapp-dt.png',
         icon: 'fa6-brands:ethereum',
