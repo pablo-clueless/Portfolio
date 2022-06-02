@@ -5,7 +5,7 @@ export const data = [
         name: 'SHORTLET',
         description: '',
         lang: 'reatjs | material-ui',
-        live: 'short-let.vercel.app',
+        live: 'https://short-let.vercel.app',
         repo: 'https://github.com/pablo-clueless/shortlet'
     },
     // {
