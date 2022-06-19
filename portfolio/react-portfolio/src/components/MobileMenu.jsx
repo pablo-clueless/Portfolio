@@ -1,10 +1,9 @@
 import { useState } from "react"
-import Link from 'next/link'
 import { motion } from "framer-motion"
 import useDownloader from 'react-use-downloader'
 import { FiArrowRight } from "react-icons/fi"
 
-import styles from '../styles/MobileMenu.module.css'
+import '../styles/mobile-menu.css'
 
 const menu = ['home', 'about', 'works', 'skills', 'contact']
 
@@ -28,34 +27,32 @@ const MobileMenu = () => {
     }
 
     return (
-        <motion.nav className={styles.nav}>
-            <div className={showMenu ? `${styles.button} ${styles.close}` : `${styles.button}`} onClick={handleShowMenu}>
-                <div className={styles.button__line}></div>
-                <div className={styles.button__line}></div>
-                <div className={styles.button__line}></div>
+        <motion.nav className='nav'>
+            <div className={showMenu ? `button close` : `button`} onClick={handleShowMenu}>
+                <div className='button__line'></div>
+                <div className='button__line'></div>
+                <div className='button__line'></div>
             </div>
-            {showMenu && <motion.div className={styles.menu} animate={showMenu ? "open" : "closed"} variants={variants}>
+            {showMenu && <motion.div className='menu' animate={showMenu ? "open" : "closed"} variants={variants}>
                 <motion.ul initial={{ x: 200 }} animate={{x: 0, transition: {type: "spring", stiffness: 100, duration: 1 }}}>
                     {menu.map((item) => (
                         <motion.li key={item} onClick={closeMenu} whileHover={{
                             borderColor: "var(--pry)",
                             translateY: [5, 0, 5],
                             transition: { type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
-                            <Link href={`#${item}`}>
-                                <a>{item}</a>
-                            </Link>
+                            <a href={`#${item}`}>{item}</a>
                         </motion.li>
                     ))}
                     <motion.li onClick={closeMenu} whileHover={{
                         borderColor: "var(--pry)",
                         translateY: [5, 0, 5],
                         transition: { type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
-                        <Link href="https://frontendpablo.hashnode.dev">
-                            <a>blog</a>
-                        </Link>
+                        <a href="https://frontendpablo.hashnode.dev" target='_blank' rel='noreferrer'>
+                            blog
+                        </a>
                     </motion.li>
                 </motion.ul>
-                <a className={styles.button_resume} href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
+                <a className='button_resume' href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
                     Resume <FiArrowRight />
                 </a>
             </motion.div>}

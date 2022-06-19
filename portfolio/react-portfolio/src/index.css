@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+@font-face {
+    font-family: 'Orelo SemiWide Heavy';
+    src: url('/fonts/Orelo\ SemiWide\ Heavy.ttf') format('truetype');
+}
+:root {
+  --orelo: 'Orelo SemiWide Heavy';
+  --poppins: 'Poppins', sans-serif;
+  --pry: #7D0BE7;
+  --sec: #;
+  --light: #FCF0EC;
+  --dark: #000;
+  --body: #392A46;
+  --transition: 0.5s all ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark);
+  font-family: var(--poppins);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--orelo);
+  letter-spacing: 5px;
+}
+
+p {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,143 @@
+.header {
+    height: 100vh;
+    background: rgb(125,11,231);
+    background: linear-gradient(to bottom, var(--pry) -50%, #000 100%);
+    color: var(--light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header span {
+    color: var(--light);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.header span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    width: 2.5rem;
+    height: 2px;
+    background: var(--dark);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+}
+
+.nav img {
+    background: var(--light);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    position: relative;
+    color: var(--light);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.nav ul li a:hover {
+    color: var(--pry);
+}
+
+.nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background: var(--pry);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+ 
+@media (hover: hover) and (pointer: fine) {
+    .header ul li a:hover::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+
+.button:hover{
+    animation: jelly 0.5s;
+}
+    
+@keyframes jelly {
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+  
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+  
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .nav {
+        display: none;
+    }
+}

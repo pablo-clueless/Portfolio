@@ -1,11 +1,10 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react'
 import { motion } from 'framer-motion'
 import useDownloader from 'react-use-downloader'
 import { FiArrowRight } from 'react-icons/fi'
 
-import styles from '../styles/Header.module.css'
-import logo from '../public/logo.png'
+import '../styles/header.css'
+import logo from '/images/logo.png'
 
 const menu = ['home', 'about', 'works', 'skills', 'contact']
 
@@ -15,19 +14,17 @@ const Header = () => {
     const fileName = 'Samson_Okunola.pdf'
 
     return (
-        <motion.header className={styles.header} initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 5 } }} id="home">
-            <nav className={styles.nav}>
-                <Image src={logo} alt='Samson Okunola' width={70} height={70} priority />
+        <motion.header className='header' initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 5 } }} id="home">
+            <nav className='nav'>
+                <img src={logo} alt='Samson Okunola' width={70} height={70} />
                 <ul>
                     {menu.map(item => (
                     <li key={item}>
-                        <Link href={`#${item}`}>
-                            <a>{item}</a>
-                        </Link>
+                        <a href={`#${item}`}>{item}</a>
                     </li>
                     ))}
                 </ul>
-                <a className={styles.button} href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
+                <a className='button' href={fileUrl} download={fileName} onClick={() =>download(fileUrl, fileName)}>
                     Resume <FiArrowRight />
                 </a>
             </nav>
@@ -37,7 +34,7 @@ const Header = () => {
             <h1>Okunola Samson</h1>
             <p>Web Developer. Blockchain Enthusiast. Content Writer.</p>
 
-            {error && <p className={styles.download__error}>Download failed, check your network and retry.</p>}
+            {error && <p className='download__error'>Download failed, check your network and retry.</p>}
         </motion.header>
     )
 }
