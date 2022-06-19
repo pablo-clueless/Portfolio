@@ -11,6 +11,7 @@
     border-radius: 5px;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
 .card_image {

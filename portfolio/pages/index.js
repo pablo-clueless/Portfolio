@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { About, Contact, Experience, Footer, Header, MobileMenu, Particle, Skills, Work } from '../comps/index'
+import { About, Contact, Experience, Footer, Header, MobileMenu, Particle, Skills, Work } from '../components'
 
 export default function Home() {
   return (
