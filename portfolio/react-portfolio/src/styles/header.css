@@ -1,8 +1,8 @@
 .header {
     height: 100vh;
     background: rgb(125,11,231);
-    background: linear-gradient(to bottom, var(--pry) -50%, #000 100%);
-    color: var(--light);
+    background: linear-gradient(to bottom, var(--color-primary) -50%, #000 100%);
+    color: var(--color-light);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .header span {
-    color: var(--light);
+    color: var(--color-light);
     font-size: 1.5rem;
     text-transform: capitalize;
     align-self: flex-start;
@@ -40,10 +40,10 @@
     left: -45%;
     width: 2.5rem;
     height: 2px;
-    background: var(--dark);
+    background: var(--color-dark);
 }
 
-.nav {
+.main_nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -54,39 +54,42 @@
     padding: 0.5rem 1rem;
 }
 
-.nav img {
-    background: var(--light);
+.main_nav img {
+    background: var(--color-light);
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
-.nav ul {
+.main_nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.nav ul li {
+.main_nav ul li {
     margin: 0 1rem;
 }
 
-.nav ul li a {
+.main_nav ul li a {
     position: relative;
-    color: var(--light);
+    color: var(--color-light);
     font-size: 1.5rem;
     transition: var(--transition);
 }
 
-.nav ul li a:hover {
-    color: var(--pry);
+.main_nav ul li a:hover {
+    color: var(--color-primary);
 }
 
-.nav ul li a::before{
+.main_nav ul li a::before{
     content: '';
     position: absolute;
     bottom: 0;
     right: 0;
     width: 0;
     height: 3px;
-    background: var(--pry);
+    background: var(--color-primary);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
  
@@ -98,13 +101,13 @@
     }
 }
 
-.button {
+.main_nav .button {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0.25rem 0.75rem;
-    background: var(--light);
-    color: var(--dark);
+    background: var(--color-light);
+    color: var(--color-dark);
     border-radius: 15px;
     transition: var(--transition);
 }
@@ -137,7 +140,7 @@
         font-size: 1rem;
     }
 
-    .nav {
+    .main_nav {
         display: none;
     }
 }

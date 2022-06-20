@@ -25,7 +25,7 @@ const Contact = () => {
 
     return (
         <motion.section 
-        className='section'
+        className='contact'
         id="contact"
         initial={{ opacity: 0 }}
         animate={{ opacity: showSection ? 1 : 0, transition: { duration: 3 }}}>

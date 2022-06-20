@@ -1,20 +1,20 @@
-.section {
-    color: var(--light);
+.exp {
+    color: var(--color-light);
     text-align: center;
     padding: 2rem 0;
 }
 
-.section h1 {
+.exp h1 {
     font-size: 3rem;
 }
 
-.section span {
-    color: var(--pry);
+.exp span {
+    color: var(--color-primary);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.section .grid_container {
+.exp .grid_container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,17 +32,17 @@
     justify-content: center;
     gap: 0.25rem;
     background: transparent;
-    color: var(--light);
+    color: var(--color-light);
     padding: 1rem 2rem;
     text-align: left;
     position: relative;
 }
 
-.card::before {
+.exp .card::before {
     content: '';
     width: 10px;
     height: 10px;
-    background: var(--pry);
+    background: var(--color-primary);
     transform: rotate(45deg);
     position: absolute;
     left: 0;

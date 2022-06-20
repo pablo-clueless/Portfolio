@@ -5,7 +5,7 @@ import { WorkData } from '../../work-data'
 
 const Experience = () => {
   return (
-    <section className='section' id="experince">
+    <section className='exp' id="experince">
       <h1>Experience</h1>
 
       <span>Below are some of the places where I&apos;ve plied the art of web development.</span>

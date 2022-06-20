@@ -5,13 +5,13 @@
     src: url('/fonts/Orelo\ SemiWide\ Heavy.ttf') format('truetype');
 }
 :root {
-  --orelo: 'Orelo SemiWide Heavy';
-  --poppins: 'Poppins', sans-serif;
-  --pry: #7D0BE7;
-  --sec: #;
-  --light: #FCF0EC;
-  --dark: #000;
-  --body: #392A46;
+  --font-bold: 'Orelo SemiWide Heavy';
+  --font-body: 'Poppins', sans-serif;
+  --color-primary: #7D0BE7;
+  --color-secondary: #;
+  --color-light: #FCF0EC;
+  --color-dark: #000;
+  --color-body: #392A46;
   --transition: 0.5s all ease;
 }
 
@@ -30,8 +30,8 @@ html {
 }
 
 body {
-  background: var(--dark);
-  font-family: var(--poppins);
+  background: var(--color-dark);
+  font-family: var(--font-body);
   overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ section {
 }
 
 h1, h2, h3 {
-  font-family: var(--orelo);
+  font-family: var(--font-bold);
   letter-spacing: 5px;
 }
 

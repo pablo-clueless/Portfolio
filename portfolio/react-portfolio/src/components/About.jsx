@@ -8,11 +8,9 @@ import '../styles/about.css'
 
 const About = () => {
     return (
-        <section className='section' id="about">
+        <section className='about' id="about">
             <h1>About</h1>
-
             <span>Who is Okunola Samson ?</span>
-            
             <div className='about'>
                 <Atropos className='my-atropos'>
                     <motion.div className='image__container'>

@@ -1,15 +1,15 @@
-.section {
+.projects {
     width: 100%;
-    color: var(--light);
+    color: var(--color-light);
     text-align: center;
 }
 
-.section h1 {
+.projects h1 {
     font-size: 3rem;
 }
 
-.section span {
-    color: var(--pry);
+.projects span {
+    color: var(--color-primary);
     font-size: 1.2rem;
     text-transform: uppercase;
 }

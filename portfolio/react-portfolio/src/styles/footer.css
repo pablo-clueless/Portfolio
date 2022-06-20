@@ -3,13 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--pry);
-    color: var(--light);
+    background: var(--color-primary);
+    color: var(--color-light);
     padding: 2rem 1rem 0.5rem;
 }
 
 .footer span {
-    color: var(--light);
+    color: var(--color-light);
 }
 
 @media screen and (max-width: 800px) {

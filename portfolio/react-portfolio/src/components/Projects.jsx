@@ -7,7 +7,7 @@ import { data } from '../../project-data'
 const Projects = () => {
 
     return (
-       <motion.section className='section' id='works'>
+       <motion.section className='projects' id='projects'>
            <h1>Notable Projects</h1>
 
            <span>I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.</span>

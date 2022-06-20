@@ -1,77 +1,77 @@
-.section {
+.contact {
     display: grid;
     place-items: center;
     background: rgb(125,11,231);
-    background: linear-gradient(0deg, var(--pry) 40%, #000 100%);
-    color: var(--light);
+    background: linear-gradient(0deg, var(--color-primary) 40%, #000 100%);
+    color: var(--color-light);
     text-align: center;
     padding: 1rem 0;
 }
 
-.section h1 {
+.contact h1 {
     font-size: 3rem;
 }
 
-.section span {
-    color: var(--pry);
+.contact span {
+    color: var(--color-primary);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.section p {
+.contact p {
     width: 70%;
     font-size: 1.5rem;
     margin: 5rem 0;
 }
 
-.section .link {
+.contact .link {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem 1.5rem;
     margin: 4rem 0;
-    border: 2px solid var(--light);
+    border: 2px solid var(--color-light);
     border-radius: 25px;
-    color: var(--light);
+    color: var(--color-light);
     text-transform: uppercase;
     transition: var(--transition);
 }
 
-.section .link:hover, .section a:focus {
+.contact .link:hover, .contact a:focus {
     animation: pulse 1s infinite;
-    border-color: var(--light);
+    border-color: var(--color-light);
     box-shadow: 0 0 0 2rem rgba(9, 247, 8, 0);
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--light);}
+    0% { box-shadow: 0 0 0 0 var(--color-light);}
 }
 
-.section ul {
+.contact ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-.section ul li {
+.contact ul li {
     margin: 0 1rem;
 }
 
-.section ul li a {
+.contact ul li a {
     border: none;
-    color: var(--light);
+    color: var(--color-light);
     font-size: 2rem;
     transition: var(--transition);
 }
 
 
-.section ul li a:hover,
-.section ul li a:focus {
-    color: var(--dark);
+.contact ul li a:hover,
+.contact ul li a:focus {
+    color: var(--color-dark);
 }
 
 @media screen and (max-width: 800px) {
-    .section p {
+    .contact p {
         font-size: 1rem;
         margin: 1rem 0;
     }

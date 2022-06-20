@@ -15,7 +15,7 @@ import '../styles/skills.css'
 
 const Skills = () => {
     return (
-        <section className='section' id="skills">
+        <section className='skills' id="skills">
             <h1>Skills</h1>
 
             <span> 2 years, a ton of tutorials and online courses, here i am.</span>
