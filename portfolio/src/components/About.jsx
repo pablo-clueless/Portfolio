@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import 'atropos/css'
 
 import img from '/images/me.png'
 import '../styles/about.css'
