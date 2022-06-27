@@ -1,34 +1,34 @@
 import React from 'react'
-import { FiGlobe, FiGithub } from 'react-icons/fi'
-import { Icon } from '@iconify/react'
-import { motion } from 'framer-motion'
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 
-import '../styles/card.css'
-
-const Card = ({name, lang, repo, live, image_dt, icon}) => {
-   
-    return (
-        <motion.div
-        initial={{ scale: 0.1 }}
-        animate={{ scale: 1, transition: { duration: 2 }}}
-        className='card'>
-            <Icon icon={icon} className='card_icon' />
-            <h2>{name}</h2>
-            <p>{lang}</p>
-            <ul>
-                <li>
-                    <a href={repo} target='_blank' rel='noreferrer noopener'>
-                        <FiGithub />
-                    </a>
-                </li>
-                <li>
-                    <a href={live} target='_blank' rel='noreferrer noopener'>
-                        <FiGlobe />
-                    </a>
-                </li>
-            </ul>
-        </motion.div>
-    )
+const ItemCard = ({name, description, lang, repo, live, image_dt, icon}) => {
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image={image_dt}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {name}
+        </Typography>
+        {lang.map((lan) => (
+            <Typography key={lan} variant='caption' textTransform='uppercase' color='text.secondary'>
+                {lan}{' '}
+            </Typography>
+        ))}
+        <Typography variant="body2" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button variant='outlined' size="small">GITHUB</Button>
+        <Button variant='outlined' size="small">Live</Button>
+      </CardActions>
+    </Card>
+  );
 }
 
-export default Card
+export default ItemCard

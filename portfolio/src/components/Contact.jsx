@@ -1,10 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Button, IconButton, List, ListItem, Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 import { FiCodepen, FiGithub, FiLinkedin, FiMail ,FiTwitter } from 'react-icons/fi'
 
-import '../styles/contact.css'
+const useStyles = makeStyles({
+    root: {
+        height: 600,
+        display: 'grid',
+        placeItems: 'center',
+        textAlign: 'center',
+        padding: '1rem 0',
+        gap: '1rem',
+    },
+    link: {
+        margin: '3rem 0',
+        textDecoration: 'none',
+    },
+    list: {
+        display:'flex',
+        direction: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    icon: {
+        color: 'var(--color-primary)',
+        fontSize: '2rem',
+    }
+})
 
 const Contact = () => {
+    const classes = useStyles()
     const [showSection, setShowSection] = useState(false)
     const [lastYPosition, setLastYPosition] = useState(0)
 
@@ -25,43 +51,52 @@ const Contact = () => {
 
     return (
         <motion.section 
-        className='contact'
+        className={classes.root}
         id="contact"
         initial={{ opacity: 0 }}
         animate={{ opacity: showSection ? 1 : 0, transition: { duration: 3 }}}>
-            <h1>Contact</h1>
+            <Typography variant='h3' color='text.primary'>Contact</Typography>
 
-            <span>looking to hire? have a project? </span>
+            <Typography variant='body1' color='text.secondary'>Looking to hire? Have a project? </Typography>
 
-            <p>I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.</p>
+            <Typography variant='body1' color='text.secondary'>I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.</Typography>
 
-            <a href='mailto:smsnmicheal@gmail.com' className='link'>
-                <FiMail /> get in touch
+            <a href='mailto:smsnmicheal@gmail.com' className={classes.link}>
+                <Button variant='outlined' style={{width:200,gap:'1rem'}}>
+                    <FiMail /> get in touch
+                </Button>
             </a>
 
-            <ul>
-                <li>
-                    <a href='https://codepen.io/pablo-clueless' target='_blank' rel='noopener noreferrer'>
-                        <FiCodepen />
-                    </a>
-                </li>
-                <li>
-                    <a href='https://github.com/pablo-clueless' target='_blank' rel='noopener noreferrer'>
-                        <FiGithub />
-                    </a>
-                </li>
-                <li>
-                    <a href='https://linkedin.com/in/samson-okunola/' target='_blank' rel='noopener noreferrer'>
-                        <FiLinkedin />
-                    </a>
-                </li>
-                <li>
-                    <a href='https://twitter.com/pablo_clueless' target='_blank' rel='noopener noreferrer'>
-                        <FiTwitter />
-                    </a>
-                </li>
-
-            </ul>
+            <List className={classes.list}>
+                <ListItem>
+                    <IconButton>
+                        <a href='https://codepen.io/pablo-clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
+                            <FiCodepen />
+                        </a>
+                    </IconButton>
+                </ListItem>
+                <ListItem>
+                    <IconButton>
+                        <a href='https://github.com/pablo-clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
+                            <FiGithub />
+                        </a>
+                    </IconButton>
+                </ListItem>
+                <ListItem>
+                    <IconButton>
+                        <a href='https://linkedin.com/in/samson-okunola/' target='_blank' rel='noopener noreferrer' className={classes.icon}>
+                            <FiLinkedin />
+                        </a>
+                    </IconButton>
+                </ListItem>
+                <ListItem>
+                    <IconButton>
+                        <a href='https://twitter.com/pablo_clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
+                            <FiTwitter />
+                        </a>
+                    </IconButton>
+                </ListItem>
+            </List>
         </motion.section>
     )
 }

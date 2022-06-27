@@ -1,24 +1,42 @@
 import React from 'react'
+import { Card, Stack, Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 
-import '../styles/experience.css'
 import { WorkData } from '../../work-data'
 
+const useStyles = makeStyles({
+  root: {
+    textAlign: 'center',
+    color: 'var(--color-dark)',
+    padding: '0 1rem',
+    margin:'3rem 0 0 0'
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: '1rem 2rem',
+  }
+})
+
 const Experience = () => {
+  const classes = useStyles()
+
   return (
-    <section className='exp' id="experince">
-      <h1>Experience</h1>
+    <section className={classes.root} id="experince">
+      <Typography variant='h3' color='text.primary'>Experience</Typography>
 
-      <span>Below are some of the places where I&apos;ve plied the art of web development.</span>
+      <Typography variant='body1'>Below are some of the places where I&apos;ve plied the art of web development.</Typography>
 
-      <div className='grid_container'>
+      <Stack direction='column' alignItems='center' p={2}>
         {WorkData.map((item, i) => (
-          <div key={i} className='card'>
-            <h3>{item.company}</h3>
-            <p>{item.position}, {item.type}</p>
-            <i>{item.start} - {item.end}</i>
-          </div>
+          <Card key={i} className={classes.card}>
+            <Typography variant='h5' color='text.secondary'>{item.company}</Typography>
+            <Typography variant='body2' color='text.secondary'>{item.position}, {item.type}</Typography>
+            <Typography variant='caption' color='text.secondary'>{item.start} - {item.end}</Typography>
+          </Card>
         ))}
-      </div>
+      </Stack>
     </section>
   )
 }

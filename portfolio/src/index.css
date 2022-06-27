@@ -4,14 +4,14 @@
     font-family: 'Orelo SemiWide Heavy';
     src: url('/fonts/Orelo\ SemiWide\ Heavy.ttf') format('truetype');
 }
+
 :root {
   --font-bold: 'Orelo SemiWide Heavy';
   --font-body: 'Poppins', sans-serif;
-  --color-primary: #7D0BE7;
-  --color-secondary: #;
-  --color-light: #FCF0EC;
-  --color-dark: #000;
-  --color-body: #392A46;
+  --color-primary:#DED1C1;
+  --color-light: #FFFFFF;
+  --color-dark: #262626;
+  --color-gray: #f5f5f5;
   --transition: 0.5s all ease;
 }
 
@@ -30,25 +30,7 @@ html {
 }
 
 body {
-  background: var(--color-dark);
+  background: var(--color-gray);
   font-family: var(--font-body);
   overflow-x: hidden;
-}
-
-section {
-  padding: 0 1rem;
-}
-
-h1, h2, h3 {
-  font-family: var(--font-bold);
-  letter-spacing: 5px;
-}
-
-p {
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-
-a {
-  text-decoration: none;
 }

@@ -1,16 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
-import '../styles/footer.css'
+import { Stack, Typography } from '@mui/material'
 
 const Footer = () => {
     return (
-        <footer className='footer'>
-            <p>designed and built by Okunola Samson - <span>@pablo_clueless</span></p>
-            <motion.a href='#home' animate={{ color: "var(--color-dark)", scale: 1 }} whileHover={{color: "var(--color-light)", translateY: [-5, 0, -5], transition: {type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
+        <Stack direction={{ xs: 'column', sm: 'column', md: 'row' }} alignItems='center' justifyContent='space-between' p={2}>
+            <Typography variant='subtitle1'>Designed and built by Okunola Samson - <span>@pablo_clueless</span></Typography>
+            <motion.a href='#home' animate={{ color: "var(--color-primary)", scale: 1 }} whileHover={{color: "var(--color-dark)", translateY: [-5, 0, -5], transition: {type: "spring", stiffness: 100, duration: 0.5, repeat: Infinity}}}>
                 scroll to top &uarr;
             </motion.a>
-        </footer>
+        </Stack>
     )
 }
 
