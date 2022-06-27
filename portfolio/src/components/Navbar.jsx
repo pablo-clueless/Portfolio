@@ -47,9 +47,9 @@ const useStyles = makeStyles({
     }
 })
 
-const links = ['home', 'about', 'projects', 'skills']
+const links = ['about', 'projects', 'skills']
 
-const Navbar = () => {
+const Navbar = ({ handleToggle }) => {
     const classes = useStyles()
 
   return (
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </ListItem>
             </List>
 
-            <IconButton className={classes.button}>
+            <IconButton onClick={handleToggle} className={classes.button}>
                 <Icon icon='line-md:chevron-triple-left' />
             </IconButton>
         </Toolbar>

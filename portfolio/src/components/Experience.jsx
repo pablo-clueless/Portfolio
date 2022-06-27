@@ -6,6 +6,7 @@ import { WorkData } from '../../work-data'
 
 const useStyles = makeStyles({
   root: {
+    height: 400,
     textAlign: 'center',
     color: 'var(--color-dark)',
     padding: '0 1rem',
