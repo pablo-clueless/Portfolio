@@ -12,12 +12,17 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     '@media screen and (max-width: 900px)': {
       width: '100%',
+      height: 'fit-content',
+      gap: 10,
     }
   },
   card_image: {
     width: '50%',
     height: '100%',
     objectFit: 'contain',
+    '@media screen and (max-width: 900px)': {
+      width: '100%',
+    }
   },
   card_content: {
     width: '50%',
@@ -25,6 +30,10 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     gap: '1rem',
     textAlign: 'left',
+    '@media screen and (max-width: 900px)': {
+      width: '100%',
+      height: 'fit-content',
+    }
   },
   card_content_title: {
     background: 'var(--color-primary)',
@@ -38,7 +47,7 @@ const ItemCard = ({name, description, lang, repo, live, image_dt, icon}) => {
   const classes = useStyles()
 
   return (
-    <Stack direction='row' className={classes.card}>
+    <Stack direction={{xs: 'column', sm: 'column', md: 'row'}} className={classes.card}>
       <img src={image_dt} alt="project" className={classes.card_image} />
 
       <Stack className={classes.card_content}>

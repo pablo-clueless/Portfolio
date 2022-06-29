@@ -9,26 +9,26 @@ export const theme = createTheme({
             styleOverrides: {
                 contained: {
                     width: 100,
-                    backgroundColor: 'var(--color-primary)',
-                    color: 'var(--color-dark)',
+                    backgroundColor: 'var(--color-dark)',
+                    color: 'var(--color-light)',
                     borderRadius: 0,
                     transition: 'var(--transition)',
                     '&:hover': {
                         transform: 'translateY(-3px)',
-                        backgroundColor: 'var(--color-primary)',
+                        backgroundColor: 'var(--color-dark)',
                     }
                 },
                 outlined: {
                     width: 100,
                     backgroundColor: 'transparent',
                     color: 'var(--color-dark)',
-                    border: 'thin solid var(--color-dark)',
+                    border: 'thin solid var(--color-primary)',
                     borderRadius: 0,
                     transition: 'var(--transition)',
                     '&:hover': {
                         transform: 'translateY(-3px)',
                         backgroundColor: 'transparent',
-                        border: 'thin solid var(--color-dark)',
+                        border: 'thin solid var(--color-primary)',
                     }
                 }
             }
@@ -37,7 +37,7 @@ export const theme = createTheme({
     palette:{
         text: {
             primary: '#E35A44',
-            secondary: '#262626'
+            secondary: '#8A9B8C'
         }
     }
 })

@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     menu: {
         width: '50%',
         height: '100%',
-        background: 'var(--color-gray)',
+        background: 'var(--color-secondary)',
     }
 })
 

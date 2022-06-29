@@ -8,7 +8,7 @@ import logo from '/images/logo.png'
 const useStyles = makeStyles({
     nav: {
         width: '100%',
-        borderBottom: 'thin solid var(--color-gray)',
+        borderBottom: 'thin solid var(--color-secondary)',
         position: 'fixed',
         top: 0,
         left: 0,

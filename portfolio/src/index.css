@@ -3,9 +3,9 @@
 :root {
   --font-body: 'Barlow', sans-serif;
   --color-primary:#E35A44;
+  --color-secondary: #8A9B8C;
   --color-light: #FFFFFF;
   --color-dark: #262626;
-  --color-gray: #f5f5f5;
   --transition: 0.5s all ease;
 }
 
@@ -24,7 +24,11 @@ html {
 }
 
 body {
-  background: var(--color-gray);
+  background: #F5F5F5;
   font-family: var(--font-body);
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }

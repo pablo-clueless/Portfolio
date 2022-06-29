@@ -16,6 +16,8 @@ const useStyles = makeStyles({
     link: {
         margin: '3rem 0',
         textDecoration: 'none',
+        display: 'grid',
+        placeItems: 'center',
     },
     list: {
         display:'flex',
@@ -31,6 +33,7 @@ const useStyles = makeStyles({
         transition: 'var(--transition)',
         '&:hover': {
             color: 'var(--color-dark)',
+            transform: 'scale(1.2)',
         }
     }
 })
@@ -63,9 +66,9 @@ const Contact = () => {
         animate={{ opacity: showSection ? 1 : 0, transition: { duration: 3 }}}>
             <Typography variant='h3' color='text.primary'>Contact</Typography>
 
-            <Typography variant='body1' color='text.secondary'>Looking to hire? Have a project? </Typography>
+            <Typography variant='body1'>Looking to hire? Have a project? </Typography>
 
-            <Typography variant='body1' color='text.secondary'>I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.</Typography>
+            <Typography variant='body1'>I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.</Typography>
 
             <a href='mailto:smsnmicheal@gmail.com' className={classes.link}>
                 <Button variant='outlined' style={{width:200,gap:'1rem'}}>

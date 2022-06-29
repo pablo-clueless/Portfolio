@@ -1,15 +1,20 @@
 import React, { useEffect,useState } from 'react'
-import { Button, Stack, Typography } from '@mui/material'
+import { Avatar, Button, Stack, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 
-import image from '/images/pablo_clueless.png'
+import image from '/images/pablo.jpeg'
 
 const useStyles = makeStyles({
     root: {
         width:'100%',
         height: '100vh',
+        display: 'flex',
+        flexDirection: 'row',
         alignItems:'center',
         justifyContent: 'center',
+        '@media screen and (max-width: 900px)': {
+            flexDirection: 'column',
+        }
     },
     section: {
         width: '50%',
@@ -18,7 +23,7 @@ const useStyles = makeStyles({
         alignItems:'center',
         justifyContent: 'center',
         '@media screen and (max-width: 868px)': {
-            width: '100vw',
+            width: '100%',
         }
     },
     button: {
@@ -26,41 +31,25 @@ const useStyles = makeStyles({
     }
 })
 
-const Header = ({ data }) => {
+const Header = () => {
     const classes = useStyles()
 
     return (
         <Stack className={classes.root} id='home'>
             <Stack direction='column' className={classes.section} textAlign='center'>
-                <Typography variant='h3' m={2}>
-                    Hi! I'm <br />
-                    Okunola Samson
+                <Avatar src={image} sx={{ width: 200, height: 200 }} />
+                <Typography variant='h3' m={2} textTransform='uppercase'>
+                    Hi! I'm Samson.<br />
+                    A web developer based in lagos.
                 </Typography>
-                <Typography variant='body1' m={2}>
-                    Frontend Developer, Blockchain Enthusiast and Technical Writer.
+                <Typography variant='subtitle1' gutterBottom>
+                    web | mobile
                 </Typography>
-                <Button variant='contained' className={classes.button}>
-                    Hire Me
-                </Button>
-                <Stack direction='row' spacing={4} alignItems='center' style={{ width: 'auto', height: 'auto' }}>
-                    <Stack direction='column' m={2}>
-                        <Typography variant='h4'>
-                            {data.public_repos}
-                        </Typography>
-                        <Typography variant='caption'>
-                            Repos
-                        </Typography>
-                    </Stack>
-                    <Stack direction='column'>
-                        <Typography variant='h4'>
-                            {data.followers}
-                        </Typography>
-                        <Typography variant='caption'>
-                            Followers
-                        </Typography>
-                    </Stack>
-                </Stack>
-                <Stack></Stack>
+                <a href='#contact'>
+                    <Button variant='contained' className={classes.button}>
+                        Hire Me
+                    </Button>
+                </a>
             </Stack>
         </Stack>
     )
