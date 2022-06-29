@@ -11,6 +11,9 @@ const useStyles = makeStyles({
         justifyContent: 'space-between',
         padding: '1rem',
         border: '2px solid var(--color-dark)',
+        '@media screen and (max-width: 700px)': {
+            width: '100%',
+        }
     },
     block: {
         width: 30,

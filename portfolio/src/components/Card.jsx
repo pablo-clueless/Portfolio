@@ -28,8 +28,9 @@ const useStyles = makeStyles({
     width: '50%',
     display: 'flex',
     flexDirection: 'column',
-    gap: '1rem',
+    gap: '0.5rem',
     textAlign: 'left',
+    padding: '0 0.5rem',
     '@media screen and (max-width: 900px)': {
       width: '100%',
       height: 'fit-content',
