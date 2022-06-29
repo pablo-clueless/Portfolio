@@ -10,7 +10,7 @@ const useStyles = makeStyles({
         display: 'grid',
         placeItems: 'center',
         textAlign: 'center',
-        padding: '1rem 0',
+        padding: '0 3rem',
         gap: '1rem',
     },
     link: {
@@ -24,8 +24,14 @@ const useStyles = makeStyles({
         justifyContent: 'space-between',
     },
     icon: {
+        width: 35,
+        height: 35,
         color: 'var(--color-primary)',
         fontSize: '2rem',
+        transition: 'var(--transition)',
+        '&:hover': {
+            color: 'var(--color-dark)',
+        }
     }
 })
 

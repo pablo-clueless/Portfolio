@@ -30,7 +30,7 @@ const Header = ({ data }) => {
     const classes = useStyles()
 
     return (
-        <Stack direction={{ xs: 'column-reverse', sm: 'column-reverse', md: 'row' }} className={classes.root}>
+        <Stack className={classes.root} id='home'>
             <Stack direction='column' className={classes.section} textAlign='center'>
                 <Typography variant='h3' m={2}>
                     Hi! I'm <br />
@@ -61,8 +61,6 @@ const Header = ({ data }) => {
                     </Stack>
                 </Stack>
                 <Stack></Stack>
-            </Stack>
-            <Stack className={classes.section} style={{ backgroundColor: 'var(--color-primary)' }}>
             </Stack>
         </Stack>
     )

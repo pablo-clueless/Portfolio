@@ -1,33 +1,71 @@
 import React from 'react'
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
+
+const useStyles = makeStyles({
+  card: {
+    width: '60%',
+    height: 200,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    '@media screen and (max-width: 900px)': {
+      width: '100%',
+    }
+  },
+  card_image: {
+    width: '50%',
+    height: '100%',
+    objectFit: 'contain',
+  },
+  card_content: {
+    width: '50%',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+    textAlign: 'left',
+  },
+  card_content_title: {
+    background: 'var(--color-primary)',
+    width: 'fit-content',
+    fontWeight: 600,
+    padding: '0 0.5rem',
+  }
+})
 
 const ItemCard = ({name, description, lang, repo, live, image_dt, icon}) => {
+  const classes = useStyles()
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image={image_dt}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+    <Stack direction='row' className={classes.card}>
+      <img src={image_dt} alt="project" className={classes.card_image} />
+
+      <Stack className={classes.card_content}>
+        <Typography variant='h6' className={classes.card_content_title}>
           {name}
         </Typography>
-        {lang.map((lan) => (
-            <Typography key={lan} variant='caption' textTransform='uppercase' color='text.secondary'>
-                {lan}{' '}
-            </Typography>
-        ))}
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant='body2'>
+          {lang}
+        </Typography>
+        <Typography variant='caption'>
           {description}
         </Typography>
-      </CardContent>
-      <CardActions>
-        <Button variant='outlined' size="small">GITHUB</Button>
-        <Button variant='outlined' size="small">Live</Button>
-      </CardActions>
-    </Card>
+
+        <Stack direction='row' spacing={4}>
+          <a href={repo} target='_blank' rel='noreferrer'>
+            <Typography variant='caption'>
+              Github
+            </Typography>
+          </a>
+          <a href={live} target='_blank' rel='noreferrer'>
+            <Typography variant='caption'>
+              Live
+            </Typography>
+          </a>
+        </Stack>
+      </Stack>
+    </Stack>
   );
 }
 

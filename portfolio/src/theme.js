@@ -11,6 +11,7 @@ export const theme = createTheme({
                     width: 100,
                     backgroundColor: 'var(--color-primary)',
                     color: 'var(--color-dark)',
+                    borderRadius: 0,
                     transition: 'var(--transition)',
                     '&:hover': {
                         transform: 'translateY(-3px)',
@@ -22,6 +23,7 @@ export const theme = createTheme({
                     backgroundColor: 'transparent',
                     color: 'var(--color-dark)',
                     border: 'thin solid var(--color-dark)',
+                    borderRadius: 0,
                     transition: 'var(--transition)',
                     '&:hover': {
                         transform: 'translateY(-3px)',
@@ -34,7 +36,7 @@ export const theme = createTheme({
     },
     palette:{
         text: {
-            primary: '#DED1C1',
+            primary: '#E35A44',
             secondary: '#262626'
         }
     }

@@ -4,11 +4,10 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles({
     root: {
-        height: 400,
         textAlign: 'center',
         color: 'var(--color-dark)',
-        padding: '0 1rem',
-        margin:'3rem 0 0 0'
+        padding: '1rem 1.5rem',
+        margin:'3rem 0'
     }
 })
 

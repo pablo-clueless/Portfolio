@@ -8,8 +8,8 @@ const useStyles = makeStyles({
     root: {
         textAlign: 'center',
         color: 'var(--color-dark)',
-        padding: '0 1rem',
-        margin:'3rem 0 0 0'
+        padding: '1rem 1.5rem',
+        margin:'3rem 0'
     },
     container: {
         width: '100%',
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         alignItems: 'center',
         justifyContent: 'center',
         flexWrap: 'wrap',
-        gap: '2rem',
+        gap: '3rem',
         padding: '1rem 0',
         margin: '2rem 0 0',
     }
@@ -28,7 +28,9 @@ const Projects = () => {
 
     return (
        <Stack className={classes.root} id='projects'>
-           <Typography variant='h3' color='text.primary'>Notable Projects</Typography>
+           <Typography variant='h3' color='text.primary'>
+                Projects
+            </Typography>
 
            <Typography variant='body1' gutterBottom>
             I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.
