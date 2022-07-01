@@ -7,7 +7,6 @@ import image from '/images/pablo.jpeg'
 const useStyles = makeStyles({
     root: {
         width:'100%',
-        height: '100vh',
         display: 'flex',
         flexDirection: 'row',
         alignItems:'center',
@@ -19,9 +18,10 @@ const useStyles = makeStyles({
     section: {
         width: '50%',
         height: '100%',
-        padding: '0 1rem',
         alignItems:'center',
         justifyContent: 'center',
+        padding: '0 1rem',
+        margin: '6rem 0',
         '@media screen and (max-width: 868px)': {
             width: '100%',
         }
