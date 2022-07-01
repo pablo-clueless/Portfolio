@@ -25,14 +25,11 @@ const useStyles = makeStyles({
     }
 })
 
-const Card2 = ({index, company, position, type, start, end}) => {
+const Card2 = ({company, position, type, start, end}) => {
     const classes = useStyles()
 
   return (
     <div className={classes.root}>
-        <Typography className={classes.block}>
-            {index}
-        </Typography>
         <Stack direction='column'>
             <Typography variant='h5'>
                 {company}
