@@ -10,9 +10,10 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    '@media screen and (max-width: 900px)': {
+    '@media screen and (max-width: 730px)': {
       width: '100%',
       height: 'fit-content',
+      flexDirection: 'column',
       gap: 10,
     }
   },
@@ -20,7 +21,7 @@ const useStyles = makeStyles({
     width: '50%',
     height: '100%',
     objectFit: 'contain',
-    '@media screen and (max-width: 900px)': {
+    '@media screen and (max-width: 730px)': {
       width: '100%',
     }
   },
@@ -31,7 +32,7 @@ const useStyles = makeStyles({
     gap: '0.5rem',
     textAlign: 'left',
     padding: '0 0.5rem',
-    '@media screen and (max-width: 900px)': {
+    '@media screen and (max-width: 730px)': {
       width: '100%',
       height: 'fit-content',
     }
@@ -48,7 +49,7 @@ const ItemCard = ({name, description, lang, repo, live, image_dt, icon}) => {
   const classes = useStyles()
 
   return (
-    <Stack direction={{xs: 'column', sm: 'column', md: 'row'}} className={classes.card}>
+    <div className={classes.card}>
       <img src={image_dt} alt="project" className={classes.card_image} />
 
       <Stack className={classes.card_content}>
@@ -75,8 +76,8 @@ const ItemCard = ({name, description, lang, repo, live, image_dt, icon}) => {
           </a>
         </Stack>
       </Stack>
-    </Stack>
-  );
+    </div>
+  )
 }
 
 export default ItemCard
