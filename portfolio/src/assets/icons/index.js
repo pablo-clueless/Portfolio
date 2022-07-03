@@ -7,6 +7,7 @@ import { Sass } from './Sass'
 import { Solidity } from './Solidity'
 import { Styledcomponents } from './Styledcomponents'
 import { Threejs } from './Threedotjs'
+import { Twitter } from './Twitter'
 import { TypeScript } from './Typescript'
 
 export {
@@ -19,5 +20,6 @@ export {
     Solidity,
     Styledcomponents,
     Threejs,
+    Twitter,
     TypeScript
 }

@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Avatar, Button, Stack, Typography } from '@mui/material'
+import { Avatar, Button, List, ListItem, Stack, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 
 import image from '/images/pablo.jpeg'
@@ -28,6 +28,9 @@ const useStyles = makeStyles({
     },
     button: {
         margin: '2rem 0',
+    },
+    link: {
+        textDecoration: 'none',
     }
 })
 
@@ -42,10 +45,7 @@ const Header = () => {
                     Hi! I'm Samson.<br />
                     A web developer based in lagos.
                 </Typography>
-                <Typography variant='subtitle1' gutterBottom>
-                    web | mobile
-                </Typography>
-                <a href='#contact'>
+                <a href='mailto:smsnmicheal@gmail.com' className={classes.link}>
                     <Button variant='contained' className={classes.button}>
                         Hire Me
                     </Button>

@@ -6,7 +6,6 @@ import { FiCodepen, FiGithub, FiLinkedin, FiMail ,FiTwitter } from 'react-icons/
 
 const useStyles = makeStyles({
     root: {
-        height: 600,
         display: 'grid',
         placeItems: 'center',
         textAlign: 'center',
@@ -33,7 +32,7 @@ const useStyles = makeStyles({
         transition: 'var(--transition)',
         '&:hover': {
             color: 'var(--color-dark)',
-            transform: 'scale(1.2)',
+            transform: 'scale(1.1)',
         }
     }
 })
@@ -64,7 +63,7 @@ const Contact = () => {
         id="contact"
         initial={{ opacity: 0 }}
         animate={{ opacity: showSection ? 1 : 0, transition: { duration: 3 }}}>
-            <Typography variant='h3' color='text.primary'>Contact</Typography>
+            <Typography variant='h3' color='text.primary'>Get In Touch</Typography>
 
             <Typography variant='body1'>Looking to hire? Have a project? </Typography>
 

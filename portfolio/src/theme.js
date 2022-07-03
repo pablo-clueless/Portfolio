@@ -8,27 +8,33 @@ export const theme = createTheme({
         MuiButton: {
             styleOverrides: {
                 contained: {
-                    width: 100,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 5,
+                    width: 120,
                     backgroundColor: 'var(--color-dark)',
                     color: 'var(--color-light)',
-                    borderRadius: 0,
+                    borderRadius: '5px',
                     transition: 'var(--transition)',
                     '&:hover': {
-                        transform: 'translateY(-3px)',
                         backgroundColor: 'var(--color-dark)',
+                        color: 'var(--color-primary)'
                     }
                 },
                 outlined: {
-                    width: 100,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 5,
+                    width: 120,
                     backgroundColor: 'transparent',
                     color: 'var(--color-dark)',
                     border: 'thin solid var(--color-primary)',
-                    borderRadius: 0,
+                    borderRadius: '5px',
                     transition: 'var(--transition)',
                     '&:hover': {
-                        transform: 'translateY(-3px)',
-                        backgroundColor: 'transparent',
-                        border: 'thin solid var(--color-primary)',
+                        backgroundColor: 'var(--color-primary)',
+                        color: 'var(--color-light)',
+                        borderColor: 'transparent'
                     }
                 }
             }
