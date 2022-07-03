@@ -1,55 +1,50 @@
 export const data = [
+    // {
+    //     image_dt: '/projects/',
+    //     name: 'COMMUNITY PRO CHAT',
+    //     description: 'A team messaging app built for Community Pro. Utilizes the getstream chat functionalities.',
+    //     live: 'https://.vercel.app',
+    //     repo: 'https://github.com/pablo-clueless/chat-app'
+    // },
     {
         image_dt: '/projects/shortlet.png',
-        icon: 'fa6-solid:bed',
         name: 'SHORTLET',
         description: 'A shortlet booking website. Inspect properties, choose from a wide range of options that meet your needs and pocket.',
-        lang: ['reactjs', ' ', 'material-ui'],
         live: 'https://short-let.vercel.app',
         repo: 'https://github.com/pablo-clueless/shortlet'
     },
     {
         image_dt: '/projects/bank-dapp.png',
-        icon: 'fa6-brands:ethereum',
         name: 'BANK DAPP',
         description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
-        lang: ['reactjs',' ', 'ether.js',' ', 'material ui',' ', 'solidity'],
         live: 'https://hardhat-bank-dapp.vercel.app',
         repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
     },
     {
         image_dt: '/projects/weather-app.png',
-        icon: 'fluent:weather-cloudy-24-filled',
         name: 'WEATHER APP',
         description: 'Check accurate weather for any location. Data includes temperature, weather description, windspeed and others.',
-        lang: ['reactjs',' ', 'openweatherapi'],
         live: 'https://pablos-weather-app.vercel.app',
         repo: 'https://github.com/pablo-clueless/WeatherApp'
     },
     {
         image_dt: '/projects/insocial.png',
-        icon: 'bi:file-image-fill',
         name: 'INSOCIAL',
         description: 'inSocial is an image sharing paltform. Share, download and save images, and interact with other users.',
-        lang: ['reactjs',' ', 'tailwind',' ', 'sanity'],
         live: 'https://insocial.vercel.app',
         repo: 'https://github.com/pablo-clueless/insocial'
     },
     {
         image_dt: '/projects/aigis.png',
-        icon: 'ic:baseline-security',
         name: 'AIGIS',
         description: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
-        lang: ['reactjs',' ', 'nodejs',' ', 'identitypass api'],
         live: 'https://aigisorg.netlify.app',
         repo: 'https://github.com/aegis-org'
     },
     {
         image_dt: '/projects/e-comerce.png',
-        icon: 'fontisto:shopping-store',
         name: "PABLO'S STORE",
         description: "An e-commerce store built with chec-commerce and stripe.",
-        lang: ['reactjs',' ', 'material ui', ' ', 'commercejs'],
         live: 'https://e-commerce-store-bice.vercel.app/',
         repo: 'https://github.com/pablo-clueless/e-commerce-store'
     }

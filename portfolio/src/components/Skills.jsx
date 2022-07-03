@@ -22,7 +22,7 @@ const Skills = () => {
             </Typography>
             <Stack direction={{xs:'column',sm:'column',md:'row'}} spacing={2}>
                 <Stack px={2}>
-                    <Typography variant='h6'> 2 years, a ton of tutorials and online courses, here i am.</Typography>
+                    <Typography variant='h6'> 2 years+, a ton of tutorials and online courses, here I am.</Typography>
 
                     <Typography variant='body1'>
                         A passion of mine is translating logic and designs into code. Here are some the tools I use
