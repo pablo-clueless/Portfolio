@@ -1,11 +1,11 @@
 export const data = [
-    // {
-    //     image_dt: '/projects/',
-    //     name: 'COMMUNITY PRO CHAT',
-    //     description: 'A team messaging app built for Community Pro. Utilizes the getstream chat functionalities.',
-    //     live: 'https://.vercel.app',
-    //     repo: 'https://github.com/pablo-clueless/chat-app'
-    // },
+    {
+        image_dt: '/projects/community-pro.png',
+        name: 'COMMUNITY PRO CHAT',
+        description: 'A team messaging app built for Community Pro. Utilizes the getstream chat functionalities.',
+        live: 'https://community-pro-chat.vercel.app/',
+        repo: 'https://github.com/pablo-clueless/chat_app'
+    },
     {
         image_dt: '/projects/shortlet.png',
         name: 'SHORTLET',
