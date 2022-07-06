@@ -14,6 +14,7 @@ specifiers:
   framer-motion: ^6.3.11
   react: ^18.0.0
   react-dom: ^18.2.0
+  react-helmet: ^6.1.0
   react-icons: ^4.4.0
   react-redux: ^8.0.2
   react-simple-badges: ^3.0.1-beta.4
@@ -32,6 +33,7 @@ dependencies:
   framer-motion: 6.3.15_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-helmet: 6.1.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
   react-redux: 8.0.2_jcbkrypqxz3emsprsw5dchskju
   react-simple-badges: 3.0.1-beta.4_react@18.2.0
@@ -1581,6 +1583,22 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-fast-compare/3.2.0:
+    resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
+    dev: false
+
+  /react-helmet/6.1.0_react@18.2.0:
+    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==}
+    peerDependencies:
+      react: '>=16.3.0'
+    dependencies:
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-fast-compare: 3.2.0
+      react-side-effect: 2.1.2_react@18.2.0
+    dev: false
+
   /react-icons/4.4.0_react@18.2.0:
     resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
     peerDependencies:
@@ -1639,6 +1657,14 @@ packages:
     resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react-side-effect/2.1.2_react@18.2.0:
+    resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-simple-badges/3.0.1-beta.4_react@18.2.0:
     resolution: {integrity: sha512-DMjXn5reK3WuwE8Sy8QMsv1sdl/iu92QahCl74AY995qSu/gWxn9Zc0dsHdfvItThfFn77VvzCw6XzWYOduirg==}
