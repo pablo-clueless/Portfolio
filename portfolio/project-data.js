@@ -47,5 +47,12 @@ export const data = [
         description: "An e-commerce store built with chec-commerce and stripe.",
         live: 'https://e-commerce-store-bice.vercel.app/',
         repo: 'https://github.com/pablo-clueless/e-commerce-store'
+    },
+    {
+        image_dt: '/projects/react-admin.png',
+        name: "ADMIN DASHBOARD",
+        description: "Admin dashboard with employee & customers details, calendar, kanban, charts and theming.",
+        live: 'https://1203-dashboard.vercel.app/',
+        repo: 'https://github.com/pablo-clueless/react_admin_dashboard'
     }
 ]
