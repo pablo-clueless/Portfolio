@@ -1,29 +1,21 @@
 import React from 'react'
-import { ThemeProvider } from '@mui/material'
-import { makeStyles } from '@mui/styles'
 import { Helmet } from 'react-helmet'
 
 import { About, Contact, Experience, Footer, Header, Navbar, Projects, Sidebar, Skills } from './components'
-import { theme } from './theme'
-
-const useStyles = makeStyles({
-  root: {
-    marginTop: '5rem',
-  }
-})
+import { useStateContext } from './contexts/ContextProvider'
 
 const App = () => {
-  const classes = useStyles()
+  const { currentMode, isOpen } = useStateContext()
 
   return (
-    <ThemeProvider theme={theme}>
+    <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <Helmet>
       {/* Primary Meta Tags */}
         <title>Samson Okunola</title>
         <meta name="title" content="Samson Okunola" />
         <meta name="description" content="Samson Okunola is a frontend developer who loves minimalist designs, and 3D animations, and is a Web3 enthusiast." />
 
-       {/* Open Graph / Facebook */}
+      {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.okunolasamson.dev/" />
         <meta property="og:title" content="Samson Okunola" />
@@ -40,7 +32,8 @@ const App = () => {
         <title>Samson Okunola</title>
       </Helmet>
       <Navbar />
-      <div className={classes.root}>
+      <div className='w-screen mt-20'>
+        {isOpen && <Sidebar />}
         <Header />
         <About />
         <Skills />
@@ -49,7 +42,7 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-    </ThemeProvider>
+    </div>
   )
 }
 

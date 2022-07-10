@@ -1,44 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-import { Button, IconButton, List, ListItem, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
 import { FiCodepen, FiGithub, FiLinkedin, FiMail ,FiTwitter } from 'react-icons/fi'
 
-const useStyles = makeStyles({
-    root: {
-        display: 'grid',
-        placeItems: 'center',
-        textAlign: 'center',
-        padding: '0 3rem',
-        gap: '1rem',
-    },
-    link: {
-        margin: '3rem 0',
-        textDecoration: 'none',
-        display: 'grid',
-        placeItems: 'center',
-    },
-    list: {
-        display:'flex',
-        direction: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    icon: {
-        width: 35,
-        height: 35,
-        color: 'var(--color-primary)',
-        fontSize: '2rem',
-        transition: 'var(--transition)',
-        '&:hover': {
-            color: 'var(--color-dark)',
-            transform: 'scale(1.1)',
-        }
-    }
-})
+import { Button, IconButton } from '.'
 
 const Contact = () => {
-    const classes = useStyles()
     const [showSection, setShowSection] = useState(false)
     const [lastYPosition, setLastYPosition] = useState(0)
 
@@ -58,54 +23,35 @@ const Contact = () => {
     }, [lastYPosition])
 
     return (
-        <motion.section 
-        className={classes.root}
-        id="contact"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: showSection ? 1 : 0, transition: { duration: 3 }}}>
-            <Typography variant='h3' color='text.primary'>Get In Touch</Typography>
+        <div className='flex flex-col items-center text-center bg-main-bg dark:bg-main-dark-bg px-6 py-10' id="contact">
+            <p className='text-6xl font-medium text-primary mb-10'>
+                Get In Touch
+            </p>
 
-            <Typography variant='body1'>Looking to hire? Have a project? </Typography>
+            <p className='text-3xl text-gray-600 dark:text-white my-4'>
+                Looking to hire? Have a project?
+            </p>
 
-            <Typography variant='body1'>I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.</Typography>
+            <p className='text-xl text-gray-600 dark:text-white my-4'>
+                I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.
+            </p>
 
-            <a href='mailto:smsnmicheal@gmail.com' className={classes.link}>
-                <Button variant='outlined' style={{width:200,gap:'1rem'}}>
-                    <FiMail /> get in touch
-                </Button>
-            </a>
-
-            <List className={classes.list}>
-                <ListItem>
-                    <IconButton>
-                        <a href='https://codepen.io/pablo-clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
-                            <FiCodepen />
-                        </a>
-                    </IconButton>
-                </ListItem>
-                <ListItem>
-                    <IconButton>
-                        <a href='https://github.com/pablo-clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
-                            <FiGithub />
-                        </a>
-                    </IconButton>
-                </ListItem>
-                <ListItem>
-                    <IconButton>
-                        <a href='https://linkedin.com/in/samson-okunola/' target='_blank' rel='noopener noreferrer' className={classes.icon}>
-                            <FiLinkedin />
-                        </a>
-                    </IconButton>
-                </ListItem>
-                <ListItem>
-                    <IconButton>
-                        <a href='https://twitter.com/pablo_clueless' target='_blank' rel='noopener noreferrer' className={classes.icon}>
-                            <FiTwitter />
-                        </a>
-                    </IconButton>
-                </ListItem>
-            </List>
-        </motion.section>
+            <Button to='mailto:smsnmicheal@gamil' text='GET IN TOUCH' icon={<FiMail />} mt={64} mb={64} />
+            <ul className='flex items-center justify-between'>
+                <li className='mx-4'>
+                    <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} large />
+                </li>
+                <li className='mx-4'>
+                    <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} large />
+                </li>
+                <li className='mx-4'>
+                    <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} large />
+                </li>
+                <li className='mx-4'>
+                    <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} large />
+                </li>
+            </ul>
+        </div>
     )
 }
 

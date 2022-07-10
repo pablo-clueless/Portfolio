@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
 
-:root {
-  --font-body: 'Barlow', sans-serif;
-  --color-primary:#E35A44;
-  --color-secondary: #8A9B8C;
-  --color-light: #FFFFFF;
-  --color-dark: #262626;
-  --transition: 0.5s all ease;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -19,16 +10,26 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background: #F5F5F5;
-  font-family: var(--font-body);
-  overflow-x: hidden;
+  font-family: 'Barlow', sans-serif;
 }
 
-a {
-  color: var(--color-light);
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.bounce:hover {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

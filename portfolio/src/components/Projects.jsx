@@ -1,47 +1,26 @@
-import { Stack, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
+import React from 'react'
 
-import ItemCard from './Card'
-import { data } from '../../project-data'
-
-const useStyles = makeStyles({
-    root: {
-        textAlign: 'center',
-        color: 'var(--color-dark)',
-        padding: '1rem 1.5rem',
-        margin:'3rem 0'
-    },
-    container: {
-        width: '100%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        gap: '3rem',
-        padding: '1rem 0',
-        margin: '2rem 0 0',
-    }
-})
+import Card from './Card'
+import { data } from '../assets/data/project-data'
 
 const Projects = () => {
-    const classes = useStyles()
 
     return (
-       <Stack className={classes.root} id='projects'>
-           <Typography variant='h3' color='text.primary'>
+        <div className='flex flex-col items-center text-center bg-main-bg dark:bg-main-dark-bg px-6 py-10' id="about">
+            <p className='text-6xl font-medium text-primary mb-10'>
                 Projects
-            </Typography>
+            </p>
 
-           <Typography variant='body1' gutterBottom>
+           <p className='text-2xl text-gray-600 dark:text-white'>
             I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.
-            </Typography>
+            </p>
 
-           <div className={classes.container}>
+           <div className='flex flex-wrap items-center justify-center gap-8 mt-12'>
                 {data.map((item) => (
-                    <ItemCard key={item.name} {...item} />
+                    <Card key={item.name} {...item} />
                 ))}
             </div>
-       </Stack>
+       </div>
     )
 }
 

@@ -13,20 +13,20 @@ export const data = [
         live: 'https://short-let.vercel.app',
         repo: 'https://github.com/pablo-clueless/shortlet'
     },
-    {
-        image_dt: '/projects/bank-dapp.png',
-        name: 'BANK DAPP',
-        description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
-        live: 'https://hardhat-bank-dapp.vercel.app',
-        repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
-    },
-    {
-        image_dt: '/projects/weather-app.png',
-        name: 'WEATHER APP',
-        description: 'Check accurate weather for any location. Data includes temperature, weather description, windspeed and others.',
-        live: 'https://pablos-weather-app.vercel.app',
-        repo: 'https://github.com/pablo-clueless/WeatherApp'
-    },
+    // {
+    //     image_dt: '/projects/bank-dapp.png',
+    //     name: 'BANK DAPP',
+    //     description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
+    //     live: 'https://hardhat-bank-dapp.vercel.app',
+    //     repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
+    // },
+    // {
+    //     image_dt: '/projects/weather-app.png',
+    //     name: 'WEATHER APP',
+    //     description: 'Check accurate weather for any location. Data includes temperature, weather description, windspeed and others.',
+    //     live: 'https://pablos-weather-app.vercel.app',
+    //     repo: 'https://github.com/pablo-clueless/WeatherApp'
+    // },
     {
         image_dt: '/projects/insocial.png',
         name: 'INSOCIAL',

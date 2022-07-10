@@ -1,71 +1,30 @@
 import React from 'react'
-import { Stack, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
 
-const useStyles = makeStyles({
-  card: {
-    width: 400,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    background: 'var(--color-primary)',
-    transition: 'var(--transition)',
-    '&:hover': {
-      transform: 'translateY(-5px)',
-    }
-  },
-  card_image: {
-    width: '100%',
-    height: 300,
-  },
-  card_content: {
-    width: '100%',
-    height: 120,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.5rem',
-    textAlign: 'left',
-    padding: '0 0.5rem',
-    margin: '0.5rem 0',
-  },
-  card_content_title: {
-    width: 'fit-content',
-    fontWeight: 600,
-    padding: '0 0.5rem',
-  }
-})
-
-const ItemCard = ({name, description, repo, live, image_dt}) => {
-  const classes = useStyles()
+const Card = ({name, description, repo, live, image_dt}) => {
 
   return (
-    <div className={classes.card}>
-      <img src={image_dt} alt="project" className={classes.card_image} />
+    <div className='flex flex-col w-300 rounded-md text-left px-1 bg-gray-300 dark:bg-black hover:scale-105 duration-500 cursor-pointer'>
+      <p className='text-base font-medium text-primary py-1'>
+        {name}
+      </p>
+      <img src={image_dt} alt="project" className='w-200 h-200' />
 
-      <Stack className={classes.card_content}>
-        <Typography variant='h6' className={classes.card_content_title}>
-          {name}
-        </Typography>
-        <Typography variant='caption'>
+      <div className='flex flex-col w-full h-120 gap-2 py-2 px-1'>
+        <p className='text-sm text-gray-600 dark:text-white'>
           {description}
-        </Typography>
+        </p>
 
-        <Stack direction='row' spacing={4}>
-          <a href={repo} target='_blank' rel='noreferrer'>
-            <Typography variant='caption'>
-              Github
-            </Typography>
+        <div className='flex items-center gap-4'>
+          <a href={repo} target='_blank' rel='noreferrer' className='text-sm text-primary hover:text-gray-700 dark:hover:text-white'>
+            Github
           </a>
-          <a href={live} target='_blank' rel='noreferrer'>
-            <Typography variant='caption'>
-              Live
-            </Typography>
+          <a href={live} target='_blank' rel='noreferrer' className='text-sm text-primary hover:text-gray-700 dark:hover:text-white'>
+            Live
           </a>
-        </Stack>
-      </Stack>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default ItemCard
+export default Card
