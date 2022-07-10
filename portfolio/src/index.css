@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +18,18 @@ body {
   width: 0;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.bounce:hover {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

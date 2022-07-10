@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { WorkData } from '../../work-data'
+import { WorkData } from '../assets/data/work-data'
 import Card2 from './Card2'
 
 const Experience = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Card from './Card'
-import { data } from '../../project-data'
+import { data } from '../assets/data/project-data'
 
 const Projects = () => {
 
@@ -15,7 +15,7 @@ const Projects = () => {
             I like to build as learn and improve on whatever I do. Take a peek into my codes and creations.
             </p>
 
-           <div className='flex flex-wrap gap-12'>
+           <div className='flex flex-wrap items-center justify-center gap-8 mt-12'>
                 {data.map((item) => (
                     <Card key={item.name} {...item} />
                 ))}

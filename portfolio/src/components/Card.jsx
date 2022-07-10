@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({name, description, repo, live, image_dt}) => {
 
   return (
-    <div className='flex flex-col w-300 rounded-md text-left px-1 bg-gray-300 dark:bg-black'>
+    <div className='flex flex-col w-300 rounded-md text-left px-1 bg-gray-300 dark:bg-black hover:scale-105 duration-500 cursor-pointer'>
       <p className='text-base font-medium text-primary py-1'>
         {name}
       </p>

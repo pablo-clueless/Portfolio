@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 
 const Footer = () => {
     return (
@@ -7,9 +6,9 @@ const Footer = () => {
             <p className='text-base text-gray-600 dark:text-white'>
                 Designed and built by Okunola Samson - <span className='text-primary'>@pablo_clueless</span>
             </p>
-            <motion.a href='#home' animate={{scale: 1}} whileHover={{color:"#E35A44",translateY:[-5, 0, -5], transition:{type: "spring",stiffness:100,duration:0.5,repeat:Infinity}}}>
+            <a href='#home' className='text-gray-600 dark:text-white duration-500 bounce'>
                 scroll to top &uarr;
-            </motion.a>
+            </a>
         </div>
     )
 }

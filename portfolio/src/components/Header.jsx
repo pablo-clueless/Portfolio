@@ -2,7 +2,7 @@ import React from 'react'
 import { FiMail } from 'react-icons/fi'
 
 import image from '/images/pablo.jpeg'
-import { Button } from './'
+import { Button } from '.'
 
 const Header = () => {
 
