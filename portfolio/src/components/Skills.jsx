@@ -1,7 +1,9 @@
 
 import { JavaScript, Nextjs, Nodejs, React, Redux, Sass, Solidity, Styledcomponents, Threejs, TypeScript } from '../assets/icons'
+import { useStateContext } from '../contexts/ContextProvider'
 
 const Skills = () => {
+    const { currentMode } = useStateContext()
 
     return (
         <div className='flex flex-col items-center text-center bg-main-bg dark:bg-main-dark-bg px-6 py-10' id="about">
@@ -19,16 +21,16 @@ const Skills = () => {
                     </p>
                 </div>
                 <div className='md:w-1/2 text-left w-full my-4 flex flex-wrap gap-8'>
-                    <JavaScript />
-                    <Nextjs />
-                    <Nodejs />
-                    <React />
-                    <Redux />
-                    <Sass />
-                    <Solidity />
-                    <Styledcomponents />
-                    <Threejs />
-                    <TypeScript />
+                    <JavaScript fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Nextjs fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Nodejs fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <React fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Redux fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Sass fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Solidity fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Styledcomponents fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <Threejs fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
+                    <TypeScript fill={currentMode === 'Light' ? '#E35A44' : 'white'} />
                 </div>
             </div>
         </div>
