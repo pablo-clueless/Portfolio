@@ -1,34 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
 
-:root {
-  --font-body: 'Barlow', sans-serif;
-  --color-primary:#E35A44;
-  --color-secondary: #8A9B8C;
-  --color-light: #FFFFFF;
-  --color-dark: #262626;
-  --transition: 0.5s all ease;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background: #F5F5F5;
-  font-family: var(--font-body);
-  overflow-x: hidden;
+  font-family: 'Barlow', sans-serif;
 }
 
-a {
-  color: var(--color-light);
+::-webkit-scrollbar {
+  width: 6px;
 }
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
