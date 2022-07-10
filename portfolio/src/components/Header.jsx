@@ -1,57 +1,21 @@
-import React, { useEffect,useState } from 'react'
-import { Avatar, Button, List, ListItem, Stack, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
+import React from 'react'
+import { FiMail } from 'react-icons/fi'
 
 import image from '/images/pablo.jpeg'
-
-const useStyles = makeStyles({
-    root: {
-        width:'100%',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems:'center',
-        justifyContent: 'center',
-        '@media screen and (max-width: 900px)': {
-            flexDirection: 'column',
-        }
-    },
-    section: {
-        width: '50%',
-        height: '100%',
-        alignItems:'center',
-        justifyContent: 'center',
-        padding: '0 1rem',
-        margin: '6rem 0',
-        '@media screen and (max-width: 868px)': {
-            width: '100%',
-        }
-    },
-    button: {
-        margin: '2rem 0',
-    },
-    link: {
-        textDecoration: 'none',
-    }
-})
+import { Button } from './'
 
 const Header = () => {
-    const classes = useStyles()
 
     return (
-        <Stack className={classes.root} id='home'>
-            <Stack direction='column' className={classes.section} textAlign='center'>
-                <Avatar src={image} sx={{ width: 200, height: 200 }} />
-                <Typography variant='h3' m={2} textTransform='uppercase'>
-                    Hi! I'm Samson.<br />
-                    A web developer based in lagos.
-                </Typography>
-                <a href='mailto:smsnmicheal@gmail.com' className={classes.link}>
-                    <Button variant='contained' className={classes.button}>
-                        Hire Me
-                    </Button>
-                </a>
-            </Stack>
-        </Stack>
+        <div className='w-full h-screen bg-main-bg dark:bg-main-dark-bg flex flex-col items-center justify-center' id='home'>
+            <img src={image} alt='Samson Okunla' className='w-44 h-44 rounded-full object-cover'/>
+
+            <p className='text-6xl font-medium text-center text-gray-600 dark:text-white uppercase px-4'>
+                Hi! I'm Samson.<br />
+                A web developer based in lagos.
+            </p>
+            <Button to='mailto:smsnmicheal@gmail.com' text='Hire Me' mt={32} icon={<FiMail />} />
+        </div>
     )
 }
 

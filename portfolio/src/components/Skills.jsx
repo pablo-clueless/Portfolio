@@ -1,67 +1,37 @@
-import { Grid, Stack, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
 
 import { JavaScript, Nextjs, Nodejs, React, Redux, Sass, Solidity, Styledcomponents, Threejs, TypeScript } from '../assets/icons'
 
-const useStyles = makeStyles({
-    root: {
-        textAlign: 'center',
-        color: 'var(--color-dark)',
-        padding: '1rem 1.5rem',
-        margin:'3rem 0'
-    },
-})
-
 const Skills = () => {
-    const classes = useStyles()
 
     return (
-        <Stack className={classes.root} id="skills">
-            <Typography variant='h3' color='text.primary'>
+        <div className='flex flex-col items-center text-center bg-main-bg dark:bg-main-dark-bg px-6 py-10' id="about">
+            <p className='text-6xl font-medium text-primary mb-10'>
                 Skills
-            </Typography>
-            <Stack direction={{xs:'column',sm:'column',md:'row'}} spacing={2}>
-                <Stack px={2}>
-                    <Typography variant='h6'> 2 years+, a ton of tutorials and online courses, here I am.</Typography>
+            </p>
+            <div className='flex md:flex-row flex-col gap-4'>
+                <div className='md:w-1/2 text-left w-full my-4'>
+                    <p className='text-2xl text-gray-600 dark:text-white mb-2'>
+                        2 years+, a ton of tutorials and online courses, here I am.
+                    </p>
 
-                    <Typography variant='body1'>
+                    <p className='text-xl text-gray-600 dark:text-white'>
                         A passion of mine is translating logic and designs into code. Here are some the tools I use
-                    </Typography>
-                </Stack>
-                <Grid container spacing={2}>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <JavaScript />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Nextjs />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Nodejs />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <React />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Redux />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Sass />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Solidity />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Styledcomponents />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Threejs />
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <TypeScript />
-                    </Grid>
-                </Grid>
-            </Stack>
-        </Stack>
+                    </p>
+                </div>
+                <div className='md:w-1/2 text-left w-full my-4 flex flex-wrap gap-8'>
+                    <JavaScript />
+                    <Nextjs />
+                    <Nodejs />
+                    <React />
+                    <Redux />
+                    <Sass />
+                    <Solidity />
+                    <Styledcomponents />
+                    <Threejs />
+                    <TypeScript />
+                </div>
+            </div>
+        </div>
     )
 }
 

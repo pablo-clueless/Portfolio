@@ -1,53 +1,27 @@
 import React from 'react'
-import { Stack, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
-
-const useStyles = makeStyles({
-    root: {
-        width: '60%',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1rem',
-        border: '2px solid var(--color-dark)',
-        '@media screen and (max-width: 700px)': {
-            width: '100%',
-        }
-    },
-    block: {
-        width: 30,
-        height: 30,
-        display: 'grid',
-        placeItems: 'center',
-        background: 'var(--color-dark)',
-        color: 'var(--color-light)',
-    }
-})
 
 const Card2 = ({company, position, type, start, end}) => {
-    const classes = useStyles()
 
   return (
-    <div className={classes.root}>
-        <Stack direction='column'>
-            <Typography variant='h5'>
+    <div className='flex items-center gap-4 border-1 border-color dark:border-white p-4'>
+        <div className=''>
+            <p className='text-3xl text-gray-600 dark:text-white'>
                 {company}
-            </Typography>
-            <Stack direction='row'>
-                <Typography variant='caption'>
+            </p>
+            <div className='flex items-center'>
+                <p className='text-base text-gray-600 dark:text-white'>
                     {start} - {end}
-                </Typography>
-            </Stack>
-        </Stack>
-        <Stack direction='column'>
-            <Typography variant='body2'>
+                </p>
+            </div>
+        </div>
+        <div className='flex flex-col gap-1'>
+            <p className='text-base text-gray-600 dark:text-white'>
                 {position}
-            </Typography>
-            <Typography variant='caption'>
+            </p>
+            <p className='text-sm text-gray-600 dark:text-white'>
                 {type}
-            </Typography>
-        </Stack>
+            </p>
+        </div>
     </div>
   )
 }

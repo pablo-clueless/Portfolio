@@ -7,8 +7,8 @@ module.exports = {
       body: ['Barlow', 'sans-serif'],
     },
     extend: {
-      color: {
-        main: '#E35A44',
+      textColor: {
+        primary: '#E35A44',
         secondary:  '#8A9B8C',
         light:  '#FFFFFF',
         dark:  '#262626',
@@ -27,16 +27,16 @@ module.exports = {
         color: 'rgba(0, 0, 0, 0.2)',
       },
       width: {
+        300: '300px',
         400: '400px',
         760: '760px',
-        780: '780px',
-        800: '800px',
-        1000: '1000px',
-        1200: '1200px',
-        1400: '1400px',
       },
       height: {
-        80: '80px',
+        100: '100px',
+        120: '120px',
+        150: '150px',
+        200: '200px',
+        400: '400px',
       },
       minHeight: {
         590: '590px',

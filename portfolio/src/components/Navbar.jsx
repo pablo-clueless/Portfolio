@@ -2,17 +2,17 @@ import React from 'react'
 import { FiMoon, FiSun, FiTwitter } from 'react-icons/fi'
 
 import logo from '/images/logo.png'
-import { Button, IconButton } from '../components'
+import { Button, IconButton } from './'
 import { useStateContext } from '../contexts/ContextProvider'
 
 const Navbar = () => {
     const { currentMode, setMode } = useStateContext()
 
   return (
-    <nav className='w-full flex items-center justify-between fixed top-0 left-0 bg-main-bg dark:bg-main-dark-bg z-10 border-b-1 border-color p-4'>
+    <nav className='w-full flex items-center justify-between fixed top-0 left-0 bg-main-bg dark:bg-main-dark-bg z-10 border-b-1 border-color dark:border-white p-4'>
             <img src={logo} alt="logo" className='w-12 h-12' />
 
-            <ul className='flex items-center gap-4'>
+            <ul className='md:flex items-center gap-4 hidden'>
                 <li>
                     <a href="#projects" className='text-base text-gray-600 dark:text-white'>
                         Projects
