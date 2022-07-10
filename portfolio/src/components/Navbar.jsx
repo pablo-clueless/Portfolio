@@ -14,17 +14,17 @@ const Navbar = () => {
 
             <ul className='md:flex items-center gap-4 hidden'>
                 <li>
-                    <a href="#projects" className='text-base text-gray-600 dark:text-white'>
+                    <a href="#projects" className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" className='text-base text-gray-600 dark:text-white'>
+                    <a href="#contact" className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
                         Contact
                     </a>
                 </li>
                 <li>
-                    <a href="https://frontendpablo.hashnode.dev" target='_blank' rel='noreferrer' className='text-base text-gray-600 dark:text-white'>
+                    <a href="https://frontendpablo.hashnode.dev" target='_blank' rel='noreferrer' className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
                         Blog
                     </a>
                 </li>
