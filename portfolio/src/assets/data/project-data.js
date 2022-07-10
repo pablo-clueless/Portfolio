@@ -13,13 +13,13 @@ export const data = [
         live: 'https://short-let.vercel.app',
         repo: 'https://github.com/pablo-clueless/shortlet'
     },
-    // {
-    //     image_dt: '/projects/bank-dapp.png',
-    //     name: 'BANK DAPP',
-    //     description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
-    //     live: 'https://hardhat-bank-dapp.vercel.app',
-    //     repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
-    // },
+    {
+        image_dt: '/projects/bank-dapp.png',
+        name: 'BANK DAPP',
+        description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
+        live: 'https://hardhat-bank-dapp.vercel.app',
+        repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
+    },
     // {
     //     image_dt: '/projects/weather-app.png',
     //     name: 'WEATHER APP',
@@ -34,13 +34,13 @@ export const data = [
         live: 'https://insocial.vercel.app',
         repo: 'https://github.com/pablo-clueless/insocial'
     },
-    {
-        image_dt: '/projects/aigis.png',
-        name: 'AIGIS',
-        description: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
-        live: 'https://aigisorg.netlify.app',
-        repo: 'https://github.com/aegis-org'
-    },
+    // {
+    //     image_dt: '/projects/aigis.png',
+    //     name: 'AIGIS',
+    //     description: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
+    //     live: 'https://aigisorg.netlify.app',
+    //     repo: 'https://github.com/aegis-org'
+    // },
     {
         image_dt: '/projects/e-comerce.png',
         name: "PABLO'S STORE",
