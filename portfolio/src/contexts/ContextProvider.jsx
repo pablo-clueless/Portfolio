@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
+import { setWithKey } from '../utils/local-storage'
 
 const StateContext = createContext()
 
@@ -10,14 +11,12 @@ export const StateProvider = ({ children }) => {
 
     const setMode = (mode) => {
         setCurrentMode(mode)
-
-        localStorage.setItem('themeMode', mode)
+        setWithKey('themeMode', mode)
     }
     
     const setColor = (color) => {
         setCurrentColor(color)
-
-        localStorage.setItem('colorMode', color)
+        setWithKey('colorMode', color)
     }
 
     const toggleSidebar = () => {

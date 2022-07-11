@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { About, Contact, Experience, Footer, Header, Navbar, Projects, Sidebar, Skills } from './components'
 import { useStateContext } from './contexts/ContextProvider'
+import { getWithKey } from './utils/local-storage'
 
 const App = () => {
-  const { currentMode, isOpen } = useStateContext()
+  const { currentMode, isOpen, setMode } = useStateContext()
+
+  useEffect(() => {
+    const themeMode = getWithKey('themeMode')
+    setMode(themeMode)
+  })
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
