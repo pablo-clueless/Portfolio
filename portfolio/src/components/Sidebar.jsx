@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   return (
     <div className='w-screen h-screen fixed top-0 left-0 bg-half-transparent z-20'>
-        <div className='flex flex-col justify-center items-center h-full w-300 bg-main-bg dark:bg-main-dark-bg float-right px-2 duration-500 sidebar'>
+        <div className='flex flex-col justify-center items-center h-full w-300 bg-main-bg dark:bg-main-dark-bg float-right px-2 duration-500'>
             <div className='flex items-center justify-between w-full border-b-1 border-color dark:border-white py-2'>
                 <Button text='Resume' />
                 <button className='rounded-full grid place-items-center p-2 hover:bg-gray-200 dark:hover:bg-gray-500 text-gray-600 dark:text-white hover:text-primary dark:hover:text-primary hover:drop-shadow-xl' onClick={toggleSidebar}>
