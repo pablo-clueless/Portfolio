@@ -1,14 +1,18 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { FiCodepen, FiGithub, FiLinkedin, FiMail ,FiTwitter } from 'react-icons/fi'
 
 import { Button, IconButton } from '.'
 
+const container = {hidden: {opacity: 0 },show: {opacity: 1,transition: {staggerChildren: 0.75,},},}
+const item = {hidden: {opacity: 0},show: {opacity: 1}}
+
 const Contact = () => {
 
     return (
-        <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="contact">
+        <motion.div className='flex flex-col items-center text-center bg-black px-6 py-10' id="contact">
             <div className='mb-12 text-left'>
-                <p className='text-6xl font-black font-heading text-primary'>
+                <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
                     GET IN TOUCH
                 </p>
             </div>
@@ -22,21 +26,21 @@ const Contact = () => {
             </p>
 
             <Button to='mailto:smsnmicheal@gamil' text='GET IN TOUCH' icon={<FiMail />} mt={64} mb={64} />
-            <ul className='flex items-center justify-between'>
-                <li className='md:mx-4 mx-1'>
+            <motion.ul variants={container} initial='hidden' whileInView='show' className='flex items-center justify-between'>
+                <motion.li variants={item} className='md:mx-4 mx-1'>
                     <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} large />
-                </li>
-                <li className='md:mx-4 mx-1'>
+                </motion.li>
+                <motion.li variants={item} className='md:mx-4 mx-1'>
                     <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} large />
-                </li>
-                <li className='md:mx-4 mx-1'>
+                </motion.li>
+                <motion.li variants={item} className='md:mx-4 mx-1'>
                     <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} large />
-                </li>
-                <li className='md:mx-4 mx-1'>
+                </motion.li>
+                <motion.li variants={item} className='md:mx-4 mx-1'>
                     <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} large />
-                </li>
-            </ul>
-        </div>
+                </motion.li>
+            </motion.ul>
+        </motion.div>
     )
 }
 
