@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FiExternalLink, FiGithub } from 'react-icons/fi'
 
 const Card = ({name, description, repo, live, image_dt}) => {
+  const [hovered, setHovered] = useState(false)
 
   return (
-    <div className='flex flex-col w-300 rounded-md text-left px-1 bg-gray-300 dark:bg-black'>
-      <p className='text-base font-medium text-primary py-1'>
-        {name}
-      </p>
-      <img src={image_dt} alt="project" className='w-200 h-200' />
-
-      <div className='flex flex-col w-full h-120 gap-2 py-2 px-1'>
-        <p className='text-sm text-gray-600 dark:text-white'>
-          {description}
-        </p>
-
-        <div className='flex items-center gap-4'>
-          <a href={repo} target='_blank' rel='noreferrer' className='text-sm text-primary hover:text-gray-700 dark:hover:text-white'>
-            Github
-          </a>
-          <a href={live} target='_blank' rel='noreferrer' className='text-sm text-primary hover:text-gray-700 dark:hover:text-white'>
-            Live
-          </a>
-        </div>
-      </div>
+    <div className='flex flex-col w-300 h-300 cursor-pointer duration-500' onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+      {hovered ?
+        <div className='w-full h-full flex flex-col justify-between p-4 text-left'>
+          <p className='text-xl text-primary font-semibold'>{name}</p>
+          <p className="text-base text-white">
+            {description}
+          </p>
+          <div className="flex items-center justify-between w-1/3">
+            <a href={repo} target='_blank' rel='noreferrer' className='text-2xl text-white hover:text-primary duration-500'>
+              <FiGithub />
+            </a>
+            <a href={live} target='_blank' rel='noreferrer' className='text-2xl text-white hover:text-primary duration-500'>
+              <FiExternalLink />
+            </a>
+          </div>
+        </div> :
+        <img src={image_dt} alt="project" className='w-full h-full object-cover' />
+      }
     </div>
   )
 }

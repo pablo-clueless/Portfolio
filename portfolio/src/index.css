@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Share+Tech+Mono&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +10,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Barlow', sans-serif;
+  background: #000;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 ::-webkit-scrollbar {
@@ -32,4 +37,10 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+.outline-text {
+  color: #E35A44;
+  -webkit-text-stroke: 1px #E35A44;
+  -webkit-text-fill-color: transparent;
 }

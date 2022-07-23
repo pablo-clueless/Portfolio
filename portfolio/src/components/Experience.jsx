@@ -6,12 +6,14 @@ import Card2 from './Card2'
 const Experience = () => {
 
   return (
-    <div className='flex flex-col items-center text-center bg-main-bg dark:bg-main-dark-bg px-6 py-10' id="about">
-            <p className='text-6xl font-medium text-primary mb-10'>
-                Experience
-            </p>
+    <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="about">
+      <div className='mb-12 text-left'>
+        <p className='text-6xl font-black font-heading text-primary'>
+          EXPERIENCE
+        </p>
+      </div>
 
-      <p className='text-3xl text-gray-600 dark:text-white'>
+      <p className='text-3xl text-white'>
         Below are some of the companies where I've worked as a developer.
       </p>
 
