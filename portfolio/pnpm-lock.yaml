@@ -13,12 +13,13 @@ specifiers:
   eslint-plugin-jsx-a11y: ^6.5.1
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
-  framer-motion: ^6.3.11
+  framer-motion: ^6.3.15
   postcss: ^8.4.6
   react: ^18.0.0
   react-dom: ^18.2.0
   react-helmet: ^6.1.0
   react-icons: ^4.4.0
+  react-intersection-observer: ^9.4.0
   react-use-downloader: ^1.1.7
   redux: ^4.2.0
   tailwindcss: ^3.0.19
@@ -32,6 +33,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-helmet: 6.1.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
+  react-intersection-observer: 9.4.0_react@18.2.0
   react-use-downloader: 1.1.7
   redux: 4.2.0
 
@@ -2140,6 +2142,14 @@ packages:
     resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
     peerDependencies:
       react: '*'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /react-intersection-observer/9.4.0_react@18.2.0:
+    resolution: {integrity: sha512-v0403CmomOVlzhqFXlzOxg0ziLcVq8mfbP0AwAcEQWgZmR2OulOT79Ikznw4UlB3N+jlUYqLMe4SDHUOyp0t2A==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
     dependencies:
       react: 18.2.0
     dev: false

@@ -1,47 +1,40 @@
 import React from 'react'
-import { MdOutlineCancel } from 'react-icons/md'
+import { motion } from 'framer-motion'
 import { FiCodepen, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
-import { Button, IconButton } from '.'
-import { useStateContext } from '../contexts/ContextProvider'
+import { IconButton } from '.'
+
+const container = {hidden: {opacity: 0 },show: {opacity: 1,transition: {staggerChildren: 0.75,},},}
+const item = {hidden: {opacity: 0},show: {opacity: 1}}
 
 const Sidebar = () => {
-    const { toggleSidebar } = useStateContext()
 
   return (
-    <div className='w-screen h-screen fixed top-0 left-0 bg-half-transparent z-20'>
-        <div className='flex flex-col justify-center items-center h-full w-300 bg-main-bg dark:bg-main-dark-bg float-right px-2 duration-500'>
-            <div className='flex items-center justify-between w-full border-b-1 border-color dark:border-white py-2'>
-                <Button text='Resume' />
-                <button className='rounded-full grid place-items-center p-2 hover:bg-gray-200 dark:hover:bg-gray-500 text-gray-600 dark:text-white hover:text-primary dark:hover:text-primary hover:drop-shadow-xl' onClick={toggleSidebar}>
-                    <MdOutlineCancel />
-                </button>
-            </div>
-            <div className='flex flex-col items-center gap-2 h-full'>
-                <ul className='flex flex-col items-center gap-12 my-20'>
-                    <li>
-                        <a href="#projects" className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://frontendpablo.hashnode.dev" target='_blank' rel='noreferrer' className='text-base font-medium text-gray-600 dark:text-white hover:text-primary'>
-                            Blog
-                        </a>
-                    </li>
-                </ul>
+    <div className='flex flex-col justify-center items-center w-full h-full fixed right-0 bg-black float-right px-2 z-20'>
+        <div className='flex flex-col items-center gap-2 h-full'>
+            <motion.ul variants={container} initial='hidden' animate='show' className='flex flex-col items-center gap-12 my-20'>
+                <motion.li variants={item}>
+                    <a href="#projects" className='text-xl font-medium text-white hover:text-primary hover:bg-white duration-500 px-2 py-1 rounded-sm'>
+                        Projects
+                    </a>
+                </motion.li>
+                <motion.li variants={item}>
+                    <a href="#contact" className='text-xl font-medium text-white hover:text-primary hover:bg-white duration-500 px-2 py-1 rounded-sm'>
+                        Contact
+                    </a>
+                </motion.li>
+                <motion.li variants={item}>
+                    <a href="https://frontendpablo.hashnode.dev" target='_blank' rel='noreferrer' className='text-xl font-medium text-white hover:text-primary hover:bg-white duration-500 px-2 py-1 rounded-sm'>
+                        Blog
+                    </a>
+                </motion.li>
+            </motion.ul>
 
-                <div className='flex items-center gap-2'>
-                    <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} />
-                    <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} />
-                    <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} />
-                    <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} />
-                </div>
+            <div className='flex items-center gap-2'>
+                <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} />
+                <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} />
+                <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} />
+                <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} />
             </div>
         </div>
     </div>

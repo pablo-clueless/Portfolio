@@ -1,20 +1,36 @@
-import React, { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { About, Contact, Experience, Footer, Header, Navbar, Projects, Sidebar, Skills } from './components'
+import { Glimer, Navbar } from './components'
 import { useStateContext } from './contexts/ContextProvider'
-import { getWithKey } from './utils/local-storage'
+
+const About = React.lazy(() => import('./components/About'))
+const Contact = React.lazy(() => import('./components/Contact'))
+const Experience = React.lazy(() => import('./components/Experience'))
+const Footer = React.lazy(() => import('./components/Footer'))
+const Header = React.lazy(() => import('./components/Header'))
+const Projects = React.lazy(() => import('./components/Projects'))
+const Skills = React.lazy(() => import('./components/Skills'))
+const Sidebar = React.lazy(() => import('./components/Sidebar'))
 
 const App = () => {
-  const { currentMode, isOpen, setMode } = useStateContext()
+  const { isOpen, setIsOpen, screenSize, setScreenSize } = useStateContext()
 
   useEffect(() => {
-    const themeMode = getWithKey('themeMode')
-    setMode(themeMode)
-  })
+    const handleScreenResize = () => setScreenSize(window.innerWidth)
+    window.addEventListener('resize', handleScreenResize)
+
+    handleScreenResize()
+
+    return () => window.removeEventListener('resize', handleScreenResize)
+  },[])
+
+  useEffect(() => {
+    screenSize >= 768 ? setIsOpen(false) : null
+  },[screenSize])
 
   return (
-    <div className={currentMode === 'Dark' ? 'dark' : ''}>
+    <>
       <Helmet>
       {/* Primary Meta Tags */}
         <title>Samson Okunola</title>
@@ -38,17 +54,19 @@ const App = () => {
         <title>Samson Okunola</title>
       </Helmet>
       <Navbar />
-      <div className='w-screen mt-20'>
-        {isOpen && <Sidebar />}
-        <Header />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
+      <div className='w-screen bg-black mt-20'>
+        <Suspense fallback={<Glimer />}>
+          {isOpen && <Sidebar />}
+          <Header />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
+        </Suspense>
       </div>
-    </div>
+    </>
   )
 }
 

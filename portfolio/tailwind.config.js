@@ -3,20 +3,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      display: ['Barlow', 'sans-serif'],
-      body: ['Barlow', 'sans-serif'],
+      heading: ['Montserrat', 'sans-serif'],
     },
     extend: {
       textColor: {
         primary: '#E35A44',
-        secondary:  '#8A9B8C',
-        light:  '#FFFFFF',
-        dark:  '#262626',
       },
       backgroundColor: {
         'primary': '#E35A44',
-        'main-bg': '#FFFFFF',
-        'main-dark-bg': '#262626',
         'light-gray': '#F7F7F7',
         'half-transparent': 'rgba(0, 0, 0, 0.5)',
       },
@@ -25,8 +19,14 @@ module.exports = {
       },
       borderColor: {
         color: 'rgba(0, 0, 0, 0.2)',
+        primary: '#E35A44',
+      },
+      fill: {
+        primary: '#E35A44',
       },
       width: {
+        100: '100px',
+        200: '200px',
         300: '300px',
         350: '350px',
         400: '400px',
@@ -37,11 +37,17 @@ module.exports = {
         120: '120px',
         150: '150px',
         200: '200px',
+        300: '300px',
         400: '400px',
+        700: '700px',
       },
       minHeight: {
         590: '590px',
       },
+      backgroundImage: {
+        'about-bg': 'url(/images/pablo.jpeg)',
+        // 'second-bg': 'url(/images/second-bg.jpg)',
+      }
     },
   },
   plugins: [],
