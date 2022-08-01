@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiCodepen, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { Hashnode } from '../assets/icons'
 
 import { IconButton } from '.'
 
@@ -30,11 +31,12 @@ const Sidebar = () => {
                 </motion.li>
             </motion.ul>
 
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center'>
                 <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} />
                 <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} />
                 <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} />
                 <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} />
+                <IconButton to='https://hashnode.com/@pablo_clueless' icon={<Hashnode />} />
             </div>
         </div>
     </div>
