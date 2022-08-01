@@ -30,7 +30,9 @@ module.exports = {
         300: '300px',
         350: '350px',
         400: '400px',
+        500: '500px',
         760: '760px',
+        '90': '90%',
       },
       height: {
         100: '100px',
@@ -39,10 +41,14 @@ module.exports = {
         200: '200px',
         300: '300px',
         400: '400px',
+        500: '500px',
         700: '700px',
       },
       minHeight: {
         590: '590px',
+      },
+      margin: {
+        '0.5': '0.125rem',
       },
       backgroundImage: {
         'about-bg': 'url(/images/pablo.jpeg)',
