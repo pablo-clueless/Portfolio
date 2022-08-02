@@ -47,7 +47,7 @@ module.exports = {
       backgroundImage: {
         'about-bg': 'url(/images/pablo.jpeg)',
         // 'second-bg': 'url(/images/second-bg.jpg)',
-      }
+      },
     },
   },
   plugins: [],

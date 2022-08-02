@@ -1,3 +1,4 @@
+import { Hashnode } from './Hashnode'
 import { JavaScript } from './Javascript'
 import { Nextjs } from './Nextdotjs'
 import { Nodejs } from './Nodedotjs'
@@ -11,6 +12,7 @@ import { Twitter } from './Twitter'
 import { TypeScript } from './Typescript'
 
 export {
+    Hashnode,
     JavaScript,
     Nextjs,
     Nodejs,
