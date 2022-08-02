@@ -10,7 +10,6 @@ const Experience = React.lazy(() => import('./components/Experience'))
 const Footer = React.lazy(() => import('./components/Footer'))
 const Header = React.lazy(() => import('./components/Header'))
 const Projects = React.lazy(() => import('./components/Projects'))
-const Popup = React.lazy(() => import('./components/Popup'))
 const Skills = React.lazy(() => import('./components/Skills'))
 const Sidebar = React.lazy(() => import('./components/Sidebar'))
 
@@ -58,7 +57,6 @@ const App = () => {
       <div className='w-screen bg-black mt-20'>
         <Suspense fallback={<Glimer />}>
           {isOpen && <Sidebar />}
-          {/* <Popup /> */}
           <Header />
           <About />
           <Skills />

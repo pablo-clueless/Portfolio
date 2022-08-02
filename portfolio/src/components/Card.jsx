@@ -5,7 +5,7 @@ const Card = ({name, description, repo, live, image_dt}) => {
   const [hovered, setHovered] = useState(false)
 
   return (
-    <div className='flex flex-col w-300 h-300 cursor-pointer transition-all ease-in-out duration-500' onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+    <div className='flex flex-col w-300 h-300 cursor-pointer duration-500' onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
       {hovered ?
         <div className='w-full h-full flex flex-col justify-between p-4 text-left'>
           <p className='text-xl text-primary font-semibold'>{name}</p>
@@ -21,9 +21,7 @@ const Card = ({name, description, repo, live, image_dt}) => {
             </a>
           </div>
         </div> :
-        <div className='wfull h-full transition-all ease-in-out duration-500'>
-          <img src={image_dt} alt="project" className='w-full h-full object-cover ' />
-        </div>
+        <img src={image_dt} alt="project" className='w-full h-full object-cover' />
       }
     </div>
   )
