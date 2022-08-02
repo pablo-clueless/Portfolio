@@ -44,7 +44,3 @@ body {
   -webkit-text-stroke: 1px #E35A44;
   -webkit-text-fill-color: transparent;
 }
-
-.popup {
-  z-index: 10;
-}
