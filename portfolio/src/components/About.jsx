@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const About = () => {
 
     return (
-        <div className='flex flex-col items-center w-full text-center bg-blak px-6 py-10'>
+        <div id='about' className='flex flex-col items-center w-full text-center bg-blak px-6 py-10'>
             <div className='mb-12 text-left'>
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
                     ABOUT

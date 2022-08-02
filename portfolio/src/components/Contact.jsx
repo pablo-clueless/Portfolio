@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiCodepen, FiGithub, FiLinkedin, FiMail ,FiTwitter } from 'react-icons/fi'
+import { Hashnode } from '../assets/icons'
 
 import { Button, IconButton } from '.'
 
@@ -27,17 +28,20 @@ const Contact = () => {
 
             <Button to='mailto:smsnmicheal@gamil' text='GET IN TOUCH' icon={<FiMail />} mt={64} mb={64} />
             <motion.ul variants={container} initial='hidden' whileInView='show' className='flex items-center justify-between'>
-                <motion.li variants={item} className='md:mx-4 mx-1'>
+                <motion.li variants={item} className='md:mx-4 mx-0.5'>
                     <IconButton to='https://codepen.io/pablo-clueless' icon={<FiCodepen />} large />
                 </motion.li>
-                <motion.li variants={item} className='md:mx-4 mx-1'>
+                <motion.li variants={item} className='md:mx-4 mx-0.5'>
                     <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} large />
                 </motion.li>
-                <motion.li variants={item} className='md:mx-4 mx-1'>
+                <motion.li variants={item} className='md:mx-4 mx-0.5'>
                     <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} large />
                 </motion.li>
-                <motion.li variants={item} className='md:mx-4 mx-1'>
+                <motion.li variants={item} className='md:mx-4 mx-0.5'>
                     <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} large />
+                </motion.li>
+                <motion.li variants={item} className='md:mx-4 mx-0.5'>
+                    <IconButton to='https://hashnode.com/@pablo_clueless' icon={<Hashnode />} large />
                 </motion.li>
             </motion.ul>
         </motion.div>
