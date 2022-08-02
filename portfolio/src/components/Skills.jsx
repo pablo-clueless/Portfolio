@@ -2,15 +2,18 @@ import { motion } from 'framer-motion'
 
 import { JavaScript, Nextjs, Nodejs, React, Redux, Sass, Solidity, Styledcomponents, Threejs, TypeScript } from '../assets/icons'
 
+const initial = {y: -50,opacity: 0}
+const animate = {y: 0, opacity: 1,transition: {duration: 1, ease: 'easeInOut'}}
+
 const Skills = () => {
 
     return (
         <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="about">
-            <div className='mb-12 text-left'>
+            <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary outline-text'>
                     SKILLS
                 </p>
-            </div>
+            </motion.div>
             <div className='flex md:flex-row flex-col gap-4'>
                 <div className='md:w-1/2 text-left w-full my-4'>
                     <p className='text-2xl text-white mb-2'>

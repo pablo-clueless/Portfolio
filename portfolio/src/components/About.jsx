@@ -9,7 +9,7 @@ const About = () => {
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
                     ABOUT
                 </p>
-                <p className='text-6xl font-black font-heading text-primary outline-text'>
+                <p className='text-5xl font-black font-heading text-primary outline-text'>
                     OKUNOLA SAMSON
                 </p>
             </div>

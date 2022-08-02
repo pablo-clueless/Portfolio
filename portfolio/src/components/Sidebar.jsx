@@ -38,7 +38,7 @@ const Sidebar = () => {
                 <IconButton to='https://github.com/pablo-clueless' icon={<FiGithub />} />
                 <IconButton to='https://linkedin.com/in/samson-okunola/' icon={<FiLinkedin />} />
                 <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} />
-                <IconButton to='https://hashnode.com/@pablo_clueless' icon={<Hashnode />} />
+                <IconButton to='https://hashnode.com/@pablo-clueless' icon={<Hashnode />} />
             </div>
         </div>
     </div>

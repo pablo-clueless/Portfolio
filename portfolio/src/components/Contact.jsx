@@ -7,16 +7,18 @@ import { Button, IconButton } from '.'
 
 const container = {hidden: {opacity: 0 },show: {opacity: 1,transition: {staggerChildren: 0.75,},},}
 const item = {hidden: {opacity: 0},show: {opacity: 1}}
+const initial = {y: '100%',opacity: 0}
+const animate = {y: 0, opacity: 1,transition: {duration: 0.5, ease: 'easeInOut'}}
 
 const Contact = () => {
 
     return (
-        <motion.div className='flex flex-col items-center text-center bg-black px-6 py-10' id="contact">
-            <div className='mb-12 text-left'>
+        <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="contact">
+            <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
                     GET IN TOUCH
                 </p>
-            </div>
+            </motion.div>
 
             <p className='text-3xl text-white my-4'>
                 Looking to hire? Have a project?
@@ -41,10 +43,10 @@ const Contact = () => {
                     <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} large />
                 </motion.li>
                 <motion.li variants={item} className='md:mx-4 mx-0.5'>
-                    <IconButton to='https://hashnode.com/@pablo_clueless' icon={<Hashnode />} large />
+                    <IconButton to='https://hashnode.com/@pablo-clueless' icon={<Hashnode />} large />
                 </motion.li>
             </motion.ul>
-        </motion.div>
+        </div>
     )
 }
 
