@@ -24,7 +24,7 @@ const Contact = () => {
                 Looking to hire? Have a project?
             </p>
 
-            <p className='text-xl text-white my-4'>
+            <p className='text-2xl text-white my-4'>
                 I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.
             </p>
 

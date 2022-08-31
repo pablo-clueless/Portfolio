@@ -20,7 +20,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className='md:w-1/2 text-left w-full my-4'>
-                    <p className='text-xl text-white'>
+                    <p className='text-2xl text-white'>
                         I&apos;m a Frontend Web Developer and Blockchain enthusiast based in Lagos, Nigeria.
                         <br />
                         I like looking for solutions and creating a great user experience adhering to real applications implementation with the knowledge and understanding of web development concepts. I&apos;ve worked with other developers on projects and created several working SPAs and websites that are maintainable and scalable.<br />

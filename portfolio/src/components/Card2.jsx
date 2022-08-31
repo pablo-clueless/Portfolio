@@ -15,10 +15,10 @@ const Card2 = ({company, position, type, start, end}) => {
             </div>
         </div>
         <div className='flex flex-col items-end gap-1'>
-            <p className='text-white text-sm'>
+            <p className='text-white'>
                 {position}
             </p>
-            <p className='text-xs text-white'>
+            <p className='text-sm text-white'>
                 {type}
             </p>
         </div>
