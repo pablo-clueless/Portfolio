@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@ html {
 
 body {
   background: #000;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 ::-webkit-scrollbar {
