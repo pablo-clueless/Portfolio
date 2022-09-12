@@ -20,7 +20,7 @@ const Card = ({name, description, repo, live, image_dt}) => {
           </div>
         </div>
         <div className='w-full h-full absolute top-0 left-0 z-30 swipe-effect'>
-          <img src={image_dt} alt="project" className='w-full h-full object-cover' />
+          <img src={image_dt} alt="project" className='w-full h-full object-cover object-top' />
         </div>
     </div>
   )
