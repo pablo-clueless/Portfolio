@@ -20,13 +20,6 @@ export const data = [
         live: 'https://hardhat-bank-dapp.vercel.app',
         repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
     },
-    // {
-    //     image_dt: '/projects/weather-app.png',
-    //     name: 'WEATHER APP',
-    //     description: 'Check accurate weather for any location. Data includes temperature, weather description, windspeed and others.',
-    //     live: 'https://pablos-weather-app.vercel.app',
-    //     repo: 'https://github.com/pablo-clueless/WeatherApp'
-    // },
     {
         image_dt: '/projects/insocial.png',
         name: 'INSOCIAL',
@@ -34,13 +27,6 @@ export const data = [
         live: 'https://insocial.vercel.app',
         repo: 'https://github.com/pablo-clueless/insocial'
     },
-    // {
-    //     image_dt: '/projects/aigis.png',
-    //     name: 'AIGIS',
-    //     description: 'A car verification portal that uses the identitypass api to verify car details using one of bvn, nin or phone number.',
-    //     live: 'https://aigisorg.netlify.app',
-    //     repo: 'https://github.com/aegis-org'
-    // },
     {
         image_dt: '/projects/e-comerce.png',
         name: "PABLO'S STORE",
@@ -54,5 +40,12 @@ export const data = [
         description: "Admin dashboard with employee & customers details, calendar, kanban, charts and theming.",
         live: 'https://1203-dashboard.vercel.app/',
         repo: 'https://github.com/pablo-clueless/react_admin_dashboard'
+    },
+    {
+        image_dt: '/projects/nft-minter.png',
+        name: "NFT MINTER",
+        description: "Mint NFTs on the Goerli testnet for free. Files are saved to IPFS using Pinata and availble on OpenSea.",
+        live: 'https://erc721-minter.vercel.app/',
+        repo: 'https://github.com/pablo-clueless/hardhat-nft-project'
     }
 ]
