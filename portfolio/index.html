@@ -24,7 +24,19 @@
     <title>Samson Okunola</title>
   </head>
   <body>
+    <div class='cursor-ball'></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      let cursor = document.querySelector('.cursor-ball')
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.top = e.pageY + 'px'
+        cursor.style.left = e.pageX + 'px'
+      })
+      document.addEventListener('mousedown', (e) => {
+        if (e.button === 0) cursor.classList.add('cursor-mousedown')
+      })
+      document.addEventListener('mouseup', () => cursor.classList.remove('cursor-mousedown'))
+    </script>
   </body>
 </html>

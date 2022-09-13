@@ -16,7 +16,7 @@ export const data = [
     {
         image_dt: '/projects/bank-dapp.png',
         name: 'BANK DAPP',
-        description: "A simple project to simulate a DeFi wallet on Rinkeby testnet.",
+        description: "A simple project to simulate a DeFi wallet on the Goerli testnet.",
         live: 'https://hardhat-bank-dapp.vercel.app',
         repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
     },
