@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiX } from 'react-icons/fi'
 
 import logo from '/images/logo.png'
@@ -8,10 +8,26 @@ const links = ['about', 'projects', 'contact']
 
 const Navbar = () => {
     const { isOpen, toggleOpen } = useStateContext()
+    const [time, setTime] = useState(new Date)
+
+    const refreshTime = () => setTime(new Date())
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            refreshTime()
+        },1000)
+        return () => clearInterval(timer)
+    },[])
       
   return (
-    <nav className='w-screen flex items-center justify-between fixed top-0 left-0 py-4 px-8 bg-black z-50'>
+    <nav className='w-screen flex items-center justify-between fixed top-0 left-0 py-4 px-8 z-50'>
             <img src={logo} alt="logo" className='md:w-16 md:h-16 w-12 h-12' />
+
+            <div>
+                <p className='text-md text-white'>
+                    {time.toLocaleTimeString()} - Lagos, Nigeria
+                </p>
+            </div>
 
             <ul className='md:flex items-center gap-4 hidden'>
                 {links.map((link) => (
@@ -25,8 +41,8 @@ const Navbar = () => {
             <div className='block md:hidden text-white text-2xl cursor-pointer' onClick={toggleOpen}>
                 {isOpen ? <FiX /> : 
                 <div className='flex flex-col justify-center gap-2 h-4 w-8'>
-                    <span className='w-full h-0.5 bg-white rounded-sm'></span>
-                    <span className='w-3/4 h-0.5 bg-white rounded-sm self-end'></span>
+                    <span className='w-full h-[1px] bg-white rounded-sm'></span>
+                    <span className='w-3/4 h-[1px] bg-white rounded-sm self-end'></span>
                 </div>
                 }
             </div>
