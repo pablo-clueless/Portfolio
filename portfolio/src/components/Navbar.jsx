@@ -20,7 +20,7 @@ const Navbar = () => {
     },[])
       
   return (
-    <nav className='w-screen flex items-center justify-between fixed top-0 left-0 py-4 px-8 bg-black z-50'>
+    <nav className='w-screen flex items-center justify-between fixed top-0 left-0 py-4 px-8 z-50'>
             <img src={logo} alt="logo" className='md:w-16 md:h-16 w-12 h-12' />
 
             <div>

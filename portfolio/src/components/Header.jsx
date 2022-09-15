@@ -14,8 +14,9 @@ const Header = () => {
     return (
         <div className='w-full h-screen bg-transparent flex flex-col items-center justify-center relative' id='home'>
             <motion.div initial={initial} animate={animate} className='flex self-start'>
-                <p className='md:text-6xl text-4xl font-black font-heading text-white uppercase px-4'>
-                    <span className='relative after:content-["*"] after:absolute after:-top-4 after:text-primary'>Hi! I'm Samson.</span><br />
+                <p className='text-4xl md:text-7xl font-black font-heading text-white uppercase px-4'>
+                    <span className='relative after:content-["*"] after:absolute after:-top-4 after:text-primary glitch' data-trick="Hi!! I'm Samson">
+                        Hi! I'm Samson.</span><br />
                     <span style={style}>A web developer</span><br />
                     — based in lagos.
                 </p>
