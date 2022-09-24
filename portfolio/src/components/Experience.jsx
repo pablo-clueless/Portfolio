@@ -21,7 +21,7 @@ const Experience = () => {
         Below are some of the companies where I've worked as a developer.
       </p>
 
-      <div className='flex flex-col items-center my-4'>
+      <div className='flex flex-wrap items-center gap-8 my-4'>
         {WorkData.map((item) => (
           <Card2 key={item.index} {...item} />
         ))}

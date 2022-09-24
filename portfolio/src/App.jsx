@@ -1,7 +1,7 @@
-import React, { Suspense, useEffect } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Glimer, Navbar } from './components'
+import { AudioControls, Glimer, Navbar } from './components'
 import { useStateContext } from './contexts/ContextProvider'
 
 const About = React.lazy(() => import('./components/About'))
@@ -54,6 +54,7 @@ const App = () => {
         <title>Samson Okunola</title>
       </Helmet>
       <Navbar />
+      {/* <AudioControls /> */}
       <div className='w-screen bg-black relative'>
         <Suspense fallback={<Glimer />}>
           {isOpen && <Sidebar />}
