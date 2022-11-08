@@ -5,7 +5,8 @@ export const data = [
         name: 'COMMUNITY PRO CHAT',
         description: 'A team messaging app built for Community Pro. Utilizes the getstream chat functionalities.',
         live: 'https://community-pro-chat.vercel.app/',
-        repo: 'https://github.com/pablo-clueless/chat_app'
+        source_code: 'https://github.com/pablo-clueless/chat_app',
+        build: ['react', 'stream-chat', 'css']
     },
     {
         id: "p-0002",
@@ -13,7 +14,8 @@ export const data = [
         name: 'SHORTLET',
         description: 'A shortlet booking website. Inspect properties, choose from a wide range of options that meet your needs and pocket.',
         live: 'https://short-let.vercel.app',
-        repo: 'https://github.com/pablo-clueless/shortlet'
+        source_code: 'https://github.com/pablo-clueless/shortlet',
+        build: ['react', 'mui'],
     },
     {
         id: "p-0003",
@@ -21,7 +23,8 @@ export const data = [
         name: 'BANK DAPP',
         description: "A simple project to simulate a DeFi wallet on the Goerli testnet.",
         live: 'https://hardhat-bank-dapp.vercel.app',
-        repo: 'https://github.com/pablo-clueless/hardhat-sample-project'
+        source_code: 'https://github.com/pablo-clueless/hardhat-sample-project',
+        build: ['react', 'solidity', 'tailwind'],
     },
     {
         id: "p-0004",
@@ -29,7 +32,8 @@ export const data = [
         name: 'INSOCIAL',
         description: 'inSocial is an image sharing paltform. Share, download and save images, and interact with other users.',
         live: 'https://insocial.vercel.app',
-        repo: 'https://github.com/pablo-clueless/insocial'
+        source_code: 'https://github.com/pablo-clueless/insocial',
+        build: ['react', 'sanity', 'tailwind'],
     },
     {
         id: "p-0005",
@@ -37,7 +41,8 @@ export const data = [
         name: "PABLO'S STORE",
         description: "An e-commerce store built with chec-commerce and stripe.",
         live: 'https://e-commerce-store-bice.vercel.app/',
-        repo: 'https://github.com/pablo-clueless/e-commerce-store'
+        source_code: 'https://github.com/pablo-clueless/e-commerce-store',
+        build: ['react', 'chec-commerce', 'mui', 'stripe'],
     },
     {
         id: "p-0006",
@@ -45,7 +50,8 @@ export const data = [
         name: "ADMIN DASHBOARD",
         description: "Admin dashboard with employee & customers details, calendar, kanban, charts and theming.",
         live: 'https://1203-dashboard.vercel.app/',
-        repo: 'https://github.com/pablo-clueless/react_admin_dashboard'
+        source_code: 'https://github.com/pablo-clueless/react_admin_dashboard',
+        build: ['react', 'syncfusion', 'tailwind'],
     },
     {
         id: "p-0007",
@@ -53,6 +59,7 @@ export const data = [
         name: "NFT MINTER",
         description: "Mint NFTs on the Goerli testnet for free. Files are saved to IPFS using Pinata and availble on OpenSea.",
         live: 'https://erc721-minter.vercel.app/',
-        repo: 'https://github.com/pablo-clueless/hardhat-nft-project'
+        source_code: 'https://github.com/pablo-clueless/hardhat-nft-project',
+        build: ['react', 'solidity', 'pinata', 'tailwind'],
     }
 ]
