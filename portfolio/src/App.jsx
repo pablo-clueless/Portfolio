@@ -1,16 +1,11 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
+import { Route, Routes } from 'react-router-dom'
 
 import { AudioControls, Glimer, Navbar } from './components'
 import { useStateContext } from './contexts/ContextProvider'
+import { Home, Project } from './pages'
 
-const About = React.lazy(() => import('./components/About'))
-const Contact = React.lazy(() => import('./components/Contact'))
-const Experience = React.lazy(() => import('./components/Experience'))
-const Footer = React.lazy(() => import('./components/Footer'))
-const Header = React.lazy(() => import('./components/Header'))
-const Projects = React.lazy(() => import('./components/Projects'))
-const Skills = React.lazy(() => import('./components/Skills'))
 const Sidebar = React.lazy(() => import('./components/Sidebar'))
 
 const App = () => {
@@ -54,17 +49,13 @@ const App = () => {
         <title>Samson Okunola</title>
       </Helmet>
       <Navbar />
-      {/* <AudioControls /> */}
       <div className='w-screen bg-black relative'>
         <Suspense fallback={<Glimer />}>
           {isOpen && <Sidebar />}
-          <Header />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/project/:id' element={<Project />} />
+          </Routes>
         </Suspense>
       </div>
     </>

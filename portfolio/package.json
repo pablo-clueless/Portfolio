@@ -17,6 +17,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^9.4.0",
+    "react-router-dom": "^6.4.3",
     "redux": "^4.2.0"
   },
   "devDependencies": {
