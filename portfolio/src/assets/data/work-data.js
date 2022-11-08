@@ -6,5 +6,5 @@ export const WorkData = [
         type: 'Internship',
         start: '04/04/2022',
         end: 'Active'
-    }
+    },
 ]

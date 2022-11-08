@@ -8,26 +8,10 @@ const links = ['about', 'projects', 'contact']
 
 const Navbar = () => {
     const { isOpen, toggleOpen } = useStateContext()
-    const [time, setTime] = useState(new Date)
-
-    const refreshTime = () => setTime(new Date())
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            refreshTime()
-        },1000)
-        return () => clearInterval(timer)
-    },[])
       
   return (
-    <nav className='w-screen flex items-center justify-between fixed top-0 left-0 py-4 px-8 z-50'>
+    <nav className='w-screen flex items-center justify-between bg-black fixed top-0 left-0 py-4 px-8 z-50'>
             <img src={logo} alt="logo" className='md:w-16 md:h-16 w-12 h-12' />
-
-            <div>
-                <p className='text-md text-white'>
-                    {time.toLocaleTimeString()} - Lagos, Nigeria
-                </p>
-            </div>
 
             <ul className='md:flex items-center gap-4 hidden'>
                 {links.map((link) => (
