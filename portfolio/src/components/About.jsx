@@ -23,7 +23,8 @@ const About = () => {
                     <p className='text-2xl text-white'>
                         I&apos;m a Frontend Web Developer and Blockchain enthusiast based in Lagos, Nigeria.<br />
                         I constantly look for solutions to problems and create a great user experience.<br />
-                        I like pop music, good food and video games.
+                        I like pop music, good food and video games. <br />
+                        Currently playing with the codebase at<a href='https://zummitafrica.com' rel='noreferrer' target='_blank' className='text-primary ml-2 hover:underline underline-offset-4 transition-all ease-in-out duration-700'>Zummit Africa</a>.
                     </p>
                 </div>
             </div>

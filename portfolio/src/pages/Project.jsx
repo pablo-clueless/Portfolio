@@ -13,8 +13,9 @@ const Project = () => {
     <div className='w-full flex flex-col mt-32'>
         <div className='w-full flex flex-col items-center text-center'>
             <p className='text-primary text-3xl md:text-6xl font-bold'>{project.name}</p>
-            <div className='w-[300px] h-[250px] md:w-[650px] md:h-[400px] mt-4 mb-8 cursor-pointer p-card'>
+            <div className='w-[300px] h-[250px] md:w-[650px] md:h-[400px] mt-4 mb-8 relative cursor-pointer p-card'>
                 <img src={project.image_dt} alt={project.name} className='w-full h-full object-cover object-top' />
+                <div className='w-200 h-200 rounded-full bg-primary absolute -bottom-[100px] -right-[100px] circle'></div>
             </div>
             <p className='w-full md:w-1/2 text-white text-xl'>
                 {project.description}
