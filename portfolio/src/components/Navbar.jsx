@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className='md:flex items-center gap-4 hidden'>
                 {links.map((link) => (
                     <li key={link}>
-                        <a href={`#${link}`} className='text-lg font-medium text-white hover:text-primary hover:bg-white duration-500 px-2 py-1 rounded-sm capitalize'>
+                        <a href={`#${link}`} className='nav_link'>
                             {link}
                         </a>
                     </li>

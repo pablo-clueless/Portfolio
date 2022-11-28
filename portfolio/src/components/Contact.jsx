@@ -25,7 +25,7 @@ const Contact = () => {
             </p>
 
             <p className='text-2xl text-white my-4'>
-                I&apos;m currently open to junior developer roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.
+                I&apos;m currently open to mid-level roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.
             </p>
 
             <Button to='mailto:smsnmicheal@gamil' text='GET IN TOUCH' icon={<FiMail />} mt={64} mb={64} />
