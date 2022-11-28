@@ -22,7 +22,7 @@ const Projects = () => {
                 </p>
             </motion.div>
            <p className='text-2xl text-white'>
-                These are some of the projects I've worked on.
+                These are some personal projects I've done.
             </p>
 
            <div className='flex flex-wrap items-center justify-center gap-8 mt-12'>
