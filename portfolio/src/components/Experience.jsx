@@ -10,7 +10,7 @@ const animate = {y: 0, opacity: 1,transition: {duration: 1, ease: 'easeInOut'}}
 const Experience = () => {
 
   return (
-    <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="about">
+    <div className='flex flex-col items-center text-center px-6 py-10' id="about">
       <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
         <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
           EXPERIENCE

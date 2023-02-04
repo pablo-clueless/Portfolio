@@ -13,7 +13,7 @@ const animate = {y: 0, opacity: 1,transition: {duration: 0.5, ease: 'easeInOut'}
 const Contact = () => {
 
     return (
-        <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="contact">
+        <div className='flex flex-col items-center text-center px-6 py-10' id="contact">
             <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
                     GET IN TOUCH

@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import Card from './Card'
-import { data } from '../assets/data/project-data'
+import Card from './Card3'
+import { data } from '../assets/data/project'
 
 const initial = {opacity: 0,scale: 0.5}
 const animate = {opacity: 1,scale: 1}
@@ -15,20 +15,19 @@ const animateDiv = {x: 0, opacity: 1,scale: 1,transition: {duration: 2, ease: 'e
 const Projects = () => {
 
     return (
-        <div className='flex flex-col items-center text-center bg-black px-6 py-10' id="projects">
+        <div className='flex flex-col items-center text-center px-6 py-10' id="projects">
             <motion.div initial={initialDiv} whileInView={animateDiv} className='mb-12 text-left'>
                 <p className='md:text-6xl text-4xl font-black font-heading text-primary outline-text'>
                     PROJECTS
                 </p>
             </motion.div>
            <p className='text-2xl text-white'>
-                These are some personal projects I've done.
+                These are some projects I've worked on.
             </p>
-
-           <div className='flex flex-wrap items-center justify-center gap-8 mt-12'>
-                {data.map((item) => (
-                    <motion.div initial={initial} whileInView={animate} transition={{default: transition, scale: scale}} key={item.name}>
-                        <Card {...item} />
+           <div className='flex flex-wrap items-center gap-8 mt-12'>
+                {data.map((data) => (
+                    <motion.div key={data.id} initial={initial} whileInView={animate} transition={{default: transition, scale: scale}}>
+                        <Card {...data} />
                     </motion.div>
                 ))}
             </div>

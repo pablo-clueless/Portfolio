@@ -24,9 +24,9 @@ const Header = () => {
             <motion.div initial={{x: -200}} whileInView={drift} className='w-100 h-100 bg-white rounded-full absolute top-3/4 right-8' />
             <span className='absolute top-1/4 left-1/4 text-9xl font-black font-heading text-white outline-text'>*</span>
 
-            <div className='flex self-start ml-8'>
+            {/* <div className='flex self-start ml-8'>
                 <Button to='mailto:smsnmicheal@gmail.com' text='Hire Me' mt={32} icon={<FiMail/>} />
-            </div>
+            </div> */}
         </div>
     )
 }

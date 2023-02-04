@@ -2,9 +2,17 @@ export const WorkData = [
     {
         index: 1,
         company: 'Zummit Africa',
-        position: 'Frontend Developer',
+        position: 'Lead Developer',
         type: 'Full time',
-        start: '04/04/2022',
+        start: 'April 2022',
+        end: 'Active'
+    },
+    {
+        index: 2,
+        company: 'Onboardng',
+        position: 'Lead Developer',
+        type: 'Part time',
+        start: 'November 2022',
         end: 'Active'
     },
 ]
