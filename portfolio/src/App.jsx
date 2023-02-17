@@ -49,7 +49,7 @@ const App = () => {
         <title>Samson Okunola</title>
       </Helmet>
       <Navbar />
-      <div className='w-screen bg-black relative'>
+      <div className='w-screen bg-white relative'>
         <Suspense fallback={<Glimer />}>
           {isOpen && <Sidebar />}
           <Routes>

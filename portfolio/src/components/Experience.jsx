@@ -12,12 +12,12 @@ const Experience = () => {
   return (
     <div className='flex flex-col items-center text-center px-6 py-10' id="about">
       <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
-        <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
+        <p className='md:text-6xl text-4xl font-black font-heading text-black'>
           EXPERIENCE
         </p>
       </motion.div>
 
-      <p className='text-3xl text-white'>
+      <p className='text-3xl text-black'>
         Below are some of the companies where I've worked as a developer.
       </p>
 

@@ -13,6 +13,6 @@ export const WorkData = [
         position: 'Lead Developer',
         type: 'Part time',
         start: 'November 2022',
-        end: 'Active'
+        end: ''
     },
 ]

@@ -17,11 +17,11 @@ const Projects = () => {
     return (
         <div className='flex flex-col items-center text-center px-6 py-10' id="projects">
             <motion.div initial={initialDiv} whileInView={animateDiv} className='mb-12 text-left'>
-                <p className='md:text-6xl text-4xl font-black font-heading text-primary outline-text'>
+                <p className='md:text-6xl text-4xl font-black font-heading text-black outline-text'>
                     PROJECTS
                 </p>
             </motion.div>
-           <p className='text-2xl text-white'>
+           <p className='text-2xl text-black'>
                 These are some projects I've worked on.
             </p>
            <div className='flex flex-wrap items-center gap-8 mt-12'>

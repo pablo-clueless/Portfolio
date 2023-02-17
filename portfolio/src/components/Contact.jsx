@@ -15,16 +15,16 @@ const Contact = () => {
     return (
         <div className='flex flex-col items-center text-center px-6 py-10' id="contact">
             <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
-                <p className='md:text-6xl text-4xl font-black font-heading text-primary'>
+                <p className='md:text-6xl text-4xl font-black font-heading text-black'>
                     GET IN TOUCH
                 </p>
             </motion.div>
 
-            <p className='text-3xl text-white my-4'>
+            <p className='text-3xl text-black my-4'>
                 Looking to hire? Have a project?
             </p>
 
-            <p className='text-2xl text-white my-4'>
+            <p className='text-2xl text-black my-4'>
                 I&apos;m currently open to mid-level roles. You can also reach out to me for collaborations, to ask questions or just simply say hi. I&apos;ll try to get back as soon as possible.
             </p>
 
@@ -43,7 +43,7 @@ const Contact = () => {
                     <IconButton to='https://twitter.com/pablo_clueless' icon={<FiTwitter />} large />
                 </motion.li>
                 <motion.li variants={item} className='md:mx-4 mx-0.5'>
-                    <IconButton to='https://hashnode.com/@pablo-clueless' icon={<Hashnode />} large />
+                    <IconButton to='https://hashnode.com/@pablo-clueless' icon={<Hashnode fill="#000" />} large />
                 </motion.li>
             </motion.ul>
         </div>

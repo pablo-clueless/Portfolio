@@ -21,7 +21,7 @@ export const data = [
     },
     {
         id: '003',
-        name: 'Ekunola Davues Ministry Website',
+        name: 'Ekunola Davies Ministry Website',
         description: 'The official website of Ekunola Davies Ministry Int\'l.',
         company: 'Ekunola Davues Ministry Int\'l',
         url: 'https://edmi-delta.vercel.app',
