@@ -12,50 +12,50 @@ const Skills = () => {
     return (
         <div className='flex flex-col items-center text-center px-6 py-10' id="about">
             <motion.div initial={initial} whileInView={animate} className='mb-12 text-left'>
-                <p className='md:text-6xl text-4xl font-black font-heading text-black outline-text'>
+                <p className='md:text-6xl text-4xl font-black font-heading text-white outline-text'>
                     SKILLS
                 </p>
             </motion.div>
             <div className='flex md:flex-row flex-col gap-4'>
                 <div className='md:w-1/2 text-left w-full my-4'>
-                    <p className='text-3xl text-black mb-2'>
+                    <p className='text-3xl text-white mb-2'>
                         2 years+, a ton of tutorials and online courses, here I am.
                     </p>
 
-                    <p className='text-2xl text-black'>
+                    <p className='text-2xl text-white'>
                         A passion of mine is translating logic and designs into code. Here are some the tools I use
                     </p>
                 </div>
                 <motion.ul variants={container} initial='hidden' animate='show' className='md:w-1/2 text-left w-full my-4 flex flex-wrap gap-8'>
                     <motion.li variants={item}>
-                        <JavaScript fill='black'/>
+                        <JavaScript fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Nextjs fill='black'/>
+                        <Nextjs fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Nodejs fill='black'/>
+                        <Nodejs fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <React fill='black'/>
+                        <React fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Redux fill='black'/>
+                        <Redux fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Sass fill='black'/>
+                        <Sass fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Solidity fill='black'/>
+                        <Solidity fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Styledcomponents fill='black'/>
+                        <Styledcomponents fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <Threejs fill='black'/>
+                        <Threejs fill='white'/>
                     </motion.li>
                     <motion.li variants={item}>
-                        <TypeScript fill='black'/>
+                        <TypeScript fill='white'/>
                     </motion.li>
                 </motion.ul>
             </div>

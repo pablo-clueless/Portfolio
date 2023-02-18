@@ -6,8 +6,13 @@ module.exports = {
       heading: ['Montserrat', 'sans-serif'],
     },
     extend: {
+      colors: {
+        primary: '#E35A44',
+        secondary: '#1F2029'
+      },
       textColor: {
         primary: '#E35A44',
+        secondary: '#1F2029'
       },
       backgroundColor: {
         'primary': '#E35A44',

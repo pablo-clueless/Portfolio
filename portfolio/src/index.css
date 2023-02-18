@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: #000;
+  background: #1F2029;
   font-family: 'Outfit', sans-serif;
   z-index: -2;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .nav_link {
-  color: #000;
+  color: #FFF;
   text-transform: capitalize;
   position: relative;
   text-decoration: none;
@@ -90,8 +90,8 @@ body {
 }
 
 .outline-text {
-  color: #000;
-  -webkit-text-stroke: 1px #000;
+  color: #FFF;
+  -webkit-text-stroke: 1px #FFF;
   -webkit-text-fill-color: transparent;
 }
 
