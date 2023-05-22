@@ -1,20 +1,18 @@
 import React, { createContext, useContext, useState } from 'react'
 
-const StateContext = createContext()
+export const StateContext = createContext()
 
 export const StateProvider = ({ children }) => {
-    const [screenSize, setScreenSize] = useState(undefined)
-    const [isOpen, setIsOpen] = useState(false)
+    const [mode, setMode] = useState('light')
 
-    const toggleOpen = () => {
-        setIsOpen(prevState => !prevState)
+    const handleMode = (mode) => {
+        setMode(mode)
+        localStorage.setItem('theme', mode)
     }
 
     return (
-        <StateContext.Provider value={{isOpen, setIsOpen, toggleOpen, screenSize, setScreenSize}}>
+        <StateContext.Provider value={{handleMode, mode}}>
             {children}
         </StateContext.Provider>
     )
 }
-
-export const useStateContext = () => useContext(StateContext)

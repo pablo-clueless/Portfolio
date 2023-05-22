@@ -10,6 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.19.0",
     "@iconify/react": "^3.2.2",
+    "@phosphor-icons/react": "^2.0.9",
     "caniuse-lite": "^1.0.30001396",
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
