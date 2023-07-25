@@ -8,18 +8,18 @@ interface Props {
   url: string
 }
 
-const Card = (props:Props) => {
-  const {description, image, name, url} = props
-  
+const Card = (props: Props) => {
+  const { description, image, name, url } = props
+
   return (
-    <div className='w-full flex flex-col gap-4 p-1 border border-gray-500 rounded cursor-pointer hover:animate-jiggle transition-all duration-500 ease-in-out relative'>
-      <a href={url} target='_blank' className='bg-black text-sm text-white rounded-full p-2 md:text-2xl absolute top-2 right-2'>
-        <Link />
-      </a>
-      <img src={image} alt={name} className='w-full object-cover rounded border' />
-      <div className='flex flex-col'>
-        <p className='text-lg font-black tracking-wide'>{name}</p>
-        <p className='text-sm font-bold'>{description}</p>
+    <div className="w-full flex flex-col gap-4 rounded cursor-pointer relative select-none">
+      <img src={image} alt={name} className="w-full h-full object-cover rounded" />
+      <div className="w-full h-full flex flex-col justify-end bg-black/80 absolute left-0 top-0 rounded p-1">
+        <div className="text-white">
+          <a href={url} target="_blank" className="text-xs nav_link">{url}</a>
+          <p className="text-lg font-extrabold">{name}</p>
+          <p className="text-sm font-semibold">{description}</p>
+        </div>
       </div>
     </div>
   )

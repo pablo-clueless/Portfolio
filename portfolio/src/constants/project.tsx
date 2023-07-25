@@ -1,6 +1,12 @@
-import { chatt, commerce, dashboard, edmi, koin, onboard } from '../assets'
+import { chatt, dashboard, edmi, koin, onboard, tsl } from '../assets'
 
 export const PROJECTS = [
+  {
+    name: 'Onboard',
+    description: 'Onboard helps with business, tourism and education travels and bookings.',
+    url: 'https://onboard.com.ng',
+    image: onboard,
+  },
   {
     name: 'Chatt',
     description: 'Landing page for an instant messaging app.',
@@ -14,10 +20,10 @@ export const PROJECTS = [
     image: dashboard,
   },
   {
-    name: 'Pablo Store',
-    description: 'A sample e-commerce store with payment integration.',
-    url: 'https://e-commerce-store-bice.vercel.app/',
-    image: commerce,
+    name: 'TSL',
+    description: 'Mock website of TSL.',
+    url: 'https://tech-solutions.vercel.app/',
+    image: tsl,
   },
   {
     name: 'Ekunola Davies Ministry Website',
@@ -26,14 +32,8 @@ export const PROJECTS = [
     image: edmi,
   },
   {
-    name: 'Onboard',
-    description: 'Onboard helps with business, tourism and education travels and bookings.',
-    url: 'https://onboard.com.ng',
-    image: onboard,
-  },
-  {
     name: 'Koin',
-    description: 'Landing page for koin crypto currency with metamask connect.',
+    description: 'Mock landing page for cryptocurrency with metamask connect.',
     url: 'https://koin-token.vercel.app',
     image: koin,
   },

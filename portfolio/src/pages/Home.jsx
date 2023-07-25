@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='bg-white dark:bg-black'>
     <Navbar />
-    <Container className='w-full h-[700px] flex flex-col items-center justify-center gap-5 bg-mountains bg-cover bg-fixed py-4 text-center'>
+    <Container className='w-full h-[700px] flex flex-col items-center justify-center gap-5 py-4 text-center'>
       <p className='text-5xl lg:text-7xl text-black dark:text-white font-black'>Hi, I'm Samson</p>
       <p className='w-full md:w-1/2 lg:text-2xl text-black dark:text-white text-lg font-bold'>
         I'm a web developer with an edge. I specialize in building web and mobile apps to give the best user experience.
@@ -29,9 +29,6 @@ const Home = () => {
           I constantly endeavor to get better and surpass my threshold to deliver outstanding results. <br />
           I like pop music, good food and video games. And web3.
         </p>
-        {/* <div className='w-full md:w-1/2'>
-          <img src="" alt="" className='w-full aspect-[3/4] object-cover' />
-        </div> */}
       </div>
     </Container>
     <Container className='w-full flex flex-col text-black dark:text-white py-10'>

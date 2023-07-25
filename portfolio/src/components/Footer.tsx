@@ -10,7 +10,7 @@ const Footer = () => {
         <Logo />
         <div className='flex items-center gap-4'>
           {CONNECT.map((item, index) => (
-            <a key={index} href={item.url} target='_blank' className='bg-gray-200 dark:bg-gray-500 p-2 rounded'>
+            <a key={index} href={item.url} target='_blank' className='bg-gray-200 dark:bg-gray-500 p-2 rounded hover:scale-110'>
               <span className='text-black dark:text-white text-xl'>
                 {item.icon}
               </span>

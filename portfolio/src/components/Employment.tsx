@@ -15,7 +15,7 @@ const Employment = (props:Props) => {
     <div className='w-full md:w-fit flex items-center gap-2 border border-gray-500 px-4 py-2'>
       <div className='flex flex-col'>
         <p className='text-lg font-extrabold'>{company}</p>
-        <p className='font-bold'>{role}{' '}({type})</p>
+        <p className='font-bold'>{role}</p>
         <div className='w-full flex items-center text-xs font-semibold'>
           <p>{start}</p><span className='mx-2'>-</span><p>{end}</p>
         </div>

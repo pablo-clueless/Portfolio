@@ -1,4 +1,4 @@
-import { CodepenLogo, GithubLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react'
+import { CodepenLogo, GithubLogo, InstagramLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react'
 import React from 'react'
 
 export const CONNECT = [
@@ -6,4 +6,5 @@ export const CONNECT = [
   {icon: <GithubLogo />, url: 'https://github.com/pablo-clueless'},
   {icon: <LinkedinLogo />, url: 'https://linkedin.com/in/samson-okunola/'},
   {icon: <TwitterLogo />, url: 'https://twitter.com/pablo_clueless'},
+  {icon: <InstagramLogo />, url: 'https://threads.net/@pablo_clueless'},
 ]
