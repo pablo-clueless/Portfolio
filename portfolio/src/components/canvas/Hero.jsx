@@ -3,8 +3,6 @@ import { Suspense, useEffect, useState } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import * as THREE from "three"
 
-import CanvasLoader from "./Loader"
-
 const Model = ({ isMobile }) => {
   const model = useGLTF("./fox_walk.glb")
 
@@ -70,7 +68,7 @@ const HeroCanvas = () => {
       shadows
       camera={{ position: [25, 5, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}>
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={null}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}

@@ -7,14 +7,7 @@ import CanvasLoader from "../Loader"
 const Earth = () => {
   const model = useGLTF("./planet/scene.gltf")
   return (
-    <mesh>
-      <primitive
-        object={model.scene}
-        scale={2.5}
-        position-y={0}
-        rotation-y={0}
-      />
-    </mesh>
+    <primitive object={model.scene} scale={2.5} position-y={0} rotation-y={0} />
   )
 }
 

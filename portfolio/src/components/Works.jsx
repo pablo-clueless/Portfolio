@@ -12,8 +12,8 @@ const Card = ({ current, index, name, description, image, url }) => {
   return (
     <motion.div
       className={`w-full cursor-pointer ${index === current ? "block" : "hidden"}`}
-      initial={{ y: "-100%", opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ type: "tween", delay: 0.1, duration: 1, ease: "easeInOut" }}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{ max: 15, scale: 1, speed: 1000 }} className="w-full">
