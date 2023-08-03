@@ -1,13 +1,22 @@
-import React from 'react'
+import { motion } from "framer-motion"
+import React from "react"
 
-const Container = (props) => {
-  const {children, className} = props
-  
-  return (
-    <div className={`px-2 md:px-20 ${className}`}>
-      {children}
-    </div>
-  )
-}
+import { staggerContainer } from "../utils/motion"
+import { styles } from "../styles"
+
+const Container = (Component, id) =>
+  function HOC() {
+    return (
+      <motion.section
+        id={id}
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true, amount: 0.25}}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+        <Component />
+      </motion.section>
+    )
+  }
 
 export default Container

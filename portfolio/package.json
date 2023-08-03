@@ -11,15 +11,21 @@
     "@babel/core": "^7.19.0",
     "@iconify/react": "^3.2.2",
     "@phosphor-icons/react": "^2.0.9",
-    "caniuse-lite": "^1.0.30001396",
+    "@react-three/drei": "^9.80.0",
+    "@react-three/fiber": "^8.13.6",
+    "caniuse-lite": "^1.0.30001517",
     "framer-motion": "^6.5.1",
+    "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^9.4.0",
     "react-router-dom": "^6.4.3",
-    "redux": "^4.2.0"
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "redux": "^4.2.0",
+    "three": "^0.155.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.19",

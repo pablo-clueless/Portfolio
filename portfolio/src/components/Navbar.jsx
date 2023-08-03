@@ -1,39 +1,27 @@
-import { Moon, Sun } from '@phosphor-icons/react'
-import { useEffect, useState } from 'react'
+import { Link } from "react-router-dom"
 
-import { useStateContext } from '../hooks'
-import Logo from './Logo'
+import { NAVLINKS } from "../constants"
+import { styles } from "../styles"
+import Logo from "./Logo"
 
 const Navbar = () => {
-  const [isScrolled, setisScrolled] = useState(false)
-  const {handleMode, mode} = useStateContext()
-
-  const handleScroll = () => {
-    if(window.scrollY > 700) {
-      setisScrolled(true)
-    } else {
-      setisScrolled(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  })
 
   return (
-    <nav className={`w-full flex items-center justify-between bg-white dark:bg-black px-2 md:px-20 py-4 top-0 left-0 z-10 ${isScrolled ? 'fixed' : 'static'}`}>
-      <Logo />
-      <div className='text-2xl text-black dark:text-white'>
-        {mode === 'light' ? (
-          <button onClick={() => handleMode('dark')}>
-            <Moon />
-          </button>
-        ):(
-          <button onClick={() => handleMode('light')}>
-            <Sun />
-          </button>
-        )}
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white`}>
+      <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
+        <Link to="/" onClick={() => {setActive(""); window.scrollTo(0, 0)}}>
+          <Logo color="text-black" size="text-base md:text-xl" />
+        </Link>
+        <ul className="list-none flex flex-row gap-2 md:gap-10">
+          {NAVLINKS.map((link) => (
+            <li
+              key={link.id}
+              className="text-xs md:text-[18px] text-black font-semibold capitalize cursor-pointer hover:tracking-[5px] transition-all duration-500">
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   )

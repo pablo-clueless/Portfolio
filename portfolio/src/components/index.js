@@ -1,7 +1,18 @@
 
-export { default as Card } from './Card'
-export { default as Employment } from './Employment'
-export { default as Footer } from './Footer'
-export { default as Loader } from './Loader'
-export { default as Logo } from './Logo'
-export { default as Navbar } from './Navbar'
+export { default as About } from "./About"
+export { default as Card } from "./Card"
+export { default as Contact } from "./Contact"
+export { default as Experience } from "./Experience"
+export { default as Feedbacks } from "./Feedbacks"
+export { default as Footer } from "./Footer"
+export { default as Hero } from "./Hero"
+export { default as Loader } from "./Loader"
+export { default as Logo } from "./Logo"
+export { default as Navbar } from "./Navbar"
+export { default as Stacks } from "./Stacks"
+export { default as Works } from "./Works"
+
+export { default as BallCanvas } from "./canvas/Ball"
+export { default as EarthCanvas } from "./canvas/Earth"
+export { default as HeroCanvas } from "./canvas/Hero"
+export { default as StarsCanvas } from "./canvas/Stars"

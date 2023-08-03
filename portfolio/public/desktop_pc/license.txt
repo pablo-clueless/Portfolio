@@ -1,0 +1,11 @@
+Model Information:
+* title:	Personal Computer
+* source:	https://sketchfab.com/3d-models/personal-computer-aa398650fe6e4baa8771c71266d842f4
+* author:	UROD Engine (https://sketchfab.com/Starven38)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Personal Computer" (https://sketchfab.com/3d-models/personal-computer-aa398650fe6e4baa8771c71266d842f4) by UROD Engine (https://sketchfab.com/Starven38) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

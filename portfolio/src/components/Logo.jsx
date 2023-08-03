@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom'
-
-const Logo = () => {
+const Logo = ({size, color}) => {
   return (
-    <Link to='/' className='text-base md:text-2xl font-black text-black dark:text-white'>
-      oO
-    </Link>
+    <h1 className={`font-black hover:tracking-[10px] transition-all duration-500 cursor-pointer ${size} ${color}`}>
+      oO.
+    </h1>
   )
 }
 
