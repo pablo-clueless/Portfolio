@@ -1,5 +1,5 @@
-import { useStateContext } from './context'
+import { useMousePosition } from "./mouse-position"
 
 export {
-  useStateContext,
+  useMousePosition,
 }

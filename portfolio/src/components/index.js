@@ -2,6 +2,7 @@
 export { default as About } from "./About"
 export { default as Card } from "./Card"
 export { default as Contact } from "./Contact"
+export { default as Cursor } from "./Cursor"
 export { default as Experience } from "./Experience"
 export { default as Feedbacks } from "./Feedbacks"
 export { default as Footer } from "./Footer"

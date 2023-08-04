@@ -24,6 +24,11 @@
   font-family: "Syne", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
 }
 
 .hash-span {

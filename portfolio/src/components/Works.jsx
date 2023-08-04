@@ -11,7 +11,7 @@ import { styles } from "../styles"
 const Card = ({ current, index, name, description, image, url }) => {
   return (
     <motion.div
-      className={`w-full cursor-pointer relative ${index === current ? "block" : "hidden"}`}
+      className={`w-full  relative ${index === current ? "block" : "hidden"}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ type: "tween", delay: 0.1, duration: 1, ease: "easeInOut" }}

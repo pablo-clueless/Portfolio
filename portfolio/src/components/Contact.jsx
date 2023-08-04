@@ -23,7 +23,7 @@ const Contact = () => {
             <Logo size="text-6xl text-white" />
             <div className="flex flex-col gap-4">
               {CONNECT.map((connect, index) => (
-                <a key={index} href={connect.url} target="_blank" className="text-white font-semibold capitalize cursor-pointer hover:tracking-[5px] transition-all duration-500">
+                <a key={index} href={connect.url} target="_blank" className="text-white font-semibold capitalize hover:tracking-[5px] transition-all duration-500">
                   {connect.label}
                 </a>
               ))}

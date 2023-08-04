@@ -17,7 +17,7 @@ const Navbar = () => {
           {NAVLINKS.map((link) => (
             <li
               key={link.id}
-              className="text-xs md:text-[18px] text-black font-semibold capitalize cursor-pointer hover:tracking-[5px] transition-all duration-500">
+              className="text-xs md:text-[18px] text-black font-semibold capitalize hover:tracking-[5px] transition-all duration-500">
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}

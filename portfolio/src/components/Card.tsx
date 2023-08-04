@@ -12,7 +12,7 @@ const Card = (props: Props) => {
   const { description, image, name, url } = props
 
   return (
-    <div className="w-full flex flex-col gap-4 rounded cursor-pointer relative select-none">
+    <div className="w-full flex flex-col gap-4 rounded relative select-none">
       <img src={image} alt={name} className="w-full h-full object-cover rounded" />
       <div className="w-full h-full flex flex-col justify-end bg-black/80 absolute left-0 top-0 rounded p-1">
         <div className="text-white">
