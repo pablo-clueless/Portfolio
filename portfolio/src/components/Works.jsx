@@ -11,35 +11,34 @@ import { styles } from "../styles"
 const Card = ({ current, index, name, description, image, url }) => {
   return (
     <motion.div
-      className={`w-full cursor-pointer ${index === current ? "block" : "hidden"}`}
+      className={`w-full cursor-pointer relative ${index === current ? "block" : "hidden"}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ type: "tween", delay: 0.1, duration: 1, ease: "easeInOut" }}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{ max: 15, scale: 1, speed: 1000 }} className="w-full">
         <div className="relative w-full">
-          <div className="w-full bg-gradient from-amber-500 to-red-600 p-2">
+          <div className="w-full">
             <img
               src={image}
               alt={name}
-              className="w-full aspect-[3/1] object-cover object-top grayscale hover:grayscale-0 transition-colors duration-500"
+              className="w-full aspect-[2/1] object-cover object-top grayscale hover:grayscale-0 transition-colors duration-500"
             />
           </div>
         </div>
       </Tilt>
-      <div className="mt-4 flex items-center justify-between">
-        <div>
-          <h3 className="text-lg md:text-xl text-black font-extrabold">
-            {name}
-          </h3>
-          <p className="text-base md:text-lg text-gray-500 font-bold">
-            {description}
-          </p>
-        </div>
-        <a href={url} target="_blank" className="rounded-full bg-black p-2">
-          <LinkSimple className="text-3xl" />
-        </a>
+      <div className="mt-4">
+        <h3 className="text-lg md:text-xl text-black font-extrabold">
+          {name}
+        </h3>
+        <p className="text-base md:text-lg text-gray-500 font-bold">
+          {description}
+        </p>
       </div>
+      <a href={url} target="_blank" className="rounded-full bg-black/70 p-2 absolute top-4
+       right-4">
+        <LinkSimple className="text-2xl" />
+      </a>
     </motion.div>
   )
 }
