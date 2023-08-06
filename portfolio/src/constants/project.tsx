@@ -3,7 +3,7 @@ import { dashboard, edmi, koin, onboard, shirt, traxo, tsl } from '../assets'
 export const PROJECTS = [
   {
     name: 'Onboard',
-    description: 'Onboard helps with business, tourism and education travels and bookings.',
+    description: 'Business, tourism and education travels and bookings.',
     url: 'https://onboard.com.ng',
     image: onboard,
     tags: [
@@ -14,7 +14,7 @@ export const PROJECTS = [
   },
   {
     name: 'Three-Shirt',
-    description: 'A website for styling 3D t-shirts. Customize logo, change colors, add full decals.',
+    description: 'Style a shirt in 3D; change logo, color, full decals.',
     url: 'https://3-shirt.vercel.app',
     image: shirt,
     tags: [

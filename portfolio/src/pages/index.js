@@ -1,7 +1,11 @@
 import { lazy } from 'react'
 
+const Blog  = lazy(() => import('./Blog'))
+const Blogs  = lazy(() => import('./Blogs'))
 const Home  = lazy(() => import('./Home'))
 
 export {
-  Home
+  Blog,
+  Blogs,
+  Home,
 }
